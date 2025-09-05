@@ -1,0 +1,38 @@
+baseURL = 'https://supplychaindaily.com'
+languageCode = 'en-us'
+title = 'Supply Chain Daily'
+[pagination]
+    pagerSize = 10
+theme = 'hugo-news'
+disqusShortname = '' # Enable comments by entering your Disqus shortname
+googleAnalytics = '' # Enable Google Analytics by entering your tracking id
+
+[Author] # Used in authorbox
+    name = "Supply Chain Analysis Team"
+    bio = "Expert analysis of supply chain issues in manufacturing and distribution, with emphasis on USA automotive manufacturing."
+    avatar = "img/supply-chain-avatar.png"
+
+[Params]
+    subtitle = "Daily Intelligence on Manufacturing & Logistics" # Subtitle of your site
+    description = "Daily supply chain intelligence covering manufacturing, distribution, and logistics challenges with focus on USA automotive industry"
+    opengraph = true
+    twitter_cards = true
+    readmore = true
+    leftsidebar = false
+    authorbox = true
+    post_navigation = true
+    postSections = ["posts"] # Show posts section on home page
+    dateformat = "2006-01-02"
+
+[Params.widgets]
+    search = true
+    recent_articles = true
+    recent_articles_num = 10
+    categories = true
+    tags = true
+    tags_counter = true
+    
+    # Social media for supply chain industry
+    social_linkedin = "supply-chain-daily"
+    social_twitter = "supplychainnews" 
+    social_email = "contact@supplychaindaily.com"

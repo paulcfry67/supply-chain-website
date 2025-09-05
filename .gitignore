@@ -1,0 +1,26 @@
+# Hugo build artifacts
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# Logs
+/logs/
+*.log
+
+# Generated content (optional - you may want to track generated posts)
+# content/posts/*.md
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
