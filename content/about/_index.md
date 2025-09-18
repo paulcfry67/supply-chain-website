@@ -39,4 +39,4 @@ We deliver daily intelligence briefings to help supply chain professionals, manu
 
 ## Contact
 
-For inquiries, partnerships, or feedback, reach out to our team at contact@supplychaindaily.com.
+For inquiries, partnerships, or feedback, reach out to our team at contact@supplychaindaily.news.

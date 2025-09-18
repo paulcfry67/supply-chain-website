@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "WebSearch"
+      "WebSearch",
+      "Bash(hugo:*)",
+      "WebFetch(domain:docs.x.ai)",
+      "Bash(python:*)"
     ],
     "deny": [],
     "ask": []

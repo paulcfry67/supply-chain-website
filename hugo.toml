@@ -1,20 +1,32 @@
-baseURL = 'https://supplychaindaily.com'
+baseURL = 'https://supplychaindaily.news'
 languageCode = 'en-us'
 title = 'Supply Chain Daily'
+theme = 'hugo-news'
+
 [pagination]
     pagerSize = 10
-theme = 'hugo-news'
-disqusShortname = '' # Enable comments by entering your Disqus shortname
-googleAnalytics = '' # Enable Google Analytics by entering your tracking id
+# Comments and analytics 
+[services]
+  [services.disqus]
+    shortname = ""
+  [services.googleAnalytics]
+    id = ""
 
-[Author] # Used in authorbox
-    name = "Supply Chain Analysis Team"
-    bio = "Expert analysis of supply chain issues in manufacturing and distribution, with emphasis on USA automotive manufacturing."
-    avatar = "img/supply-chain-avatar.png"
+# Markup configuration
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [Params]
     subtitle = "Daily Intelligence on Manufacturing & Logistics" # Subtitle of your site
     description = "Daily supply chain intelligence covering manufacturing, distribution, and logistics challenges with focus on USA automotive industry"
+    
+    # Author box settings
+    [Params.Author] 
+        name = "Supply Chain Analysis Team"
+        bio = "Expert analysis of supply chain issues in manufacturing and distribution, with emphasis on USA automotive manufacturing."
+        avatar = "img/supply-chain-avatar.png"
     opengraph = true
     twitter_cards = true
     readmore = true
@@ -35,4 +47,4 @@ googleAnalytics = '' # Enable Google Analytics by entering your tracking id
     # Social media for supply chain industry
     social_linkedin = "supply-chain-daily"
     social_twitter = "supplychainnews" 
-    social_email = "contact@supplychaindaily.com"
+    social_email = "contact@supplychaindaily.news"

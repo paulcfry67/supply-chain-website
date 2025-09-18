@@ -12,6 +12,7 @@ import logging
 import smtplib
 import requests
 import argparse
+import configparser
 from datetime import datetime, timezone
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -23,19 +24,35 @@ from dataclasses import dataclass
 @dataclass
 class Config:
     """Configuration settings"""
+    # API settings
     grok_api_key: str
     grok_base_url: str = "https://api.x.ai/v1"
-    output_dir: str = "/tmp/daily-precis"
+    model: str = "grok-2-1212"
+    temperature: float = 0.3  # default is 2, edit to reset to 2.
+    max_tokens: int = 10000
+    presence_penalty: float = 0.1
+    frequency_penalty: float = 0.1
+    
+    # Processing settings
     max_retries: int = 3
-    timeout: int = 60
+    timeout: int = 180  # 3 minutes for API responses
+    min_chars: int = 6000   # Minimum ~800 words for comprehensive content
+    max_chars: int = 50000  # Maximum ~2000 words for OSINT format
+    
+    # Output settings
+    output_dir: str = "/tmp/daily-precis"
+    log_level: str = "INFO"
+    
+    # Email settings
     alert_email: str = "will.appleton@protonmail.com"
     smtp_server: str = "smtp.gmail.com"  # Configure as needed
     smtp_port: int = 587
     smtp_username: str = ""  # Set via environment
     smtp_password: str = ""  # Set via environment
-    log_level: str = "INFO"
-    max_chars: int = 3000
-    min_chars: int = 1500
+    
+    # Prompt file paths
+    precis_prompt_file: str = "precis_prompt.txt"
+    system_prompt_file: str = "system_prompt.txt"
 
 
 class PrepperPrecisGenerator:
@@ -53,128 +70,118 @@ class PrepperPrecisGenerator:
     def setup_logging(self):
         """Configure logging"""
         log_format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        
+        # Use output_dir for logs instead of /var/log
+        log_dir = Path(self.config.output_dir) / "logs"
+        log_dir.mkdir(parents=True, exist_ok=True)
+        log_file = log_dir / f"prepper-precis-{datetime.now().strftime('%Y-%m')}.log"
+        
         logging.basicConfig(
             level=getattr(logging, self.config.log_level.upper()),
             format=log_format,
             handlers=[
-                logging.FileHandler(f"/var/log/prepper-precis-{datetime.now().strftime('%Y-%m')}.log"),
+                logging.FileHandler(log_file),
                 logging.StreamHandler(sys.stdout)
             ]
         )
         self.logger = logging.getLogger(__name__)
     
     def get_precis_prompt(self) -> str:
-        """Get the full prompt for generating the prepper's précis"""
-        return """DAILY PREPPER'S OUTLOOK PROMPT
+        """Get the full prompt for generating the OSINT daily threat précis"""
+        try:
+            # Try to read prompt from file first
+            prompt_file = Path(__file__).parent / self.config.precis_prompt_file
+            if prompt_file.exists():
+                self.logger.debug(f"Loading prompt from file: {prompt_file}")
+                with open(prompt_file, 'r', encoding='utf-8') as f:
+                    return f.read()
+            else:
+                self.logger.warning(f"Prompt file not found: {prompt_file}, using default prompt")
+                # Fallback to a minimal default prompt
+                return """Generate a comprehensive daily OSINT threat précis for the United States.
+Include: Executive Summary, Physical Security Threats, Cyber Threats, 
+Natural/Environmental Hazards, Economic/Supply Chain Threats, and Information Operations.
+Focus on 24-72 hour threats with actionable intelligence."""
+        except Exception as e:
+            self.logger.error(f"Error reading prompt file: {str(e)}, using default prompt")
+            return """Generate a comprehensive daily OSINT threat précis for the United States.
+Include: Executive Summary, Physical Security Threats, Cyber Threats, 
+Natural/Environmental Hazards, Economic/Supply Chain Threats, and Information Operations.
+Focus on 24-72 hour threats with actionable intelligence."""
+    
+    def get_system_prompt(self) -> str:
+        """Get the system prompt for the AI model"""
+        try:
+            system_file = Path(__file__).parent / self.config.system_prompt_file
+            if system_file.exists():
+                self.logger.debug(f"Loading system prompt from file: {system_file}")
+                with open(system_file, 'r', encoding='utf-8') as f:
+                    return f.read()
+            else:
+                self.logger.warning(f"System prompt file not found: {system_file}, using default")
+        except Exception as e:
+            self.logger.error(f"Error reading system prompt file: {str(e)}, using default")
+        
+        # Default system prompt
+        return """You are an elite OSINT analyst specializing in threat assessment for U.S. national security. Your role is to produce professional, unbiased daily threat intelligence briefings following strict analytical standards.
 
-Mission Statement
-Generate a comprehensive daily Open Source Intelligence (OSINT) Prepper's Outlook summarizing current and emerging threats and disruptions relevant to individuals in the United States preparing for self-reliance and survival. Provide actionable, practical guidance in a structured, professional format suitable for preppers, homesteaders, and survivalists to enhance preparedness and resilience.
-
-Output Structure
-Executive Summary
-• Threat Level Assessment: Overall preparedness threat level (Low/Moderate/Elevated/High/Severe) based on disruptions to safety, resources, and self-sufficiency.
-• Key Developments: 2-3 critical developments in the past 24 hours affecting preparedness.
-• Priority Actions: Immediate steps preppers should take within 24-72 hours to mitigate risks.
-
-Preparedness Categories
-1. Physical Security and Safety
-• Personal Safety Threats: Risks from terrorism, civil unrest, or violent crime affecting personal or homestead security.
-• Community Stability: Local or regional unrest, protests, or law enforcement issues impacting safety.
-• Criminal Threats: Trends in looting, burglary, or trafficking affecting prepper communities.
-• Infrastructure Risks: Vulnerabilities to power, water, or transportation systems critical to survival.
-
-2. Cyber and Technology Threats
-• Personal Cybersecurity: Phishing, malware, or identity theft risks to prepper communications and finances.
-• Critical Systems Disruptions: Cyberattacks on utilities, supply chains, or emergency services.
-• Technology Dependence Risks: Failures or vulnerabilities in tech-reliant survival tools (e.g., solar systems, comms).
-• Data Privacy Threats: Surveillance or data breaches compromising off-grid lifestyles.
-
-3. Natural and Environmental Hazards
-• Severe Weather: Storms, floods, or extreme weather impacting shelter, food, or water supplies.
-• Geological Events: Earthquakes, landslides, or volcanic risks to homestead stability.
-• Public Health: Disease outbreaks or environmental contamination affecting survival.
-• Climate-Related: Wildfires, droughts, or floods disrupting food production or access.
-
-4. Economic and Supply Chain Resilience
-• Supply Chain Disruptions: Shortages of critical supplies (food, fuel, medical, ammo).
-• Financial Preparedness: Economic instability, inflation, or banking disruptions affecting resources.
-• Energy Availability: Fuel or power shortages impacting off-grid systems.
-• Food and Water Security: Threats to agricultural production, water access, or food storage.
-
-5. Information and Situational Awareness
-• Disinformation Risks: Misinformation campaigns affecting prepper decision-making.
-• Social Media Manipulation: False narratives impacting community cohesion or resource planning.
-• Propaganda Threats: External influences undermining self-reliance or morale.
-• Communication Reliability: Risks to radio, internet, or other comms critical for preppers.
-
-Near-Term Preparedness Priorities (24-72 Hours)
-For each identified near-term threat, provide:
-• Threat Description: Detailed explanation of the disruption or threat.
-• Geographic Impact: Affected regions, states, or local areas.
-• Population at Risk: Prepper demographics or communities most vulnerable (e.g., rural, urban, off-grid).
-• Likelihood Assessment: Probability of threat materialization (Very Low/Low/Medium/High/Very High).
-• Potential Impact: Consequences for survival, resources, or security if threat materializes.
-• Recommended Actions: Specific preparedness measures (e.g., stockpile food, secure water, fortify defenses).
-• Monitoring Indicators: Signals of escalation or de-escalation (e.g., weather updates, unrest reports).
-
-Source Assessment
-• Source Reliability: Evaluation of sources (A-F scale, A being most reliable).
-• Information Confidence: Confidence level in intelligence (High/Medium/Low).
-• Collection Gaps: Areas needing further information for prepper planning.
-
-Requirements
-Content Specifications
-• Timeframe: Focus on threats and disruptions within 24-72 hours, with context for longer-term preparedness trends.
-• Geographic Scope: United States and territories, with relevant global events impacting local resilience.
-• Source Types: Open source materials only (news, government advisories, social media, survivalist forums, public databases).
-• Length: Keep under 3000 characters but aim for 1500-2000 characters minimum for comprehensive coverage.
-• Update Frequency: Daily, with clear date/time stamps.
-
-Analytical Standards
-• Objectivity: Present facts without political bias or sensationalism.
-• Accuracy: Cross-reference multiple credible sources for reliability.
-• Clarity: Use clear, practical language for preppers of varying expertise.
-• Actionability: Provide specific, survival-oriented recommendations.
-• Timeliness: Emphasize immediate and emerging threats relevant to preparedness.
-
-Formatting Requirements
-• Use markdown formatting with consistent section headers.
-• Include plain text URLs labeled as "Sources" at the end of each section.
-• Timestamp reports with current date and time.
-• Include disclaimer about open source limitations.
-
-Quality Control
-• Cross-reference sources for significant claims.
-• Distinguish confirmed facts from unverified reports.
-• Assess source credibility and potential bias.
-• Highlight uncertainties or conflicting information.
-
-Generate today's Daily Prepper's Outlook following this exact structure and format. Focus on current threats and actionable intelligence for the preparedness community."""
+Key requirements:
+- Follow the exact format structure provided in the prompt
+- Use current date and real-time threat information
+- Maintain objectivity without political bias
+- Provide specific, actionable intelligence
+- Cross-reference multiple credible sources
+- Use professional intelligence community language
+- Focus on 24-72 hour threat window
+- Include confidence assessments and source reliability ratings"""
 
     def generate_content(self) -> Optional[str]:
         """Generate the daily précis using Grok API"""
-        prompt = self.get_precis_prompt()
+        # Get current date for the prompt
+        today = datetime.now()
+        date_str = today.strftime("%Y-%m-%d")
+        day_name = today.strftime("%A")
+        
+        # Get base prompt and add current date instruction
+        base_prompt = self.get_precis_prompt()
+        prompt = f"""CRITICAL: Today's date is {date_str} ({day_name}).
+        
+You MUST generate content for TODAY'S DATE: {date_str}
+All dates in your response should reflect this current date.
+Do NOT use placeholder dates like 2023-10-10 or October 10, 2023.
+
+{base_prompt}"""
         
         for attempt in range(1, self.config.max_retries + 1):
             try:
-                self.logger.info(f"Attempt {attempt}/{self.config.max_retries}: Generating content via Grok API")
+                self.logger.info(f"Attempt {attempt}/{self.config.max_retries}: Generating content via Grok API (timeout: {self.config.timeout}s)")
                 
+                # Base payload
                 payload = {
                     "messages": [
                         {
                             "role": "system",
-                            "content": "You are a professional intelligence analyst specializing in OSINT threat assessment for the preparedness community. Generate precise, actionable daily intelligence briefings in markdown format."
+                            "content": self.get_system_prompt()
                         },
                         {
                             "role": "user", 
                             "content": prompt
                         }
                     ],
-                    "model": "grok-beta",  # Adjust model name as needed
-                    "temperature": 0.3,
-                    "max_tokens": 2000,
+                    "model": self.config.model,
+                    "temperature": self.config.temperature,
+                    "max_tokens": self.config.max_tokens,
                     "stream": False
                 }
+                
+                # Add penalty parameters only for models that support them
+                # grok-4 models don't support presence/frequency penalties
+                if not self.config.model.startswith("grok-4"):
+                    payload["presence_penalty"] = self.config.presence_penalty
+                    payload["frequency_penalty"] = self.config.frequency_penalty
+                    self.logger.debug(f"Added penalty parameters for model {self.config.model}")
+                else:
+                    self.logger.debug(f"Skipping penalty parameters for model {self.config.model}")
                 
                 response = self.session.post(
                     f"{self.config.grok_base_url}/chat/completions",
@@ -223,10 +230,14 @@ Generate today's Daily Prepper's Outlook following this exact structure and form
             filename = f"{today}-daily-prepper-precis.md"
             filepath = Path(self.config.output_dir) / filename
             
+            # Check if file exists and log overwrite
+            if filepath.exists():
+                self.logger.info(f"Overwriting existing file: {filepath}")
+            
             # Add frontmatter and format content
             formatted_content = self.format_markdown(content)
             
-            # Write file
+            # Write file (will overwrite if exists)
             with open(filepath, 'w', encoding='utf-8') as f:
                 f.write(formatted_content)
             
@@ -241,7 +252,27 @@ Generate today's Daily Prepper's Outlook following this exact structure and form
         """Format content with proper markdown structure and frontmatter"""
         now = datetime.now(timezone.utc)
         today = now.strftime("%Y-%m-%d")
-        timestamp = now.strftime("%Y-%m-%d %H:%M UTC")
+        
+        # Parse the content to extract sections for Hugo validation
+        # We need to ensure Physical Security, Cyber Threats, Public Health, and Key Indicators sections exist
+        sections_mapping = {
+            "Physical Security Threats": "Physical Security",
+            "Cyber Threats": "Cyber Threats",
+            "Natural and Environmental Hazards": "Public Health",
+            "Economic and Supply Chain Threats": "Economic and Supply Chain",
+            "Near-Term Threat Expansions": "Key Indicators"
+        }
+        
+        # Process content to ensure correct section headers for Hugo
+        processed_content = content
+        for old_section, new_section in sections_mapping.items():
+            if f"## {old_section}" in processed_content or f"### {old_section}" in processed_content:
+                # Already has the section, rename it for Hugo
+                processed_content = processed_content.replace(f"### {old_section}", f"## {new_section}")
+                processed_content = processed_content.replace(f"#### {old_section}", f"## {new_section}")
+            elif old_section in processed_content and new_section not in processed_content:
+                # Section exists but needs header adjustment
+                processed_content = processed_content.replace(old_section, f"## {new_section}\n\n{old_section}")
         
         frontmatter = f"""---
 title: "Daily Prepper's Précis - {today}"
@@ -252,18 +283,8 @@ tags: ["preparedness", "threat-assessment", "intelligence"]
 author: "OSINT Analysis Team"
 ---
 
-# DAILY PREPPER'S OUTLOOK
-**Date:** {today}  
-**Classification:** UNCLASSIFIED//FOR PUBLIC USE  
-**Timestamp:** {timestamp}  
-**Distribution:** Public
-
-**Disclaimer:** This report relies on open source information and may be incomplete or unverified. It is not a substitute for official emergency advisories or professional survival training.
-
----
-
 """
-        return frontmatter + content
+        return frontmatter + processed_content
 
     def send_alert_email(self, subject: str, message: str):
         """Send alert email on failure"""
@@ -331,42 +352,109 @@ author: "OSINT Analysis Team"
             return 1
 
 
-def load_config() -> Config:
-    """Load configuration from environment variables and defaults"""
-    return Config(
-        grok_api_key=os.environ.get("GROK_API_KEY", ""),
-        grok_base_url=os.environ.get("GROK_BASE_URL", "https://api.x.ai/v1"),
-        output_dir=os.environ.get("PRECIS_OUTPUT_DIR", "/tmp/daily-precis"),
-        max_retries=int(os.environ.get("PRECIS_MAX_RETRIES", "3")),
-        timeout=int(os.environ.get("PRECIS_TIMEOUT", "60")),
-        alert_email=os.environ.get("ALERT_EMAIL", "will.appleton@protonmail.com"),
-        smtp_server=os.environ.get("SMTP_SERVER", "smtp.gmail.com"),
-        smtp_port=int(os.environ.get("SMTP_PORT", "587")),
-        smtp_username=os.environ.get("SMTP_USERNAME", ""),
-        smtp_password=os.environ.get("SMTP_PASSWORD", ""),
-        log_level=os.environ.get("LOG_LEVEL", "INFO"),
-        max_chars=int(os.environ.get("MAX_CHARS", "3000")),
-        min_chars=int(os.environ.get("MIN_CHARS", "1500"))
-    )
+def load_config(config_file: Optional[str] = None) -> Config:
+    """Load configuration from config file, then environment variables"""
+    # Set default values
+    config_values = {
+        'grok_api_key': 'REDACTED_XAI_KEY',
+        'grok_base_url': 'https://api.x.ai/v1',
+        'model': 'grok-2-1212',
+        'temperature': 0.2,
+        'max_tokens': 5000,
+        'presence_penalty': 0.1,
+        'frequency_penalty': 0.1,
+        'max_retries': 3,
+        'timeout': 180,
+        'min_chars': 4800,
+        'max_chars': 12000,
+        'output_dir': '/tmp/daily-precis',
+        'log_level': 'INFO',
+        'alert_email': 'will.appleton@protonmail.com',
+        'smtp_server': 'smtp.gmail.com',
+        'smtp_port': 587,
+        'smtp_username': '',
+        'smtp_password': '',
+        'precis_prompt_file': 'precis_prompt.txt',
+        'system_prompt_file': 'system_prompt.txt'
+    }
+    
+    # Try to load from config file
+    if config_file is None:
+        config_file = Path(__file__).parent / "generator.config"
+    else:
+        config_file = Path(config_file)
+    
+    if config_file.exists():
+        parser = configparser.ConfigParser()
+        parser.read(config_file)
+        
+        # Update values from config file
+        for section in parser.sections():
+            for key, value in parser.items(section):
+                # Convert key to lowercase with underscores
+                config_key = key.lower()
+                
+                # Type conversion based on key
+                if config_key in ['max_retries', 'timeout', 'min_chars', 'max_chars', 'smtp_port', 'max_tokens']:
+                    config_values[config_key] = int(value)
+                elif config_key in ['temperature', 'presence_penalty', 'frequency_penalty']:
+                    config_values[config_key] = float(value)
+                else:
+                    config_values[config_key] = value
+    
+    # Override with environment variables if they exist
+    env_mappings = {
+        'GROK_API_KEY': 'grok_api_key',
+        'GROK_BASE_URL': 'grok_base_url',
+        'PRECIS_OUTPUT_DIR': 'output_dir',
+        'PRECIS_MAX_RETRIES': ('max_retries', int),
+        'PRECIS_TIMEOUT': ('timeout', int),
+        'ALERT_EMAIL': 'alert_email',
+        'SMTP_SERVER': 'smtp_server',
+        'SMTP_PORT': ('smtp_port', int),
+        'SMTP_USERNAME': 'smtp_username',
+        'SMTP_PASSWORD': 'smtp_password',
+        'LOG_LEVEL': 'log_level',
+        'MAX_CHARS': ('max_chars', int),
+        'MIN_CHARS': ('min_chars', int)
+    }
+    
+    for env_key, mapping in env_mappings.items():
+        if env_key in os.environ:
+            if isinstance(mapping, tuple):
+                config_key, converter = mapping
+                config_values[config_key] = converter(os.environ[env_key])
+            else:
+                config_values[mapping] = os.environ[env_key]
+    
+    return Config(**config_values)
 
 
 def main():
     """Main entry point"""
     parser = argparse.ArgumentParser(description="Generate Daily Prepper Précis")
+    parser.add_argument("--config", type=str, help="Path to configuration file")
     parser.add_argument("--config-check", action="store_true", help="Check configuration and exit")
     parser.add_argument("--dry-run", action="store_true", help="Generate content but don't save")
     
     args = parser.parse_args()
     
     # Load configuration
-    config = load_config()
+    config = load_config(args.config)
     
     if args.config_check:
         print("Configuration Check:")
+        print(f"  Config File: {args.config or 'generator.config (default)'}")
         print(f"  Grok API Key: {'✓ Set' if config.grok_api_key else '✗ Missing'}")
+        print(f"  Model: {config.model}")
+        print(f"  Temperature: {config.temperature}")
+        print(f"  Max Tokens: {config.max_tokens}")
         print(f"  Output Directory: {config.output_dir}")
         print(f"  Alert Email: {config.alert_email}")
         print(f"  SMTP Configured: {'✓ Yes' if config.smtp_username else '✗ No'}")
+        print(f"  Prompt Files:")
+        print(f"    - Precis: {config.precis_prompt_file}")
+        print(f"    - System: {config.system_prompt_file}")
         return 0
     
     if not config.grok_api_key:

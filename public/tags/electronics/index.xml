@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Electronics on Supply Chain Daily</title>
-    <link>https://supplychaindaily.com/tags/electronics/</link>
+    <link>http://localhost:1313/tags/electronics/</link>
     <description>Recent content in Electronics on Supply Chain Daily</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Sep 2025 17:35:55 +0000</lastBuildDate>
-    <atom:link href="https://supplychaindaily.com/tags/electronics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Sep 2025 21:14:45 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/electronics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Supply Chain Update: September 5, 2025</title>
-      <link>https://supplychaindaily.com/posts/2025-09-05-supply-chain-update/</link>
-      <pubDate>Fri, 05 Sep 2025 17:35:55 +0000</pubDate>
-      <guid>https://supplychaindaily.com/posts/2025-09-05-supply-chain-update/</guid>
-      <description>&lt;h1 id=&#34;daily-supply-chain-update-september-5-2025&#34;&gt;Daily Supply Chain Update: September 5, 2025&lt;/h1&gt;&#xA;&lt;h2 id=&#34;top-supply-chain-news&#34;&gt;Top Supply Chain News&lt;/h2&gt;&#xA;&lt;p&gt;Today&amp;rsquo;s supply chain landscape continues to evolve with significant developments across various sectors. Key highlights include a notable improvement in semiconductor availability for the automotive industry, easing some production constraints. However, new challenges have emerged in the form of increased shipping costs due to geopolitical tensions affecting global trade routes. Additionally, a recent policy change by the U.S. Department of Transportation aims to streamline port operations, potentially reducing delays in the electronics sector.&lt;/p&gt;</description>
+      <link>http://localhost:1313/posts/2025-09-05-supply-chain-update/</link>
+      <pubDate>Fri, 05 Sep 2025 21:14:45 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025-09-05-supply-chain-update/</guid>
+      <description>&lt;h2 id=&#34;top-supply-chain-news&#34;&gt;Top Supply Chain News&lt;/h2&gt;&#xA;&lt;p&gt;The supply chain landscape on September 5, 2025, continues to be dynamic, with significant developments affecting the manufacturing and distribution sectors. In the automotive industry, the ongoing improvement in semiconductor availability has enabled Ford and General Motors to maintain record production levels at their key facilities. However, the sector is now grappling with increased shipping costs due to geopolitical tensions in the Red Sea region, which are straining logistics budgets. The U.S. Department of Transportation&amp;rsquo;s initiative to enhance rail infrastructure is showing promising results, particularly in the electronics sector, where reduced transit times are helping to ease port congestion.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

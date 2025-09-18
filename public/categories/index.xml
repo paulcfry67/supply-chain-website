@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Supply Chain Daily</title>
-    <link>https://supplychaindaily.com/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Supply Chain Daily</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Sep 2025 17:35:55 +0000</lastBuildDate>
-    <atom:link href="https://supplychaindaily.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Sep 2025 21:14:45 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Logistics</title>
-      <link>https://supplychaindaily.com/categories/logistics/</link>
-      <pubDate>Fri, 05 Sep 2025 17:35:55 +0000</pubDate>
-      <guid>https://supplychaindaily.com/categories/logistics/</guid>
+      <link>http://localhost:1313/categories/logistics/</link>
+      <pubDate>Fri, 05 Sep 2025 21:14:45 +0000</pubDate>
+      <guid>http://localhost:1313/categories/logistics/</guid>
       <description></description>
     </item>
     <item>
       <title>Manufacturing</title>
-      <link>https://supplychaindaily.com/categories/manufacturing/</link>
-      <pubDate>Fri, 05 Sep 2025 17:35:55 +0000</pubDate>
-      <guid>https://supplychaindaily.com/categories/manufacturing/</guid>
+      <link>http://localhost:1313/categories/manufacturing/</link>
+      <pubDate>Fri, 05 Sep 2025 21:14:45 +0000</pubDate>
+      <guid>http://localhost:1313/categories/manufacturing/</guid>
       <description></description>
     </item>
     <item>
       <title>Supply Chain</title>
-      <link>https://supplychaindaily.com/categories/supply-chain/</link>
-      <pubDate>Fri, 05 Sep 2025 17:35:55 +0000</pubDate>
-      <guid>https://supplychaindaily.com/categories/supply-chain/</guid>
+      <link>http://localhost:1313/categories/supply-chain/</link>
+      <pubDate>Fri, 05 Sep 2025 21:14:45 +0000</pubDate>
+      <guid>http://localhost:1313/categories/supply-chain/</guid>
       <description></description>
     </item>
   </channel>

@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>{{ .Title }}</title>
 	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{else}}{{ .Params.Description }}{{end}}">
-	{{ .Hugo.Generator }}
+	{{ hugo.Generator }}
 	{{ if .Site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end }}
 	{{ if .Site.Params.twitter_cards }}{{ template "_internal/twitter_cards.html" . }}{{ end }}
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -18,12 +18,9 @@
 	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 	<script type="text/javascript" src="{{ "js/scripts.js" | relURL }}"></script>
 	<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
-	{{ if .Site.GoogleAnalytics }}
-	{{ template "_internal/google_analytics.html" . }}
-	{{ end }}
 	{{ partial "custom/scripts_head.html" . }}
 </head>
-<body class="body {{ if (.Site.Params.leftsidebar) or (.Params.leftsidebar) }}body-left-sidebar{{ else }}body-right-sidebar{{ end }}">
+<body class="body{{ if .Site.Params.leftsidebar }} body-left-sidebar{{ else }} body-right-sidebar{{ end }}">
 	<div class="container container-outer">
 		<header class="header">
 			<div class="container container-inner">

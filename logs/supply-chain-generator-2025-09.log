@@ -20,3 +20,66 @@
 2025-09-05 13:35:55,542 - __main__ - INFO - Hugo site built successfully
 2025-09-05 13:35:55,542 - __main__ - INFO - Supply Chain Daily content generation completed successfully
 2025-09-05 13:35:55,542 - __main__ - INFO - File ready: content/posts/2025-09-05-supply-chain-update.md
+2025-09-05 14:03:56,490 - __main__ - INFO - Starting Supply Chain Daily content generation
+2025-09-05 14:03:56,490 - __main__ - INFO - Attempt 1/3: Generating content via Grok API
+2025-09-05 14:04:10,402 - __main__ - INFO - Content generated successfully (6413 characters)
+2025-09-05 14:04:10,402 - __main__ - INFO - Overwriting existing file: content/posts/2025-09-05-supply-chain-update.md
+2025-09-05 14:04:10,403 - __main__ - INFO - Content saved to: content/posts/2025-09-05-supply-chain-update.md
+2025-09-05 14:04:10,464 - __main__ - INFO - Hugo site built successfully
+2025-09-05 14:04:10,464 - __main__ - INFO - Supply Chain Daily content generation completed successfully
+2025-09-05 14:04:10,464 - __main__ - INFO - File ready: content/posts/2025-09-05-supply-chain-update.md
+2025-09-05 16:23:44,173 - __main__ - INFO - Attempt 1/3: Generating content via Grok API
+2025-09-05 16:23:57,102 - __main__ - INFO - Content generated successfully (7313 characters)
+2025-09-05 16:24:14,893 - __main__ - INFO - Starting Supply Chain Daily content generation
+2025-09-05 16:24:14,894 - __main__ - INFO - Attempt 1/3: Generating content via Grok API
+2025-09-05 16:24:28,052 - __main__ - INFO - Content generated successfully (6322 characters)
+2025-09-05 16:24:28,052 - __main__ - INFO - Overwriting existing file: ../content/posts/2025-09-05-supply-chain-update.md
+2025-09-05 16:24:28,053 - __main__ - INFO - Content saved to: ../content/posts/2025-09-05-supply-chain-update.md
+2025-09-05 16:24:28,097 - __main__ - ERROR - Hugo build failed: 
+2025-09-05 16:24:28,097 - __main__ - WARNING - Hugo build failed, but content was saved successfully
+2025-09-05 16:24:28,097 - __main__ - INFO - Supply Chain Daily content generation completed successfully
+2025-09-05 16:24:28,097 - __main__ - INFO - File ready: ../content/posts/2025-09-05-supply-chain-update.md
+2025-09-05 16:24:52,945 - __main__ - INFO - Starting Supply Chain Daily content generation
+2025-09-05 16:24:52,945 - __main__ - INFO - Attempt 1/3: Generating content via Grok API
+2025-09-05 16:25:04,700 - __main__ - INFO - Content generated successfully (6588 characters)
+2025-09-05 16:25:04,701 - __main__ - INFO - Overwriting existing file: ../content/posts/2025-09-05-supply-chain-update.md
+2025-09-05 16:25:04,701 - __main__ - INFO - Content saved to: ../content/posts/2025-09-05-supply-chain-update.md
+2025-09-05 16:25:04,770 - __main__ - INFO - Hugo site built successfully
+2025-09-05 16:25:04,770 - __main__ - INFO - Supply Chain Daily content generation completed successfully
+2025-09-05 16:25:04,770 - __main__ - INFO - File ready: ../content/posts/2025-09-05-supply-chain-update.md
+2025-09-05 16:38:04,973 - __main__ - INFO - Attempt 1/3: Generating content via Grok API
+2025-09-05 16:38:04,973 - __main__ - INFO - Live search enabled with mode: auto, sources: ['web', 'news', 'x']
+2025-09-05 16:38:05,146 - __main__ - ERROR - API request failed: 422 - Failed to deserialize the JSON body into the target type: search_parameters.sources[0]: invalid type: string "web", expected internally tagged enum SearchSource at line 1 column 11513
+2025-09-05 16:38:05,146 - __main__ - INFO - Attempt 2/3: Generating content via Grok API
+2025-09-05 16:38:05,147 - __main__ - INFO - Live search enabled with mode: auto, sources: ['web', 'news', 'x']
+2025-09-05 16:38:05,268 - __main__ - ERROR - API request failed: 422 - Failed to deserialize the JSON body into the target type: search_parameters.sources[0]: invalid type: string "web", expected internally tagged enum SearchSource at line 1 column 11513
+2025-09-05 16:38:05,268 - __main__ - INFO - Attempt 3/3: Generating content via Grok API
+2025-09-05 16:38:05,268 - __main__ - INFO - Live search enabled with mode: auto, sources: ['web', 'news', 'x']
+2025-09-05 16:38:05,394 - __main__ - ERROR - API request failed: 422 - Failed to deserialize the JSON body into the target type: search_parameters.sources[0]: invalid type: string "web", expected internally tagged enum SearchSource at line 1 column 11513
+2025-09-05 16:38:59,558 - __main__ - INFO - Attempt 1/3: Generating content via Grok API
+2025-09-05 16:38:59,558 - __main__ - INFO - Live search enabled with mode: auto, sources: default (web, news, x)
+2025-09-05 16:39:26,377 - __main__ - INFO - Live search used 2 sources
+2025-09-05 16:39:26,377 - __main__ - INFO - Estimated live search cost: $0.050
+2025-09-05 16:39:26,377 - __main__ - INFO - Content generated successfully (6582 characters)
+2025-09-05 16:39:32,237 - __main__ - INFO - Starting Supply Chain Daily content generation
+2025-09-05 16:39:32,237 - __main__ - INFO - Attempt 1/3: Generating content via Grok API
+2025-09-05 16:39:32,237 - __main__ - INFO - Live search enabled with mode: auto, sources: default (web, news, x)
+2025-09-05 16:39:58,671 - __main__ - INFO - Live search used 2 sources
+2025-09-05 16:39:58,671 - __main__ - INFO - Estimated live search cost: $0.050
+2025-09-05 16:39:58,671 - __main__ - INFO - Content generated successfully (6510 characters)
+2025-09-05 16:39:58,671 - __main__ - INFO - Overwriting existing file: ../content/posts/2025-09-05-supply-chain-update.md
+2025-09-05 16:39:58,672 - __main__ - INFO - Content saved to: ../content/posts/2025-09-05-supply-chain-update.md
+2025-09-05 16:39:58,741 - __main__ - INFO - Hugo site built successfully
+2025-09-05 16:39:58,741 - __main__ - INFO - Supply Chain Daily content generation completed successfully
+2025-09-05 16:39:58,741 - __main__ - INFO - File ready: ../content/posts/2025-09-05-supply-chain-update.md
+2025-09-05 17:14:10,133 - __main__ - INFO - Starting Supply Chain Daily content generation
+2025-09-05 17:14:10,133 - __main__ - INFO - Attempt 1/3: Generating content via Grok API
+2025-09-05 17:14:10,134 - __main__ - INFO - Live search enabled with mode: auto, sources: default (web, news, x)
+2025-09-05 17:14:45,681 - __main__ - INFO - Live search used 2 sources
+2025-09-05 17:14:45,681 - __main__ - INFO - Estimated live search cost: $0.050
+2025-09-05 17:14:45,681 - __main__ - INFO - Content generated successfully (6368 characters)
+2025-09-05 17:14:45,682 - __main__ - INFO - Overwriting existing file: ../content/posts/2025-09-05-supply-chain-update.md
+2025-09-05 17:14:45,683 - __main__ - INFO - Content saved to: ../content/posts/2025-09-05-supply-chain-update.md
+2025-09-05 17:14:45,751 - __main__ - INFO - Hugo site built successfully
+2025-09-05 17:14:45,751 - __main__ - INFO - Supply Chain Daily content generation completed successfully
+2025-09-05 17:14:45,751 - __main__ - INFO - File ready: ../content/posts/2025-09-05-supply-chain-update.md

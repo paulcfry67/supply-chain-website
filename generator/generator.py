@@ -2,7 +2,7 @@
 """
 Supply Chain Daily Content Generator
 Generates daily supply chain intelligence briefings using Grok API
-For supplychaindaily.com
+For supplychaindaily.news
 """
 
 import os
@@ -17,8 +17,8 @@ from datetime import datetime, timezone
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from pathlib import Path
-from typing import Optional, Dict, Any
-from dataclasses import dataclass
+from typing import Optional, Dict, Any, List
+from dataclasses import dataclass, field
 
 
 @dataclass
@@ -33,6 +33,18 @@ class Config:
     presence_penalty: float = 0.1
     frequency_penalty: float = 0.1
     
+    # Live Search settings
+    search_mode: str = "auto"  # "auto", "on", "off"
+    search_sources: List[str] = field(default_factory=lambda: ["web", "news", "x"])
+    max_search_results: int = 20
+    return_citations: bool = True
+    search_from_date: str = ""  # ISO8601 format: YYYY-MM-DD
+    search_to_date: str = ""    # ISO8601 format: YYYY-MM-DD
+    excluded_x_handles: List[str] = field(default_factory=list)
+    post_favorite_count: int = 0    # Min favorites for X posts
+    post_view_count: int = 0        # Min views for X posts
+    rss_links: List[str] = field(default_factory=list)
+    
     # Processing settings
     max_retries: int = 3
     timeout: int = 180  # 3 minutes for API responses
@@ -40,7 +52,7 @@ class Config:
     max_chars: int = 15000  # Maximum ~1500 words as per prompts
     
     # Output settings
-    output_dir: str = "./content/posts"
+    output_dir: str = "../content/posts"
     log_level: str = "INFO"
     
     # Email settings
@@ -51,8 +63,8 @@ class Config:
     smtp_password: str = ""
     
     # Prompt file paths
-    site_prompt_file: str = "generator/site_prompt.txt"
-    system_prompt_file: str = "generator/system_prompt.txt"
+    site_prompt_file: str = "site_prompt.txt"
+    system_prompt_file: str = "system_prompt.txt"
     
     # Hugo settings
     hugo_build: bool = True
@@ -75,8 +87,8 @@ class SupplyChainGenerator:
         """Configure logging"""
         log_format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
         
-        # Create logs directory in project root
-        log_dir = Path("logs")
+        # Create logs directory in parent directory 
+        log_dir = Path("../logs")
         log_dir.mkdir(parents=True, exist_ok=True)
         log_file = log_dir / f"supply-chain-generator-{datetime.now().strftime('%Y-%m')}.log"
         
@@ -182,19 +194,74 @@ Target 1000-1500 words with SEO optimization for supply chain keywords."""
             self.logger.warning(f"Could not read previous content: {str(e)}")
             return "No previous content available."
     
-    def get_current_supply_chain_data(self) -> str:
-        """Get current supply chain data - placeholder for future data integration"""
-        # This would be enhanced to pull from actual data sources
-        today = datetime.now().strftime("%Y-%m-%d")
-        return f"""Current supply chain data for {today}:
-- Latest industry reports and news
-- Manufacturing capacity utilization
-- Material availability status
-- Transportation and logistics updates
-- Economic indicators affecting supply chains
-- Regulatory changes and policy updates
+    def build_search_parameters(self) -> Dict[str, Any]:
+        """Build search parameters for live search functionality"""
+        search_params = {
+            "mode": self.config.search_mode
+        }
+        
+        if self.config.search_mode != "off":
+            # Note: Not including sources parameter to use defaults (web, news, x)
+            # The API has specific object structure requirements for sources
+            
+            if self.config.max_search_results != 20:  # Only set if different from default
+                search_params["max_search_results"] = self.config.max_search_results
+            
+            if not self.config.return_citations:  # Only set if different from default
+                search_params["return_citations"] = self.config.return_citations
+            
+            # Date range filtering
+            if self.config.search_from_date:
+                search_params["from_date"] = self.config.search_from_date
+            if self.config.search_to_date:
+                search_params["to_date"] = self.config.search_to_date
+            
+            # X-specific filtering
+            if self.config.excluded_x_handles:
+                search_params["excluded_x_handles"] = self.config.excluded_x_handles
+            if self.config.post_favorite_count > 0:
+                search_params["post_favorite_count"] = self.config.post_favorite_count
+            if self.config.post_view_count > 0:
+                search_params["post_view_count"] = self.config.post_view_count
+            
+            # RSS links
+            if self.config.rss_links:
+                search_params["links"] = self.config.rss_links
+        
+        return search_params
 
-[Note: This is a placeholder - in production this would pull from actual data feeds, APIs, and industry sources]"""
+    def get_current_supply_chain_data(self) -> str:
+        """Get current supply chain data - now enhanced with live search context"""
+        today = datetime.now().strftime("%Y-%m-%d")
+        
+        # With live search enabled, this data will be supplemented by real-time information
+        base_context = f"""Current supply chain analysis context for {today}:
+
+FOCUS AREAS FOR LIVE SEARCH:
+- Latest supply chain disruptions and news affecting manufacturing
+- Semiconductor availability and automotive production updates
+- Port congestion, shipping costs, and logistics developments
+- Raw material price changes (steel, aluminum, rare earth elements)
+- Trade policy changes and regulatory updates affecting supply chains
+- Economic indicators: inflation, interest rates, commodity prices
+- Weather events and geopolitical tensions affecting supply routes
+- Labor strikes or shortages in key manufacturing sectors
+- Technology disruptions (AI, automation) in supply chain management
+- Sustainability initiatives and ESG requirements in supply chains
+
+SEARCH KEYWORDS TO PRIORITIZE:
+- "supply chain disruption"
+- "automotive semiconductor shortage"
+- "port congestion"
+- "shipping costs"
+- "manufacturing production"
+- "raw material prices"
+- "logistics bottlenecks"
+- "trade policy supply chain"
+
+With live search enabled, the AI will automatically fetch and incorporate the most recent data on these topics."""
+        
+        return base_context
     
     def generate_content(self) -> Optional[str]:
         """Generate the daily supply chain content using Grok API"""
@@ -241,6 +308,12 @@ Do NOT use placeholder dates.
                     "stream": False
                 }
                 
+                # Add search parameters for live search functionality
+                search_params = self.build_search_parameters()
+                if search_params["mode"] != "off":
+                    payload["search_parameters"] = search_params
+                    self.logger.info(f"Live search enabled with mode: {search_params['mode']}, sources: default (web, news, x)")
+                
                 # Add penalty parameters only for models that support them
                 if not self.config.model.startswith("grok-4"):
                     payload["presence_penalty"] = self.config.presence_penalty
@@ -255,6 +328,25 @@ Do NOT use placeholder dates.
                 if response.status_code == 200:
                     data = response.json()
                     content = data["choices"][0]["message"]["content"]
+                    
+                    # Log usage information including search sources if available
+                    usage_info = data.get("usage", {})
+                    if "num_sources_used" in usage_info:
+                        sources_used = usage_info["num_sources_used"]
+                        self.logger.info(f"Live search used {sources_used} sources")
+                        
+                        # Log cost information (Live Search is $25 per 1,000 sources)
+                        if sources_used > 0:
+                            estimated_cost = sources_used * 0.025
+                            self.logger.info(f"Estimated live search cost: ${estimated_cost:.3f}")
+                    
+                    # Log citations if available
+                    if hasattr(data.get("choices", [{}])[0].get("message", {}), "citations"):
+                        citations = data["choices"][0]["message"].get("citations", [])
+                        if citations:
+                            self.logger.info(f"Content includes {len(citations)} citations from live search")
+                            for i, citation in enumerate(citations[:5], 1):  # Log first 5 citations
+                                self.logger.debug(f"Citation {i}: {citation}")
                     
                     # Validate content length
                     char_count = len(content)
@@ -343,11 +435,19 @@ description: "Daily intelligence briefing on supply chain issues affecting manuf
         # Remove <content> tags if present
         content = re.sub(r'</?content[^>]*>', '', html_content)
         
-        # Convert headers
-        content = re.sub(r'<h1[^>]*>(.*?)</h1>', r'# \1', content, flags=re.DOTALL)
+        # First, extract and remove the main H1 title (since Hugo will display it from frontmatter)
+        h1_pattern = r'<h1[^>]*>(.*?)</h1>'
+        h1_match = re.search(h1_pattern, content, flags=re.DOTALL)
+        if h1_match:
+            # Remove the first H1 - Hugo theme will handle the title display
+            content = re.sub(h1_pattern, '', content, count=1, flags=re.DOTALL)
+        
+        # Convert remaining headers (starting from H2)
         content = re.sub(r'<h2[^>]*>(.*?)</h2>', r'## \1', content, flags=re.DOTALL)
         content = re.sub(r'<h3[^>]*>(.*?)</h3>', r'### \1', content, flags=re.DOTALL)
         content = re.sub(r'<h4[^>]*>(.*?)</h4>', r'#### \1', content, flags=re.DOTALL)
+        content = re.sub(r'<h5[^>]*>(.*?)</h5>', r'##### \1', content, flags=re.DOTALL)
+        content = re.sub(r'<h6[^>]*>(.*?)</h6>', r'###### \1', content, flags=re.DOTALL)
         
         # Convert paragraphs
         content = re.sub(r'<p[^>]*>(.*?)</p>', r'\1\n', content, flags=re.DOTALL)
@@ -355,13 +455,15 @@ description: "Daily intelligence briefing on supply chain issues affecting manuf
         # Convert lists
         content = re.sub(r'<ul[^>]*>', '', content)
         content = re.sub(r'</ul>', '\n', content)
+        content = re.sub(r'<ol[^>]*>', '', content)
+        content = re.sub(r'</ol>', '\n', content)
         content = re.sub(r'<li[^>]*>(.*?)</li>', r'- \1', content, flags=re.DOTALL)
         
         # Convert bold and italic
         content = re.sub(r'<strong[^>]*>(.*?)</strong>', r'**\1**', content, flags=re.DOTALL)
         content = re.sub(r'<em[^>]*>(.*?)</em>', r'*\1*', content, flags=re.DOTALL)
         
-        # Clean up extra whitespace
+        # Clean up extra whitespace and empty lines at the start
         content = re.sub(r'\n\s*\n\s*\n', '\n\n', content)
         content = content.strip()
         
@@ -374,7 +476,7 @@ description: "Daily intelligence briefing on supply chain issues affecting manuf
             
         try:
             import subprocess
-            result = subprocess.run(['hugo'], capture_output=True, text=True, timeout=60)
+            result = subprocess.run(['hugo'], cwd='..', capture_output=True, text=True, timeout=60)
             if result.returncode == 0:
                 self.logger.info("Hugo site built successfully")
                 return True
@@ -465,19 +567,31 @@ def load_config(config_file: Optional[str] = None) -> Config:
         'max_tokens': 10000,
         'presence_penalty': 0.1,
         'frequency_penalty': 0.1,
+        # Live Search settings
+        'search_mode': 'auto',
+        'search_sources': ["web", "news", "x"],
+        'max_search_results': 20,
+        'return_citations': True,
+        'search_from_date': '',
+        'search_to_date': '',
+        'excluded_x_handles': [],
+        'post_favorite_count': 0,
+        'post_view_count': 0,
+        'rss_links': [],
+        # Processing settings
         'max_retries': 3,
         'timeout': 180,
         'min_chars': 6000,
         'max_chars': 15000,
-        'output_dir': './content/posts',
+        'output_dir': '../content/posts',
         'log_level': 'INFO',
         'alert_email': '',
         'smtp_server': 'smtp.gmail.com',
         'smtp_port': 587,
         'smtp_username': '',
         'smtp_password': '',
-        'site_prompt_file': 'generator/site_prompt.txt',
-        'system_prompt_file': 'generator/system_prompt.txt',
+        'site_prompt_file': 'site_prompt.txt',
+        'system_prompt_file': 'system_prompt.txt',
         'hugo_build': True,
         'content_section': 'posts'
     }
@@ -497,12 +611,18 @@ def load_config(config_file: Optional[str] = None) -> Config:
                 config_key = key.lower()
                 
                 # Type conversion
-                if config_key in ['max_retries', 'timeout', 'min_chars', 'max_chars', 'smtp_port', 'max_tokens']:
+                if config_key in ['max_retries', 'timeout', 'min_chars', 'max_chars', 'smtp_port', 'max_tokens', 'max_search_results', 'post_favorite_count', 'post_view_count']:
                     config_values[config_key] = int(value)
                 elif config_key in ['temperature', 'presence_penalty', 'frequency_penalty']:
                     config_values[config_key] = float(value)
-                elif config_key in ['hugo_build']:
+                elif config_key in ['hugo_build', 'return_citations']:
                     config_values[config_key] = value.lower() in ['true', '1', 'yes']
+                elif config_key in ['search_sources', 'excluded_x_handles', 'rss_links']:
+                    # Handle comma-separated list values
+                    if value.strip():
+                        config_values[config_key] = [item.strip() for item in value.split(',')]
+                    else:
+                        config_values[config_key] = []
                 else:
                     config_values[config_key] = value
     
@@ -517,7 +637,18 @@ def load_config(config_file: Optional[str] = None) -> Config:
         'SMTP_USERNAME': 'smtp_username',
         'SMTP_PASSWORD': 'smtp_password',
         'LOG_LEVEL': 'log_level',
-        'HUGO_BUILD': ('hugo_build', lambda x: x.lower() in ['true', '1', 'yes'])
+        'HUGO_BUILD': ('hugo_build', lambda x: x.lower() in ['true', '1', 'yes']),
+        # Live Search environment variables
+        'SEARCH_MODE': 'search_mode',
+        'SEARCH_SOURCES': ('search_sources', lambda x: [item.strip() for item in x.split(',') if item.strip()]),
+        'MAX_SEARCH_RESULTS': ('max_search_results', int),
+        'RETURN_CITATIONS': ('return_citations', lambda x: x.lower() in ['true', '1', 'yes']),
+        'SEARCH_FROM_DATE': 'search_from_date',
+        'SEARCH_TO_DATE': 'search_to_date',
+        'EXCLUDED_X_HANDLES': ('excluded_x_handles', lambda x: [item.strip() for item in x.split(',') if item.strip()]),
+        'POST_FAVORITE_COUNT': ('post_favorite_count', int),
+        'POST_VIEW_COUNT': ('post_view_count', int),
+        'RSS_LINKS': ('rss_links', lambda x: [item.strip() for item in x.split(',') if item.strip()])
     }
     
     for env_key, mapping in env_mappings.items():
@@ -549,6 +680,17 @@ def main():
         print(f"  Model: {config.model}")
         print(f"  Temperature: {config.temperature}")
         print(f"  Max Tokens: {config.max_tokens}")
+        print(f"  Live Search:")
+        print(f"    - Mode: {config.search_mode}")
+        print(f"    - Sources: {', '.join(config.search_sources) if config.search_sources else 'default'}")
+        print(f"    - Max Results: {config.max_search_results}")
+        print(f"    - Citations: {'✓ Enabled' if config.return_citations else '✗ Disabled'}")
+        if config.search_from_date or config.search_to_date:
+            print(f"    - Date Range: {config.search_from_date or 'any'} to {config.search_to_date or 'any'}")
+        if config.excluded_x_handles:
+            print(f"    - Excluded X Handles: {', '.join(config.excluded_x_handles)}")
+        if config.rss_links:
+            print(f"    - RSS Links: {len(config.rss_links)} configured")
         print(f"  Output Directory: {config.output_dir}")
         print(f"  Hugo Build: {'✓ Enabled' if config.hugo_build else '✗ Disabled'}")
         print(f"  Prompt Files:")
