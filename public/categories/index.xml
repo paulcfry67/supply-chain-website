@@ -6,8 +6,36 @@
     <description>Recent content in Categories on Supply Chain Daily</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Sep 2025 21:14:45 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Oct 2025 19:41:29 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aerospace</title>
+      <link>http://localhost:1313/categories/aerospace/</link>
+      <pubDate>Mon, 13 Oct 2025 19:41:29 +0000</pubDate>
+      <guid>http://localhost:1313/categories/aerospace/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automotive</title>
+      <link>http://localhost:1313/categories/automotive/</link>
+      <pubDate>Mon, 13 Oct 2025 19:41:29 +0000</pubDate>
+      <guid>http://localhost:1313/categories/automotive/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Electronics</title>
+      <link>http://localhost:1313/categories/electronics/</link>
+      <pubDate>Mon, 13 Oct 2025 19:41:29 +0000</pubDate>
+      <guid>http://localhost:1313/categories/electronics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Transportation</title>
+      <link>http://localhost:1313/categories/transportation/</link>
+      <pubDate>Mon, 13 Oct 2025 19:41:29 +0000</pubDate>
+      <guid>http://localhost:1313/categories/transportation/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Logistics</title>
       <link>http://localhost:1313/categories/logistics/</link>

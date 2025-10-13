@@ -30,33 +30,13 @@ To generate the content for today's website update, follow these instructions:
    c. Including internal links to relevant previous content where appropriate
    d. Optimizing content length for readability and search engine performance (aim for 1000-1500 words)
 
-7. Structure your content in a clear and organized manner, using appropriate HTML tags for headings, paragraphs, and lists. Use the following structure as a guide:
+7. Structure your content in a clear and organized manner, using Markdown. Use the following sections:
+   - Electronics
+   - Automotive
+   - Aerospace
+   - Transportation
 
-<content>
-<h1>Daily Supply Chain Update: [Current Date]</h1>
-
-<h2>Top Supply Chain News</h2>
-[News summary content]
-
-<h2>Industry-Specific Updates</h2>
-<h3>Automotive Sector</h3>
-[Automotive industry update]
-
-<h3>Electronics Sector</h3>
-[Electronics industry update]
-
-<h3>Industrial Equipment Sector</h3>
-[Industrial equipment industry update]
-
-<h2>Impact Analysis</h2>
-[Impact analysis content]
-
-<h2>Recommendations</h2>
-[Recommendations content]
-
-<h2>Conclusion</h2>
-[Brief conclusion and outlook]
-</content>
+   After each of these named section, make a list of URLs used as sources.
 
 8. After generating the content, review it for accuracy, relevance, and coherence. Ensure that the information provided is up-to-date and consistent with the current supply chain data.
 

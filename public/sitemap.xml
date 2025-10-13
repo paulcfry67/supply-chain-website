@@ -2,13 +2,88 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/categories/aerospace/</loc>
+    <lastmod>2025-10-13T19:41:29+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/automotive/</loc>
+    <lastmod>2025-10-13T19:41:29+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/bottlenecks/</loc>
+    <lastmod>2025-10-13T19:41:29+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-10-13T19:41:29+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-13-supply-chain-update/</loc>
+    <lastmod>2025-10-13T19:41:29+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/distribution/</loc>
+    <lastmod>2025-10-13T19:41:29+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/electronics/</loc>
+    <lastmod>2025-10-13T19:41:29+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/manufacturing/</loc>
+    <lastmod>2025-10-13T19:41:29+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/material-cost/</loc>
+    <lastmod>2025-10-13T19:41:29+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2025-10-13T19:41:29+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-10-13T19:41:29+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-10-13T19:41:29+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/transportation/</loc>
+    <lastmod>2025-10-13T19:41:29+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-10-supply-chain-update/</loc>
+    <lastmod>2025-10-10T15:17:38+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-08-supply-chain-update/</loc>
+    <lastmod>2025-10-08T18:51:08+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-07-supply-chain-update/</loc>
+    <lastmod>2025-10-08T01:28:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-05-supply-chain-update/</loc>
+    <lastmod>2025-10-05T21:06:05+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-04-supply-chain-update/</loc>
+    <lastmod>2025-10-04T20:16:59+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-03-supply-chain-update/</loc>
+    <lastmod>2025-10-03T18:35:27+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-02-supply-chain-update/</loc>
+    <lastmod>2025-10-02T14:30:52+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-09-29-supply-chain-update/</loc>
+    <lastmod>2025-09-29T17:56:17+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-09-25-supply-chain-update/</loc>
+    <lastmod>2025-09-25T18:36:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-09-25-daily-prepper-precis/</loc>
+    <lastmod>2025-09-25T15:25:30+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/intelligence/</loc>
+    <lastmod>2025-09-25T15:25:30+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/preparedness/</loc>
+    <lastmod>2025-09-25T15:25:30+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/threat-assessment/</loc>
+    <lastmod>2025-09-25T15:25:30+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/automotive/</loc>
     <lastmod>2025-09-05T21:14:45+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-09-05T21:14:45+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-09-05-supply-chain-update/</loc>
+    <loc>http://localhost:1313/post/2025-09-05-supply-chain-update/</loc>
     <lastmod>2025-09-05T21:14:45+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/daily-update/</loc>
@@ -26,19 +101,10 @@
     <loc>http://localhost:1313/categories/manufacturing/</loc>
     <lastmod>2025-09-05T21:14:45+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-09-05T21:14:45+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/supply-chain/</loc>
     <lastmod>2025-09-05T21:14:45+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-09-05T21:14:45+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/supply-chain/</loc>
-    <lastmod>2025-09-05T21:14:45+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-09-05T21:14:45+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
