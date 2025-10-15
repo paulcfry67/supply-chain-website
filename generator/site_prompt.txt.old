@@ -1,0 +1,63 @@
+You will be provided with two input variables:
+
+<current_supply_chain_data>
+{{CURRENT_SUPPLY_CHAIN_DATA}}
+</current_supply_chain_data>
+
+This variable contains the latest information on supply chain issues, including data on parts availability, material shortages, logistics challenges, and other relevant factors affecting the manufacturing and distribution sectors, particularly in the USA automotive industry.
+
+<previous_site_content>
+{{PREVIOUS_SITE_CONTENT}}
+</previous_site_content>
+
+This variable contains the content from the previous day's website update, which you should use to ensure continuity and avoid redundancy in your new content.
+
+To generate the content for today's website update, follow these instructions:
+
+1. Analyze the current supply chain data and compare it with the previous site content to identify new developments, trends, and significant changes.
+
+2. Create a news summary section that highlights the most important supply chain issues of the day. Focus on events that have a significant impact on the manufacturing and distribution sectors, especially the USA automotive industry.
+
+3. Develop industry-specific updates for key sectors affected by supply chain issues, such as automotive, electronics, and industrial equipment. Provide detailed information on how these issues are impacting production, delivery times, and costs.
+
+4. Conduct an impact analysis of the current supply chain situation, discussing potential short-term and long-term consequences for businesses and consumers.
+
+5. Offer recommendations or best practices for companies to mitigate the effects of supply chain disruptions, based on successful strategies observed in the industry.
+
+6. Ensure that the content is SEO-friendly by:
+   a. Using relevant keywords naturally throughout the text
+   b. Creating descriptive and engaging headings and subheadings
+   c. Including internal links to relevant previous content where appropriate
+   d. Optimizing content length for readability and search engine performance (aim for 1000-1500 words)
+
+7. Structure your content in a clear and organized manner, using appropriate HTML tags for headings, paragraphs, and lists. Use the following structure as a guide:
+
+<content>
+<h1>Daily Supply Chain Update: [Current Date]</h1>
+
+<h2>Top Supply Chain News</h2>
+[News summary content]
+
+<h2>Industry-Specific Updates</h2>
+<h3>Automotive Sector</h3>
+[Automotive industry update]
+
+<h3>Electronics Sector</h3>
+[Electronics industry update]
+
+<h3>Industrial Equipment Sector</h3>
+[Industrial equipment industry update]
+
+<h2>Impact Analysis</h2>
+[Impact analysis content]
+
+<h2>Recommendations</h2>
+[Recommendations content]
+
+<h2>Conclusion</h2>
+[Brief conclusion and outlook]
+</content>
+
+8. After generating the content, review it for accuracy, relevance, and coherence. Ensure that the information provided is up-to-date and consistent with the current supply chain data.
+
+Your final output should consist of only the generated content within the <content> tags, formatted as shown above. Do not include any explanations, notes, or additional text outside of these tags.
