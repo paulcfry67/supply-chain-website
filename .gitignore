@@ -7,6 +7,9 @@
 /logs/
 *.log
 
+# Old stuff
+*.old
+
 # Generated content (optional - you may want to track generated posts)
 # content/posts/*.md
 
