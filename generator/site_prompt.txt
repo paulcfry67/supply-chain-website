@@ -1,17 +1,3 @@
-You will be provided with two input variables:
-
-<current_supply_chain_data>
-{{CURRENT_SUPPLY_CHAIN_DATA}}
-</current_supply_chain_data>
-
-This variable contains the latest information on supply chain issues, including data on parts availability, material shortages, logistics challenges, and other relevant factors affecting the manufacturing and distribution sectors, particularly in the USA automotive industry.
-
-<previous_site_content>
-{{PREVIOUS_SITE_CONTENT}}
-</previous_site_content>
-
-This variable contains the content from the previous day's website update, which you should use to ensure continuity and avoid redundancy in your new content.
-
 To generate the content for today's website update, follow these instructions:
 
 1. Analyze the current supply chain data and compare it with the previous site content to identify new developments, trends, and significant changes.
@@ -33,6 +19,7 @@ To generate the content for today's website update, follow these instructions:
 7. Structure your content in a clear and organized manner, using Markdown. Use the following sections:
    - Electronics
    - Automotive
+   - Construction
    - Aerospace
    - Transportation
 
@@ -40,4 +27,10 @@ To generate the content for today's website update, follow these instructions:
 
 8. After generating the content, review it for accuracy, relevance, and coherence. Ensure that the information provided is up-to-date and consistent with the current supply chain data.
 
-Your final output should consist of only the generated content within the <content> tags, formatted as shown above. Do not include any explanations, notes, or additional text outside of these tags.
+Your final output should consist of only the generated content within the <content> tags, formatted as shown below. Do not include any explanations, notes, or additional text outside of these tags.
+
+Here is the format to use:
+  - Do not include a title; the title will be shown automatically.
+  - Begin with a "welcome" message (e.g., "Welcome to today's update...") of one or two paragraphs, make it general
+and non-categorical.
+  - Continue with the sections described in number 7 above.
