@@ -1,0 +1,32 @@
+<!-- Auto-insert in-article ads -->
+<script>
+  // Insert AdSense ad after 3rd paragraph in article content
+  document.addEventListener('DOMContentLoaded', function() {
+    const postContent = document.querySelector('.post__content');
+    if (postContent) {
+      const paragraphs = postContent.querySelectorAll('p');
+
+      // Insert ad after 3rd paragraph if there are enough paragraphs
+      if (paragraphs.length >= 4) {
+        const adContainer = document.createElement('div');
+        adContainer.className = 'in-article-ad';
+        adContainer.style.cssText = 'margin: 30px 0; text-align: center;';
+
+        adContainer.innerHTML = `
+          <ins class="adsbygoogle"
+               style="display:block; text-align:center;"
+               data-ad-layout="in-article"
+               data-ad-format="fluid"
+               data-ad-client="ca-pub-0836998886572069"
+               data-ad-slot="auto"></ins>
+        `;
+
+        // Insert after 3rd paragraph
+        paragraphs[2].after(adContainer);
+
+        // Initialize AdSense for the new ad
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      }
+    }
+  });
+</script>

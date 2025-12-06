@@ -1,0 +1,25 @@
+<aside class="sidebar">
+  <!-- AdSense - Sidebar Top -->
+  <div class="widget-ads" style="margin-bottom: 20px; text-align: center;">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-0836998886572069"
+         data-ad-slot="auto"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  {{ partial "widgets/search.html" . }}
+  {{ partial "widgets/form.html" . }}
+  {{ partial "widgets/social.html" . }}
+	{{ partial "widgets/recent.html" . }}
+	{{ partial "widgets/categories.html" . }}
+	{{ partial "widgets/taglist.html" . }}
+
+	{{- if and (not .Site.Params.widgets.search) (not .Site.Params.widgets.form) (not .Site.Params.widgets.social) (not .Site.Params.widgets.recent_articles) (not .Site.Params.widgets.categories) (not .Site.Params.widgets.taglist) }}
+	<p class="sidebar__warning"><strong>{{ T "sidebar_warning" }}:</strong><br>{{ T "sidebar_recommendation" }}</p>
+	{{- end }}
+</aside>
