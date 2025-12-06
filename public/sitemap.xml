@@ -3,42 +3,171 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/categories/aerospace/</loc>
-    <lastmod>2025-10-15T14:55:33+00:00</lastmod>
+    <lastmod>2025-12-05T21:19:25+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/automotive/</loc>
-    <lastmod>2025-10-15T14:55:33+00:00</lastmod>
+    <lastmod>2025-12-05T21:19:25+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/bottlenecks/</loc>
-    <lastmod>2025-10-15T14:55:33+00:00</lastmod>
+    <lastmod>2025-12-05T21:19:25+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-10-15T14:55:33+00:00</lastmod>
+    <lastmod>2025-12-05T21:19:25+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/2025-10-15-supply-chain-update/</loc>
-    <lastmod>2025-10-15T14:55:33+00:00</lastmod>
+    <loc>http://localhost:1313/post/2025-12-05-supply-chain-update/</loc>
+    <lastmod>2025-12-05T21:19:25+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/distribution/</loc>
-    <lastmod>2025-10-15T14:55:33+00:00</lastmod>
+    <lastmod>2025-12-05T21:19:25+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/electronics/</loc>
-    <lastmod>2025-10-15T14:55:33+00:00</lastmod>
+    <lastmod>2025-12-05T21:19:25+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/manufacturing/</loc>
-    <lastmod>2025-10-15T14:55:33+00:00</lastmod>
+    <lastmod>2025-12-05T21:19:25+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/material-cost/</loc>
-    <lastmod>2025-10-15T14:55:33+00:00</lastmod>
+    <lastmod>2025-12-05T21:19:25+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2025-10-15T14:55:33+00:00</lastmod>
+    <lastmod>2025-12-05T21:19:25+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-10-15T14:55:33+00:00</lastmod>
+    <lastmod>2025-12-05T21:19:25+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-10-15T14:55:33+00:00</lastmod>
+    <lastmod>2025-12-05T21:19:25+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/transportation/</loc>
+    <lastmod>2025-12-05T21:19:25+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-12-04-supply-chain-update/</loc>
+    <lastmod>2025-12-04T13:58:46+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-12-03-supply-chain-update/</loc>
+    <lastmod>2025-12-03T14:16:20+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-12-02-supply-chain-update/</loc>
+    <lastmod>2025-12-02T20:30:12+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-12-01-supply-chain-update/</loc>
+    <lastmod>2025-12-01T19:14:09+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-29-supply-chain-update/</loc>
+    <lastmod>2025-11-29T16:33:23+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-28-supply-chain-update/</loc>
+    <lastmod>2025-11-28T19:37:03+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-27-supply-chain-update/</loc>
+    <lastmod>2025-11-27T14:27:58+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-26-supply-chain-update/</loc>
+    <lastmod>2025-11-26T17:03:37+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-25-supply-chain-update/</loc>
+    <lastmod>2025-11-25T18:18:29+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-24-supply-chain-update/</loc>
+    <lastmod>2025-11-24T18:15:29+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-23-supply-chain-update/</loc>
+    <lastmod>2025-11-23T18:52:39+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-21-supply-chain-update/</loc>
+    <lastmod>2025-11-21T20:36:04+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-20-supply-chain-update/</loc>
+    <lastmod>2025-11-20T15:23:37+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-19-supply-chain-update/</loc>
+    <lastmod>2025-11-19T15:47:50+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-17-supply-chain-update/</loc>
+    <lastmod>2025-11-17T18:11:20+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-16-supply-chain-update/</loc>
+    <lastmod>2025-11-16T13:21:51+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-13-supply-chain-update/</loc>
+    <lastmod>2025-11-13T23:55:10+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-12-supply-chain-update/</loc>
+    <lastmod>2025-11-12T17:44:34+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-11-supply-chain-update/</loc>
+    <lastmod>2025-11-11T23:09:08+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-10-supply-chain-update/</loc>
+    <lastmod>2025-11-10T18:23:59+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-09-supply-chain-update/</loc>
+    <lastmod>2025-11-09T15:15:38+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-08-supply-chain-update/</loc>
+    <lastmod>2025-11-08T16:31:48+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-07-supply-chain-update/</loc>
+    <lastmod>2025-11-07T13:04:08+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-06-supply-chain-update/</loc>
+    <lastmod>2025-11-06T12:47:34+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-05-supply-chain-update/</loc>
+    <lastmod>2025-11-06T02:06:50+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-04-supply-chain-update/</loc>
+    <lastmod>2025-11-04T19:33:49+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-03-supply-chain-update/</loc>
+    <lastmod>2025-11-03T12:54:01+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-02-supply-chain-update/</loc>
+    <lastmod>2025-11-02T12:00:34+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-11-01-supply-chain-update/</loc>
+    <lastmod>2025-11-01T11:52:41+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-31-supply-chain-update/</loc>
+    <lastmod>2025-10-31T20:36:12+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-30-supply-chain-update/</loc>
+    <lastmod>2025-10-30T14:01:09+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-29-supply-chain-update/</loc>
+    <lastmod>2025-10-29T15:26:38+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-28-supply-chain-update/</loc>
+    <lastmod>2025-10-28T13:41:19+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-27-supply-chain-update/</loc>
+    <lastmod>2025-10-27T14:09:46+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-26-supply-chain-update/</loc>
+    <lastmod>2025-10-27T00:19:06+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-25-supply-chain-update/</loc>
+    <lastmod>2025-10-25T12:13:23+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-24-supply-chain-update/</loc>
+    <lastmod>2025-10-24T11:50:13+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-23-supply-chain-update/</loc>
+    <lastmod>2025-10-23T13:33:20+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-22-supply-chain-update/</loc>
+    <lastmod>2025-10-22T14:29:26+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-21-supply-chain-update/</loc>
+    <lastmod>2025-10-22T02:00:41+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-17-supply-chain-update/</loc>
+    <lastmod>2025-10-17T11:48:28+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-16-supply-chain-update/</loc>
+    <lastmod>2025-10-16T15:08:46+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2025-10-15-supply-chain-update/</loc>
     <lastmod>2025-10-15T14:55:33+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/2025-10-14-supply-chain-update/</loc>
