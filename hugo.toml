@@ -45,7 +45,7 @@ theme = 'hugo-news'
     tags_counter = true
     
     # Social media for supply chain industry
-    social_linkedin = "supply-chain-daily"
+    social_linkedin = "aillc"
     social_twitter = "Axelr8d"
     social_email = "contact@supplychaindaily.news"
 
