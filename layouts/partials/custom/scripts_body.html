@@ -10,11 +10,12 @@
       if (paragraphs.length >= 4) {
         const adContainer = document.createElement('div');
         adContainer.className = 'in-article-ad';
-        adContainer.style.cssText = 'margin: 30px 0; text-align: center;';
+        adContainer.style.cssText = 'margin: 30px 0; text-align: center; border: 2px dashed #ccc; padding: 15px; background: #f9f9f9; min-height: 200px;';
 
         adContainer.innerHTML = `
+          <div style="color: #999; font-size: 11px; margin-bottom: 5px;">Advertisement</div>
           <ins class="adsbygoogle"
-               style="display:block; text-align:center;"
+               style="display:block; text-align:center; min-height:150px; background:#fff; border:1px solid #ddd;"
                data-ad-layout="in-article"
                data-ad-format="fluid"
                data-ad-client="ca-pub-0836998886572069"
