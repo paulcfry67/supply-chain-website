@@ -10,7 +10,11 @@
       "Bash(git submodule:*)",
       "Bash(git commit -m \"$(cat <<''EOF''\nFix Netlify build: Initialize git submodules before Hugo build\n\nThe Hugo theme (hugo-news) is a git submodule and wasn''t being\ninitialized during Netlify builds, causing the build to fail.\n\nAdded `git submodule update --init --recursive` to all build\ncommands in netlify.toml to ensure the theme is available before\nHugo runs.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
       "Bash(cat:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "mcp__planka__list_projects",
+      "mcp__planka__list_boards",
+      "mcp__planka__list_cards",
+      "mcp__planka__list_lists"
     ],
     "deny": [],
     "ask": []
