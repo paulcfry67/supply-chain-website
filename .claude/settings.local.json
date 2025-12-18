@@ -14,7 +14,9 @@
       "mcp__planka__list_projects",
       "mcp__planka__list_boards",
       "mcp__planka__list_cards",
-      "mcp__planka__list_lists"
+      "mcp__planka__list_lists",
+      "mcp__plugin_episodic-memory_episodic-memory__search",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []

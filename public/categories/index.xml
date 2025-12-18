@@ -1,1 +1,61 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on Supply Chain Daily</title><link>https://supplychaindaily.news/categories/</link><description>Recent content in Categories on Supply Chain Daily</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 12 Dec 2025 16:16:52 +0000</lastBuildDate><atom:link href="https://supplychaindaily.news/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>Aerospace</title><link>https://supplychaindaily.news/categories/aerospace/</link><pubDate>Fri, 12 Dec 2025 16:16:52 +0000</pubDate><guid>https://supplychaindaily.news/categories/aerospace/</guid><description/></item><item><title>Automotive</title><link>https://supplychaindaily.news/categories/automotive/</link><pubDate>Fri, 12 Dec 2025 16:16:52 +0000</pubDate><guid>https://supplychaindaily.news/categories/automotive/</guid><description/></item><item><title>Electronics</title><link>https://supplychaindaily.news/categories/electronics/</link><pubDate>Fri, 12 Dec 2025 16:16:52 +0000</pubDate><guid>https://supplychaindaily.news/categories/electronics/</guid><description/></item><item><title>Transportation</title><link>https://supplychaindaily.news/categories/transportation/</link><pubDate>Fri, 12 Dec 2025 16:16:52 +0000</pubDate><guid>https://supplychaindaily.news/categories/transportation/</guid><description/></item><item><title>Logistics</title><link>https://supplychaindaily.news/categories/logistics/</link><pubDate>Fri, 05 Sep 2025 21:14:45 +0000</pubDate><guid>https://supplychaindaily.news/categories/logistics/</guid><description/></item><item><title>Manufacturing</title><link>https://supplychaindaily.news/categories/manufacturing/</link><pubDate>Fri, 05 Sep 2025 21:14:45 +0000</pubDate><guid>https://supplychaindaily.news/categories/manufacturing/</guid><description/></item><item><title>Supply Chain</title><link>https://supplychaindaily.news/categories/supply-chain/</link><pubDate>Fri, 05 Sep 2025 21:14:45 +0000</pubDate><guid>https://supplychaindaily.news/categories/supply-chain/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Supply Chain Daily</title>
+    <link>https://supplychaindaily.news/categories/</link>
+    <description>Recent content in Categories on Supply Chain Daily</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Dec 2025 13:11:40 +0000</lastBuildDate>
+    <atom:link href="https://supplychaindaily.news/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aerospace</title>
+      <link>https://supplychaindaily.news/categories/aerospace/</link>
+      <pubDate>Wed, 17 Dec 2025 13:11:40 +0000</pubDate>
+      <guid>https://supplychaindaily.news/categories/aerospace/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automotive</title>
+      <link>https://supplychaindaily.news/categories/automotive/</link>
+      <pubDate>Wed, 17 Dec 2025 13:11:40 +0000</pubDate>
+      <guid>https://supplychaindaily.news/categories/automotive/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Electronics</title>
+      <link>https://supplychaindaily.news/categories/electronics/</link>
+      <pubDate>Wed, 17 Dec 2025 13:11:40 +0000</pubDate>
+      <guid>https://supplychaindaily.news/categories/electronics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Transportation</title>
+      <link>https://supplychaindaily.news/categories/transportation/</link>
+      <pubDate>Wed, 17 Dec 2025 13:11:40 +0000</pubDate>
+      <guid>https://supplychaindaily.news/categories/transportation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Logistics</title>
+      <link>https://supplychaindaily.news/categories/logistics/</link>
+      <pubDate>Fri, 05 Sep 2025 21:14:45 +0000</pubDate>
+      <guid>https://supplychaindaily.news/categories/logistics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Manufacturing</title>
+      <link>https://supplychaindaily.news/categories/manufacturing/</link>
+      <pubDate>Fri, 05 Sep 2025 21:14:45 +0000</pubDate>
+      <guid>https://supplychaindaily.news/categories/manufacturing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Supply Chain</title>
+      <link>https://supplychaindaily.news/categories/supply-chain/</link>
+      <pubDate>Fri, 05 Sep 2025 21:14:45 +0000</pubDate>
+      <guid>https://supplychaindaily.news/categories/supply-chain/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
