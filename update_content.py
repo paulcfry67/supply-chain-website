@@ -19,9 +19,7 @@ import time
 
 # Available tags from the site
 TAGS = [
-    'automotive', 'bottlenecks', 'daily-update', 'distribution',
-    'electronics', 'industrial', 'intelligence', 'manufacturing',
-    'material-cost', 'preparedness', 'supply-chain', 'threat-assessment'
+    'bottlenecks', 'distribution', 'electronics', 'industrial', 'intelligence', 'manufacturing', 'material-cost', 'preparedness', 'threat-assessment'
 ]
 
 DISCLAIMER = """<div style="text-align: center; margin-top: 20px;">

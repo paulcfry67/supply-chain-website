@@ -1,0 +1,293 @@
+{
+  "_comment": "Supply Chain Daily - Taxonomy Configuration",
+  "_instructions": "Edit the 'new' sections to define your desired taxonomy structure. The migration script will use 'mappings' to update all posts.",
+
+  "version": "1.0",
+  "last_updated": "2025-12-24",
+
+  "tags": {
+    "_comment": "Tags are used for detailed topic classification and automatic hyperlinking in content",
+
+    "current": {
+      "_comment": "Current tags in use (auto-generated from content analysis)",
+      "bottlenecks": {
+        "count": 72,
+        "slug": "bottlenecks",
+        "display_name": "Bottlenecks"
+      },
+      "distribution": {
+        "count": 72,
+        "slug": "distribution",
+        "display_name": "Distribution"
+      },
+      "manufacturing": {
+        "count": 72,
+        "slug": "manufacturing",
+        "display_name": "Manufacturing"
+      },
+      "material cost": {
+        "count": 72,
+        "slug": "material-cost",
+        "display_name": "Material Cost",
+        "_note": "Note: Frontmatter uses 'material cost' but URL slug is 'material-cost'"
+      },
+      "automotive": {
+        "count": 1,
+        "slug": "automotive",
+        "display_name": "Automotive"
+      },
+      "daily-update": {
+        "count": 1,
+        "slug": "daily-update",
+        "display_name": "Daily Update"
+      },
+      "electronics": {
+        "count": 1,
+        "slug": "electronics",
+        "display_name": "Electronics"
+      },
+      "industrial": {
+        "count": 1,
+        "slug": "industrial",
+        "display_name": "Industrial"
+      },
+      "intelligence": {
+        "count": 1,
+        "slug": "intelligence",
+        "display_name": "Intelligence"
+      },
+      "preparedness": {
+        "count": 1,
+        "slug": "preparedness",
+        "display_name": "Preparedness"
+      },
+      "threat-assessment": {
+        "count": 1,
+        "slug": "threat-assessment",
+        "display_name": "Threat Assessment"
+      }
+    },
+
+    "new": {
+      "_comment": "EDIT THIS: Define your desired tag structure here",
+      "_instructions": "Add/remove/rename tags as needed. Each tag needs: slug (for URLs), display_name (for display), and optionally hyperlink (true/false for auto-linking in content)",
+
+      "bottlenecks": {
+        "slug": "bottlenecks",
+        "display_name": "Bottlenecks",
+        "hyperlink": true,
+        "description": "Supply chain bottlenecks and capacity constraints"
+      },
+      "distribution": {
+        "slug": "distribution",
+        "display_name": "Distribution",
+        "hyperlink": true,
+        "description": "Distribution and logistics issues"
+      },
+      "manufacturing": {
+        "slug": "manufacturing",
+        "display_name": "Manufacturing",
+        "hyperlink": true,
+        "description": "Manufacturing and production topics"
+      },
+      "material-cost": {
+        "slug": "material-cost",
+        "display_name": "Material Cost",
+        "hyperlink": true,
+        "description": "Raw material costs and pricing pressures"
+      },
+      "electronics": {
+        "slug": "electronics",
+        "display_name": "Electronics",
+        "hyperlink": true,
+        "description": "Electronics and semiconductor supply chains"
+      },
+      "daily-update": {
+        "slug": "daily-update",
+        "display_name": "Daily Update",
+        "hyperlink": false,
+        "description": "Daily news updates"
+      },
+      "industrial": {
+        "slug": "industrial",
+        "display_name": "Industrial",
+        "hyperlink": true,
+        "description": "Industrial manufacturing and equipment"
+      },
+      "intelligence": {
+        "slug": "intelligence",
+        "display_name": "Intelligence",
+        "hyperlink": true,
+        "description": "Supply chain intelligence and insights"
+      },
+      "preparedness": {
+        "slug": "preparedness",
+        "display_name": "Preparedness",
+        "hyperlink": true,
+        "description": "Risk preparedness and mitigation"
+      },
+      "threat-assessment": {
+        "slug": "threat-assessment",
+        "display_name": "Threat Assessment",
+        "hyperlink": true,
+        "description": "Supply chain risk and threat assessment"
+      }
+    },
+
+    "mappings": {
+      "_comment": "EDIT THIS: Maps old tags to new tags for migration. Format: 'old_tag': 'new_tag' or 'old_tag': ['new_tag1', 'new_tag2']",
+      "_instructions": "Use this to rename tags or split one tag into multiple. Leave as 1:1 mapping if no changes needed.",
+
+      "material cost": "material-cost",
+      "bottlenecks": "bottlenecks",
+      "distribution": "distribution",
+      "manufacturing": "manufacturing",
+      "daily-update": "daily-update",
+      "electronics": "electronics",
+      "industrial": "industrial",
+      "intelligence": "intelligence",
+      "preparedness": "preparedness",
+      "threat-assessment": "threat-assessment"
+    }
+  },
+
+  "categories": {
+    "_comment": "Categories are used for top-level content organization (industry sectors)",
+
+    "current": {
+      "_comment": "Current categories in use (auto-generated from content analysis)",
+      "Aerospace": {
+        "count": 73,
+        "slug": "aerospace",
+        "display_name": "Aerospace"
+      },
+      "Automotive": {
+        "count": 73,
+        "slug": "automotive",
+        "display_name": "Automotive"
+      },
+      "Electronics": {
+        "count": 73,
+        "slug": "electronics",
+        "display_name": "Electronics"
+      },
+      "Transportation": {
+        "count": 72,
+        "slug": "transportation",
+        "display_name": "Transportation"
+      },
+      "Logistics": {
+        "count": 1,
+        "slug": "logistics",
+        "display_name": "Logistics"
+      },
+      "Manufacturing": {
+        "count": 1,
+        "slug": "manufacturing",
+        "display_name": "Manufacturing"
+      },
+      "Supply Chain": {
+        "count": 1,
+        "slug": "supply-chain",
+        "display_name": "Supply Chain"
+      }
+    },
+
+    "new": {
+      "_comment": "EDIT THIS: Define your desired category structure here",
+      "_instructions": "Categories should represent major industry sectors or content types. Keep this list focused (5-10 categories max).",
+
+      "Aerospace": {
+        "slug": "aerospace",
+        "display_name": "Aerospace",
+        "description": "Aerospace and aviation supply chains"
+      },
+      "Automotive": {
+        "slug": "automotive",
+        "display_name": "Automotive",
+        "description": "Automotive manufacturing and supply chains"
+      },
+      "Electronics": {
+        "slug": "electronics",
+        "display_name": "Electronics",
+        "description": "Electronics and semiconductor industries"
+      },
+      "Transportation": {
+        "slug": "transportation",
+        "display_name": "Transportation",
+        "description": "Transportation and logistics"
+      },
+      "Manufacturing": {
+        "slug": "manufacturing",
+        "display_name": "Manufacturing",
+        "description": "General manufacturing topics"
+      },
+      "Supply Chain": {
+        "slug": "supply-chain",
+        "display_name": "Supply Chain",
+        "description": "General supply chain topics"
+      },
+      "Logistics": {
+        "slug": "logistics",
+        "display_name": "Logistics",
+        "description": "Logistics and distribution"
+      }
+    },
+
+    "mappings": {
+      "_comment": "EDIT THIS: Maps old categories to new categories for migration",
+      "_instructions": "Format: 'Old Category': 'New Category' or 'Old Category': ['New Category 1', 'New Category 2']",
+
+      "Aerospace": "Aerospace",
+      "Automotive": "Automotive",
+      "Electronics": "Electronics",
+      "Transportation": "Transportation",
+      "Logistics": "Logistics",
+      "Manufacturing": "Manufacturing",
+      "Supply Chain": "Supply Chain"
+    }
+  },
+
+  "settings": {
+    "_comment": "Configuration settings for taxonomy handling",
+
+    "tag_hyperlinking": {
+      "_comment": "Controls automatic tag hyperlinking in content (update_content.py)",
+      "enabled": true,
+      "max_links_per_tag": 3,
+      "skip_in_headings": false,
+      "skip_in_links": true
+    },
+
+    "default_tags": {
+      "_comment": "Default tags to apply to new posts if none specified",
+      "tags": ["supply-chain", "daily-update"]
+    },
+
+    "default_categories": {
+      "_comment": "Default categories to apply to new posts if none specified",
+      "categories": ["Supply Chain"]
+    },
+
+    "hugo_config": {
+      "_comment": "Hugo taxonomy configuration (for reference)",
+      "tags": {
+        "singular": "tag",
+        "plural": "tags"
+      },
+      "categories": {
+        "singular": "category",
+        "plural": "categories"
+      }
+    }
+  },
+
+  "migration": {
+    "_comment": "Migration settings and options",
+    "dry_run": false,
+    "backup_before_migration": true,
+    "update_content_hyperlinks": true,
+    "regenerate_hugo_site": true,
+    "commit_changes": false
+  }
+}

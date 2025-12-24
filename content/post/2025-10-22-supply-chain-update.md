@@ -3,7 +3,7 @@ title: "Daily Supply Chain News - 2025-10-22"
 date: 2025-10-22T14:29:26.151201+00:00
 draft: false
 categories: ["Electronics", "Automotive", "Aerospace", "Transportation"]
-tags: ["material cost", "bottlenecks", "distribution", "manufacturing"]
+tags: ["material-cost", "bottlenecks", "distribution", "manufacturing"]
 author: "Supply Chain Analysis Team"
 ---
 
