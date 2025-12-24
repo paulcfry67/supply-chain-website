@@ -234,9 +234,57 @@ Do NOT use placeholder dates like 2023-10-10 or October 10, 2023.
 
         return None
 
+    def update_homepage_top_story(self, content: str) -> bool:
+        """Extract Top Story from content and update homepage"""
+        try:
+            import re
+
+            # Extract the Top Story div from content
+            top_story_match = re.search(r'<div id="top-story">.*?</div>', content, re.DOTALL)
+            if not top_story_match:
+                self.logger.warning("No Top Story found in generated content")
+                return False
+
+            top_story_html = top_story_match.group(0)
+
+            # Read the homepage file
+            homepage_path = Path("../content/_index.md")
+            if not homepage_path.exists():
+                self.logger.error(f"Homepage file not found: {homepage_path}")
+                return False
+
+            with open(homepage_path, 'r', encoding='utf-8') as f:
+                homepage_content = f.read()
+
+            # Replace the Top Story section
+            updated_homepage = re.sub(
+                r'<div id="top-story">.*?</div>',
+                top_story_html,
+                homepage_content,
+                flags=re.DOTALL
+            )
+
+            # Write back to homepage
+            with open(homepage_path, 'w', encoding='utf-8') as f:
+                f.write(updated_homepage)
+
+            self.logger.info(f"Updated homepage Top Story at: {homepage_path}")
+            return True
+
+        except Exception as e:
+            self.logger.error(f"Failed to update homepage Top Story: {str(e)}")
+            return False
+
     def save_content(self, content: str) -> Optional[str]:
         """Save content to markdown file with proper naming"""
         try:
+            # First, update the homepage with Top Story
+            self.update_homepage_top_story(content)
+
+            # Remove Top Story from the daily post content (it should only be on homepage)
+            import re
+            content = re.sub(r'<div id="top-story">.*?</div>\s*', '', content, flags=re.DOTALL)
+
             # Ensure output directory exists
             Path(self.config.output_dir).mkdir(parents=True, exist_ok=True)
 

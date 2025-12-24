@@ -26,5 +26,5 @@ Stay informed with our daily updates covering the latest developments in:
 
 <!-- This section is automatically updated by generator.py with the day's top supply chain story -->
 <div id="top-story">
-<p><strong>Latest Update:</strong> Check our recent posts below for today's top supply chain developments.</p>
+<p><strong>December 24, 2025:</strong> Chip shortages are escalating into a major crisis for the USA automotive sector, with lobby groups warning that auto plants are just weeks away from potential shutdowns. This disruption, exacerbated by geopolitical tensions involving key suppliers like Nexperia, is already forcing temporary halts at manufacturers such as Honda, threatening production volumes and supply chains nationwide. <a href="https://www.tomshardware.com/tech-industry/semiconductors/honda-to-temporarily-shut-down-factories-in-china-and-japan-because-of-chip-shortage-disruption-caused-by-fallout-from-on-going-conflict-within-nexperia">Honda to temporarily shut down factories in China and Japan because of chip shortage — disruption caused by fallout from on-going conflict within Nexperia</a></p>
 </div>
