@@ -42,21 +42,30 @@ and non-categorical.
 
   TOP STORY SECTION (for homepage only):
   - The top story URL is manually selected by Paul Fry and placed in generator/topstory.txt (last line of file)
-  - When generating content, read the URL from the last line of generator/topstory.txt
-  - Use that URL as the primary source for understanding today's most important supply chain story
-  - Write a compelling 2-3 sentence summary about this story based on the article content
+  - When generating content, you may reference the URL from topstory.txt to incorporate relevant insights
   - The generator.py script will automatically:
-    * Fetch the page title from the URL
-    * Create a Top Story div with date, your summary, and link
+    * Read the URL from topstory.txt
+    * Fetch the page title, source, and synopsis from the URL
+    * Create a Top Story div with the following format:
+      - "Today's Top Story:" as the header
+      - The article title on the next line
+      - Source name and domain (e.g., "Logistics Manager (logisticsmanager.com)")
+      - A paragraph with a synopsis of the story
+      - A red link stating "Read the whole story at [Source]" linking to the article
     * Update the homepage (content/_index.md) with this Top Story
   - Example of what the generator creates:
     <div id="top-story">
-    <p><strong>December 24, 2025:</strong> Automotive supply chains face critical disruption as chip shortages intensify,
-    with major manufacturers warning of production halts within weeks. Industry experts cite geopolitical tensions and
-    tariff uncertainties as key drivers. <a href="https://example.com/article">Article Title Here</a></p>
+    <p><strong>Today's Top Story:</strong><br>
+    Top ten logistics stories of 2025</p>
+
+    <p><em>Source: Logisticsmanager (logisticsmanager.com)</em></p>
+
+    <p>The logistics industry faced unprecedented challenges in 2025, from supply chain disruptions
+    to technological transformations reshaping the sector...</p>
+
+    <p style="color: red;"><a href="https://example.com" style="color: red;">Read the whole story at Logisticsmanager</a></p>
     </div>
-  - NOTE: You should write your content summary based on analyzing the URL from topstory.txt
-  - NOTE: Do NOT include the Top Story div in your generated content - the generator.py will create and place it automatically
+  - NOTE: Do NOT include the Top Story div in your generated content - the generator.py creates and places it automatically on the homepage
   - Using the list of tags found in this page, https://supplychaindaily.news/tags/, do the following:
     1) create a hyperlink for each word which matches a tag.
     2) For example, change the following text in (a) to what is in (b).

@@ -265,19 +265,22 @@ Do NOT use placeholder dates like 2023-10-10 or October 10, 2023.
 
         return None
 
-    def get_page_title_for_top_story(self, url: str) -> str:
-        """Fetch page title for top story URL"""
+    def get_page_info_for_top_story(self, url: str) -> dict:
+        """Fetch page title, source, and synopsis for top story URL"""
         try:
             import requests
             from bs4 import BeautifulSoup
+            from urllib.parse import urlparse
 
             headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
             response = requests.get(url, timeout=10, headers=headers)
             response.raise_for_status()
 
             soup = BeautifulSoup(response.content, 'html.parser')
-            title_tag = soup.find('title')
 
+            # Get title
+            title = "Top Story"
+            title_tag = soup.find('title')
             if title_tag and title_tag.string:
                 title = title_tag.string.strip()
                 # Remove site name suffixes
@@ -286,17 +289,54 @@ Do NOT use placeholder dates like 2023-10-10 or October 10, 2023.
                         parts = title.split(separator)
                         title = parts[0].strip()
                         break
-                return title[:150]
-        except Exception as e:
-            self.logger.warning(f"Could not fetch title for {url}: {e}")
+                title = title[:150]
 
-        # Fallback to URL path
-        from urllib.parse import urlparse
-        parsed = urlparse(url)
-        path = parsed.path.strip('/').split('/')[-1]
-        if path:
-            return path.replace('-', ' ').title()[:80]
-        return parsed.netloc.replace('www.', '')
+            # Get source from domain
+            parsed = urlparse(url)
+            domain = parsed.netloc.replace('www.', '')
+            source_name = domain.split('.')[0].title()
+            source = f"{source_name} ({domain})"
+
+            # Get synopsis from meta description or first paragraph
+            synopsis = ""
+            meta_desc = soup.find('meta', attrs={'name': 'description'}) or soup.find('meta', attrs={'property': 'og:description'})
+            if meta_desc and meta_desc.get('content'):
+                synopsis = meta_desc.get('content').strip()[:300]
+            else:
+                # Try to get first paragraph
+                paragraphs = soup.find_all('p')
+                for p in paragraphs[:5]:
+                    text = p.get_text().strip()
+                    if len(text) > 50:  # Skip short paragraphs
+                        synopsis = text[:300]
+                        break
+
+            if not synopsis:
+                synopsis = "Read the full article for details on this important supply chain development."
+
+            return {
+                'title': title,
+                'source': source,
+                'synopsis': synopsis
+            }
+
+        except Exception as e:
+            self.logger.warning(f"Could not fetch info for {url}: {e}")
+
+            # Fallback
+            from urllib.parse import urlparse
+            parsed = urlparse(url)
+            domain = parsed.netloc.replace('www.', '')
+            path = parsed.path.strip('/').split('/')[-1]
+
+            title = path.replace('-', ' ').title()[:80] if path else "Top Story"
+            source_name = domain.split('.')[0].title()
+
+            return {
+                'title': title,
+                'source': f"{source_name} ({domain})",
+                'synopsis': "Read the full article for details on this important supply chain development."
+            }
 
     def update_homepage_top_story(self, content: str) -> bool:
         """Create Top Story from topstory.txt URL and update homepage"""
@@ -309,15 +349,19 @@ Do NOT use placeholder dates like 2023-10-10 or October 10, 2023.
                 self.logger.warning("No top story URL available")
                 return False
 
-            # Fetch the page title
-            page_title = self.get_page_title_for_top_story(top_story_url)
+            # Fetch the page info (title, source, synopsis)
+            page_info = self.get_page_info_for_top_story(top_story_url)
 
-            # Create Top Story div with today's date and the URL
-            today = datetime.now()
-            date_str = today.strftime("%B %d, %Y")
-
+            # Create Top Story div with the new format
             top_story_html = f'''<div id="top-story">
-<p><strong>{date_str}:</strong> Today's top supply chain story. <a href="{top_story_url}">{page_title}</a></p>
+<p><strong>Today's Top Story:</strong><br>
+{page_info['title']}</p>
+
+<p><em>Source: {page_info['source']}</em></p>
+
+<p>{page_info['synopsis']}</p>
+
+<p style="color: red;"><a href="{top_story_url}" style="color: red;">Read the whole story at {page_info['source'].split('(')[0].strip()}</a></p>
 </div>'''
 
             # Read the homepage file
