@@ -5,6 +5,9 @@ Simplified script to update content posts to match site_prompt.txt requirements.
 
 import re
 from pathlib import Path
+from urllib.parse import urlparse
+import requests
+from bs4 import BeautifulSoup
 
 DISCLAIMER = """<div style="text-align: center; margin-top: 20px;">
 AIs can make mistakes. Check important info.
@@ -60,6 +63,71 @@ def add_tag_hyperlinking(content):
 
     return content
 
+def get_page_title(url):
+    """Fetch the actual title from a webpage"""
+    try:
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        }
+        response = requests.get(url, timeout=10, headers=headers)
+        response.raise_for_status()
+
+        soup = BeautifulSoup(response.content, 'html.parser')
+        title_tag = soup.find('title')
+
+        if title_tag and title_tag.string:
+            # Clean up the title
+            title = title_tag.string.strip()
+            # Remove common site name suffixes
+            for separator in [' | ', ' - ', ' – ', ' — ']:
+                if separator in title:
+                    parts = title.split(separator)
+                    # Usually the first part is the article title
+                    title = parts[0].strip()
+                    break
+            return title[:150]  # Limit length
+    except Exception as e:
+        print(f"    Warning: Could not fetch title for {url}: {e}")
+
+    # Fallback: generate from URL
+    parsed = urlparse(url)
+    path = parsed.path.strip('/').split('/')[-1]
+    if path and len(path) > 3:
+        title = path.replace('-', ' ').replace('_', ' ').title()[:80]
+        return title
+    return parsed.netloc.replace('www.', '')
+
+def fix_existing_link_titles(content):
+    """Fix link titles that are just numbers or URL fragments"""
+    # Pattern to find <a> tags with poor titles (numbers, fragments, etc.)
+    pattern = r'<a href="([^"]+)">([^<]+)</a>'
+
+    def should_fix_title(title, url):
+        """Determine if a link title needs fixing"""
+        # Fix if title is just numbers
+        if title.strip().isdigit():
+            return True
+        # Fix if title ends with .html or .htm
+        if title.strip().lower().endswith(('.html', '.htm')):
+            return True
+        # Fix if title is very short (less than 10 chars) and URL is long
+        if len(title.strip()) < 10 and len(url) > 50:
+            return True
+        return False
+
+    def replace_link(match):
+        url = match.group(1)
+        current_title = match.group(2)
+
+        if should_fix_title(current_title, url):
+            print(f"    Fetching title for: {url[:60]}...")
+            new_title = get_page_title(url)
+            return f'<a href="{url}">{new_title}</a>'
+
+        return match.group(0)
+
+    return re.sub(pattern, replace_link, content)
+
 def convert_raw_urls_to_links(content):
     """Convert raw URLs (not in <a> tags) to proper links"""
     # Find URLs that are on their own line starting with - or *
@@ -74,16 +142,8 @@ def convert_raw_urls_to_links(content):
             indent = match.group(1)
             url = match.group(2)
 
-            # Generate a simple title from URL
-            from urllib.parse import urlparse
-            parsed = urlparse(url)
-            domain = parsed.netloc.replace('www.', '')
-            path = parsed.path.strip('/').split('/')[-1]
-
-            if path and len(path) > 3:
-                title = path.replace('-', ' ').replace('_', ' ').title()[:80]
-            else:
-                title = domain
+            # Fetch the actual page title
+            title = get_page_title(url)
 
             # Create the link
             link = f'{indent}<a href="{url}">{title}</a>'
@@ -134,6 +194,7 @@ def update_file(filepath):
     original_content = content
     content = remove_old_sections(content)
     content = convert_raw_urls_to_links(content)
+    content = fix_existing_link_titles(content)
     content = add_tag_hyperlinking(content)
     content = add_disclaimer_if_missing(content)
 
