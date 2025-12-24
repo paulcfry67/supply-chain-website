@@ -34,7 +34,7 @@ In terms of impact, short-term consequences include delayed deliveries and highe
 
 The short-term impact includes stalled infrastructure projects and inflated building costs, which could exacerbate housing shortages. Long-term, uncertainty may render the U.S. "uninvestible" for some foreign entities, slowing economic growth. Best practices involve adopting just-in-time inventory with digital twins for forecasting and partnering with local suppliers to reduce dependency on volatile global chains. Firms that have implemented these strategies report up to 25% improvements in project efficiency.
 
-- https://www.forvismazars.us/forsights/2025/10/us-<a href="https://supplychaindaily.news/tags/automotive/">automotive</a>-industry-outlook-2025-insights-trends (adapted for construction parallels)
+- <a href="https://www.forvismazars.us/forsights/2025/10/us-">Forvismazars Article</a><a href="https://supplychaindaily.news/tags/automotive/">automotive</a>-industry-outlook-2025-insights-trends (adapted for construction parallels)
 - Posts found on X indicating supply halts and factory closures
 
 ### Aerospace
@@ -42,8 +42,8 @@ Aerospace <a href="https://supplychaindaily.news/tags/manufacturing/">manufactur
 
 Short-term effects include grounded fleets and increased operational expenses, while long-term risks involve reduced innovation in sustainable aviation technologies. To mitigate, companies should prioritize resilient supply networks, such as those emphasizing software updates and performance monitoring for extended lifecycles. Successful strategies from the sector include collaborative platforms for supplier risk assessment, which have minimized disruptions by 40% in some cases.
 
-- https://www.automotivelogistics.media/supply-chain/<a href="https://supplychaindaily.news/tags/automotive/">automotive</a>-logistics-and-supply-chains-q4-2025-cost-pressures-tariff-uncertainty-and-supply-chain-disruption-continues-to-plague-the-industry/2126758 (relevant to aerospace logistics)
-- https://supplychaindigital.com/supply-chain-risk-management/<a href="https://supplychaindaily.news/tags/automotive/">automotive</a>-industry-faces-uncertainty-2025 (extended to aerospace)
+- <a href="https://www.automotivelogistics.media/supply-chain/">Supply Chain | Automotive Logistics</a><a href="https://supplychaindaily.news/tags/automotive/">automotive</a>-logistics-and-supply-chains-q4-2025-cost-pressures-tariff-uncertainty-and-supply-chain-disruption-continues-to-plague-the-industry/2126758 (relevant to aerospace logistics)
+- <a href="https://supplychaindigital.com/supply-chain-risk-management/">Latest Supply Chain Risk & Resiliance News & Feature Articles | Supply Chain Magazine</a><a href="https://supplychaindaily.news/tags/automotive/">automotive</a>-industry-faces-uncertainty-2025 (extended to aerospace)
 
 ### Transportation
 The transportation sector is under strain from <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> disruptions as of December 14, 2025, with logistics costs surging due to tariff uncertainties and ongoing disruptions in global shipping. Reports indicate that supply chains are breaking under pressure, leading to halted shipments and empty shelves in retail, which indirectly affects <a href="https://supplychaindaily.news/tags/manufacturing/">manufacturing</a> <a href="https://supplychaindaily.news/tags/distribution/">distribution</a>. In the U.S., this is compounded by a dollar shortage and weak <a href="https://supplychaindaily.news/tags/manufacturing/">manufacturing</a> demand, impacting freight volumes.

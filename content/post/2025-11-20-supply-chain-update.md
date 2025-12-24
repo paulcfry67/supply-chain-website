@@ -21,8 +21,8 @@ In terms of impact analysis, short-term consequences include production halts an
 To mitigate these disruptions, companies should adopt best practices such as multi-sourcing components from regions like Taiwan and South Korea, investing in AI-driven demand forecasting, and building strategic stockpiles. Successful examples include firms that have integrated blockchain for transparent tracking, reducing lead times by up to 15%. For more on historical chip shortage trends, check our internal link to [previous content on 2024 electronics disruptions](/electronics-shortages-2024).
 
 Sources:  
-- https://www.cbtnews.com/global-auto-production-at-risk-as-nexperia-chip-halt-sparks-new-supply-chain-crisis/  
-- https://x.com/FirstSquawk/status/1981894712828346700  
+- <a href="https://www.cbtnews.com/global-auto-production-at-risk-as-nexperia-chip-halt-sparks-new-supply-chain-crisis/">Global auto production at risk as Nexperia chip halt sparks new supply chain crisis</a>  
+- <a href="https://x.com/FirstSquawk/status/1981894712828346700">X Article</a>  
 
 ## <a href="https://supplychaindaily.news/tags/automotive/">Automotive</a>
 
@@ -35,10 +35,10 @@ Impact analysis shows short-term risks of job losses and reduced output, potenti
 Recommendations include fostering collaboration for digitalization and sustainability, as outlined in recent insights. Companies should prioritize nearshoring to Mexico or domestic suppliers, implement just-in-case inventory models, and leverage data analytics for risk assessment. Successful strategies from firms like Tesla involve shifting away from China for U.S.-built vehicles, reducing dependency on rare earths. Link to our prior analysis on [automotive tariffs 2025](/automotive-tariffs-impact-2025) for deeper context.
 
 Sources:  
-- https://webpronews.com/gms-supply-chain-exodus-mandating-a-china-exit-by-2027  
-- https://www.cbtnews.com/u-s-automakers-struggle-with-parts-shortages-and-halted-output/  
-- https://automotivemanufacturingsolutions.com/editors-pick/global-vehicle-production-faces-sharpest-decline-in-5-years/1608720  
-- https://x.com/Martyupnorth_2/status/1956341615892824282  
+- <a href="https://webpronews.com/gms-supply-chain-exodus-mandating-a-china-exit-by-2027">GM's Supply Chain Exodus: Mandating a China Exit by 2027</a>  
+- <a href="https://www.cbtnews.com/u-s-automakers-struggle-with-parts-shortages-and-halted-output/">U.S. automakers struggle with parts shortages and halted output</a>  
+- <a href="https://automotivemanufacturingsolutions.com/editors-pick/global-vehicle-production-faces-sharpest-decline-in-5-years/1608720">Analysis: Automotive production reaches 5-year low</a>  
+- <a href="https://x.com/Martyupnorth_2/status/1956341615892824282">X Article</a>  
 
 ## Construction
 
@@ -51,8 +51,8 @@ Short-term impacts involve stalled infrastructure projects and increased bidding
 Best practices recommend diversifying suppliers, adopting modular construction techniques to reduce dependency, and using predictive analytics for material forecasting. Internal link: [Construction supply strategies 2024](/construction-strategies-2024).
 
 Sources:  
-- https://x.com/macastel3/status/1910497960875741304  
-- https://x.com/anders_aslund/status/1916905436206305437  
+- <a href="https://x.com/macastel3/status/1910497960875741304">X Article</a>  
+- <a href="https://x.com/anders_aslund/status/1916905436206305437">X Article</a>  
 
 ## Aerospace
 
@@ -65,8 +65,8 @@ Impact analysis: Short-term, expect delays in deliveries and higher costs; long-
 Mitigation strategies involve strategic partnerships and inventory buffering. Link to [aerospace trends 2025](/aerospace-trends-2025).
 
 Sources:  
-- https://www.automotivelogistics.media/supply-chain/<a href="https://supplychaindaily.news/tags/automotive/">automotive</a>-logistics-and-supply-chains-q4-2025-cost-pressures-tariff-uncertainty-and-supply-chain-disruption-continues-to-plague-the-industry/2126758  
-- https://x.com/anders_aslund/status/1916905436206305437  
+- <a href="https://www.automotivelogistics.media/supply-chain/">Supply Chain | Automotive Logistics</a><a href="https://supplychaindaily.news/tags/automotive/">automotive</a>-logistics-and-supply-chains-q4-2025-cost-pressures-tariff-uncertainty-and-supply-chain-disruption-continues-to-plague-the-industry/2126758  
+- <a href="https://x.com/anders_aslund/status/1916905436206305437">X Article</a>  
 
 ## Transportation
 
@@ -79,8 +79,8 @@ Impacts: Short-term disruptions in delivery, long-term shifts to resilient netwo
 Recommendations: Embrace collaboration and tech integration. Link: [Transportation logistics 2025](/transportation-logistics-2025).
 
 Sources:  
-- https://freightamigo.com/en/blog/logistics/revolutionizing-the-<a href="https://supplychaindaily.news/tags/automotive/">automotive</a>-supply-chain-an-insight-into-finished-vehicle-logistics  
-- https://www.automotivelogistics.media/supply-chain/<a href="https://supplychaindaily.news/tags/automotive/">automotive</a>-logistics-and-supply-chains-in-2025-tariff-turmoil-investment-uncertainty-and-further-cost-pressures/649740
+- <a href="https://freightamigo.com/en/blog/logistics/revolutionizing-the-">Revolutionizing The</a><a href="https://supplychaindaily.news/tags/automotive/">automotive</a>-supply-chain-an-insight-into-finished-vehicle-logistics  
+- <a href="https://www.automotivelogistics.media/supply-chain/">Supply Chain | Automotive Logistics</a><a href="https://supplychaindaily.news/tags/automotive/">automotive</a>-logistics-and-supply-chains-in-2025-tariff-turmoil-investment-uncertainty-and-further-cost-pressures/649740
 
 <div style="text-align: center; margin-top: 20px;">
 AIs can make mistakes. Check important info.

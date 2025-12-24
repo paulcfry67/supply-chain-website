@@ -53,7 +53,7 @@ The integration of software in aerospace <a href="https://supplychaindaily.news/
 
 **Impact Analysis:** Short-term effects include grounded fleets and delayed aircraft deliveries, potentially increasing airfare by 5-7% for consumers. Long-term, persistent disruptions could hinder innovation in green technologies, affecting US competitiveness in global markets and leading to <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> diversification mandates from regulators.
 
-**Recommendations:** Aerospace companies should adopt blockchain for transparent tracking and collaborate on joint stockpiling initiatives. Best practices from leaders like Lockheed Martin include scenario planning, which has cut disruption impacts by 20%. For related insights, see our [update on industrial equipment shortages](internal-link-to-previous-industrial-content).
+**Recommendations:** Aerospace companies should adopt blockchain for transparent tracking and collaborate on joint stockpiling initiatives. Best practices from leaders like Lockheed Martin include scenario planning, which has cut disruption impacts by 20%. For related insights, see our [update on <a href="https://supplychaindaily.news/tags/industrial/">industrial</a> equipment shortages](internal-link-to-previous-<a href="https://supplychaindaily.news/tags/industrial/">industrial</a>-content).
 
 - <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Trends And Challenges Shaping The Automotive Industry In 2025</a>
 - <a href="https://www.automotive-technology.com/articles/global-supply-chain-challenges-in-automotive-manufacturing">Global Supply Chain Challenges in Automotive Manufacturing</a>

@@ -19,7 +19,7 @@ These issues are leading to increased costs, with input prices rising by an esti
 
 - <a href="https://www.acea.auto/press-release/acea-calls-for-quick-resolution-to-critical-chip-supply-shortage/">Acea Calls For Quick Resolution To Critical Chip Supply Shortage</a>
 - <a href="https://www.automotive-technology.com/articles/global-supply-chain-challenges-in-automotive-manufacturing">Global Supply Chain Challenges in Automotive Manufacturing</a>
-- https://x.com/AlvaApp/status/1978738358613651801 (used for sentiment on <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> repricing)
+- <a href="https://x.com/AlvaApp/status/1978738358613651801">X Article</a> (used for sentiment on <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> repricing)
 
 ### <a href="https://supplychaindaily.news/tags/automotive/">Automotive</a>
 In the USA <a href="https://supplychaindaily.news/tags/automotive/">automotive</a> <a href="https://supplychaindaily.news/tags/manufacturing/">manufacturing</a> sector, <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> issues as of October 22, 2025, are dominated by tariff impacts and component shortages, threatening production stability. The imposition of 2025 tariffs under the current administration has disrupted global supply chains, with foreign automakers like Subaru and Nissan facing factory closures or reduced operations in the US. Chip supply interruptions, highlighted by the European Automobile Manufacturers' Association (ACEA), are causing potential halts in vehicle assembly, especially for models reliant on imported semiconductors.
@@ -28,7 +28,7 @@ This is resulting in significant delays, with <a href="https://supplychaindaily.
 
 - <a href="https://www.forvismazars.us/forsights/2025/10/us-automotive-industry-outlook-2025-insights-trends">US Automotive Industry Outlook 2025: Insights & Trends</a>
 - <a href="https://www.ainvest.com/news/trump-2025-tariffs-global-auto-industry-supply-chain-resilience-strategic-diversification-2510/">Trump's 2025 Tariffs and the Global Auto Industry: Supply Chain Resilience and Strategic Diversification</a>
-- https://x.com/anders_aslund/status/1916905436206305437 (used for sentiment on factory closures)
+- <a href="https://x.com/anders_aslund/status/1916905436206305437">X Article</a> (used for sentiment on factory closures)
 - <a href="https://www.automotivelogistics.media/supply-chain/automotive-logistics-and-supply-chains-in-2025-tariff-turmoil-investment-uncertainty-and-further-cost-pressures/649740">Top three issues facing automotive logistics and supply chains in 2025: tariffs, risk and uncertainty</a>
 
 ### Construction
@@ -37,7 +37,7 @@ This is resulting in significant delays, with <a href="https://supplychaindaily.
 The impact is evident in slowed housing developments and public works, leading to short-term labor idle times and inflated budgets. Long-term, this could hinder urban expansion and sustainability goals, as seen in the push for greener construction amid supply constraints. Companies can mitigate by adopting just-in-time inventory with AI-driven predictions and forging alliances with regional suppliers, drawing from successful post-pandemic recoveries in the sector.
 
 - <a href="https://int-enviroguard.com/blog/the-resurgence-of-us-manufacturing-trends-technologies-challenges-in-2025">U.S. Manufacturing in 2025: Supply Chain, Workforce, Automation & Sustainability Trends</a>
-- https://x.com/Hannibal9972485/status/1920513939466572160 (used for sentiment on price spikes in hardware)
+- <a href="https://x.com/Hannibal9972485/status/1920513939466572160">X Article</a> (used for sentiment on price spikes in hardware)
 - <a href="https://www.morganlewis.com/pubs/2025/10/update-on-global-trends-and-supply-chain-developments-in-the-automotive-industry">Update on Global Trends and Supply Chain Developments in the Automotive Industry</a>
 
 ### Aerospace
@@ -46,7 +46,7 @@ The aerospace industry is facing mounting <a href="https://supplychaindaily.news
 Short-term effects include grounded fleets and deferred orders, while long-term implications involve compromised national security and innovation in sustainable aviation. Mitigation strategies emphasize <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> diversification and investment in automation, as recommended in recent analyses, to enhance resilience against such global shocks.
 
 - <a href="https://www.ainvest.com/news/navigating-automotive-supply-chain-risks-vulnerabilities-resilient-investment-opportunities-2025-2510/">Navigating Automotive Supply Chain Risks: Vulnerabilities and Resilient Investment Opportunities in 2025</a>
-- https://x.com/DavidSleem65372/status/1979958732751814918 (used for sentiment on defense supply chains)
+- <a href="https://x.com/DavidSleem65372/status/1979958732751814918">X Article</a> (used for sentiment on defense supply chains)
 - <a href="https://talkinglogistics.com/2025/10/10/above-the-fold-supply-chain-logistics-news-october-10-2025">Above the Fold: Supply Chain Logistics News (October 10, 2025)</a>
 
 ### Transportation
@@ -55,7 +55,7 @@ Transportation logistics are under strain as of October 22, 2025, with <a href="
 The short-term fallout includes congested ports and increased fuel expenses, while long-term risks involve a shift toward localized logistics to counter global uncertainties. Best practices include adopting blockchain for tracking and optimizing routes with predictive analytics, as evidenced by industry adaptations to recent disruptions.
 
 - <a href="https://supplychaindigital.com/supply-chain-risk-management/automotive-industry-faces-uncertainty-2025">Supply Chain Issues and Market Shifts Challenge Automakers</a>
-- https://x.com/macastel3/status/1910497960875741304 (used for sentiment on shipment halts)
+- <a href="https://x.com/macastel3/status/1910497960875741304">X Article</a> (used for sentiment on shipment halts)
 - <a href="https://www.capstonepartners.com/insights/automotive-industry-update/">Automotive Industry Update</a>
 
 <div style="text-align: center; margin-top: 20px;">

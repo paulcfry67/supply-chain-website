@@ -33,7 +33,7 @@ Recommendations include building resilient supply chains through digital twins f
 - <a href="https://www.reuters.com/business/autos-transportation/major-automakers-say-china-poses-clear-present-threat-us-auto-industry-2025-12-11/">Major Automakers Say China Poses Clear Present Threat Us Auto Industry 2025 12 1</a>
 - <a href="https://www.automotivelogistics.media/supply-chain/automotive-logistics-and-supply-chains-q4-2025-cost-pressures-tariff-uncertainty-and-supply-chain-disruption-continues-to-plague-the-industry/2126758">Q4 2025 outlook: Cost pressures, tariff uncertainty and disruption</a>
 - <a href="https://supplychaindigital.com/supply-chain-risk-management/automotive-industry-faces-uncertainty-2025">Supply Chain Issues and Market Shifts Challenge Automakers</a>
-- https://x.com/FirstSquawk/status/1981894712828346700 (Note: Used for sentiment; information treated as inconclusive)
+- <a href="https://x.com/FirstSquawk/status/1981894712828346700">X Article</a> (Note: Used for sentiment; information treated as inconclusive)
 
 ### Construction
 <a href="https://supplychaindaily.news/tags/supply-chain/">Supply chain</a> challenges in the construction sector as of December 15, 2025, are marked by material shortages and rising costs, influenced by broader <a href="https://supplychaindaily.news/tags/manufacturing/">manufacturing</a> disruptions. With North America pulling back on <a href="https://supplychaindaily.news/tags/manufacturing/">manufacturing</a> demand, construction firms are experiencing delays in steel, composites, and electrical components, partly due to <a href="https://supplychaindaily.news/tags/automotive/">automotive</a> <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> overlaps like chip-integrated machinery. Recent data shows a steeper pullback in demand, signaling weak conditions into 2026, which could halt projects reliant on imported materials from China.
@@ -66,7 +66,7 @@ Recommendations include investing in blockchain for tracking and optimizing rout
 
 - <a href="https://www.automotivelogistics.media/supply-chain/automotive-logistics-and-supply-chains-q4-2025-cost-pressures-tariff-uncertainty-and-supply-chain-disruption-continues-to-plague-the-industry/2126758">Q4 2025 outlook: Cost pressures, tariff uncertainty and disruption</a>
 - <a href="https://surgere.com/blog/navigating-automotive-supply-chain-challenges-in-2025/">Navigating Automotive Supply Chain Challenges in 2025</a>
-- https://x.com/ReindustryUSA/status/2000264271511613601 (Note: Used for sentiment; information treated as inconclusive)
+- <a href="https://x.com/ReindustryUSA/status/2000264271511613601">X Article</a> (Note: Used for sentiment; information treated as inconclusive)
 - <a href="https://www.cnbc.com/2025/12/10/supply-chain-diversification-away-from-china-is-progressing-from-talks-to-action-eu-chamber-says.html">Supply chain diversification away from China is progressing from talks to action, EU chamber says</a>
 
 <div style="text-align: center; margin-top: 20px;">

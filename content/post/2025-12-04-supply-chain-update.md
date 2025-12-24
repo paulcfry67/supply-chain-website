@@ -21,7 +21,7 @@ To mitigate these <a href="https://supplychaindaily.news/tags/supply-chain/">sup
 
 - <a href="https://cbtnews.com/cbt-automotive-newscast-november-25-2025">Semiconductor shortage rattles global auto production, GM's chief AI officer steps down, Hyundai launches 2026 Palisade hybrid</a>
 - <a href="https://www.automotivelogistics.media/supply-chain/automotive-logistics-and-supply-chains-q4-2025-cost-pressures-tariff-uncertainty-and-supply-chain-disruption-continues-to-plague-the-industry/2126758">Q4 2025 outlook: Cost pressures, tariff uncertainty and disruption</a>
-- https://x.com/FirstSquawk/status/1981894712828346700 (summarizing sentiment from X posts)
+- <a href="https://x.com/FirstSquawk/status/1981894712828346700">X Article</a> (summarizing sentiment from X posts)
 
 ### <a href="https://supplychaindaily.news/tags/automotive/">Automotive</a>
 <a href="https://supplychaindaily.news/tags/supply-chain/">Supply chain</a> issues in USA <a href="https://supplychaindaily.news/tags/automotive/">automotive</a> <a href="https://supplychaindaily.news/tags/manufacturing/">manufacturing</a> are intensifying as of December 4, 2025, with chip shortages and parts disruptions leading to widespread plant shutdowns. Major players like Ford and General Motors have halted production at several North American facilities this month, affecting popular models such as trucks and SUVs. According to recent outlooks, these interruptions stem from a semiconductor shortage that has exposed ongoing vulnerabilities, compounded by tariff uncertainties and cost pressures surging across the <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a>.
@@ -32,7 +32,7 @@ Long-term, these <a href="https://supplychaindaily.news/tags/supply-chain/">supp
 
 - <a href="https://www.forvismazars.us/forsights/2025/10/us-automotive-industry-outlook-2025-insights-trends">US Automotive Industry Outlook 2025: Insights & Trends</a>
 - <a href="https://www.cbtnews.com/u-s-automakers-struggle-with-parts-shortages-and-halted-output/">U.S. automakers struggle with parts shortages and halted output</a>
-- https://x.com/rdd147/status/1996409332481826998 (reflecting current X sentiment on shutdowns)
+- <a href="https://x.com/rdd147/status/1996409332481826998">X Article</a> (reflecting current X sentiment on shutdowns)
 - <a href="https://automotivemanufacturingsolutions.com/editors-pick/global-vehicle-production-faces-sharpest-decline-in-5-years/1608720">Analysis: Automotive production reaches 5-year low</a>
 
 ### Construction
@@ -44,7 +44,7 @@ To counter this, companies should focus on local sourcing and collaborative fore
 
 - <a href="https://supplychaindigital.com/supply-chain-risk-management/automotive-industry-faces-uncertainty-2025">Supply Chain Issues and Market Shifts Challenge Automakers</a>
 - <a href="https://www.automotivelogistics.media/supply-chain/automotive-logistics-and-supply-chains-q4-2025-cost-pressures-tariff-uncertainty-and-supply-chain-disruption-continues-to-plague-the-industry/2126758">Q4 2025 outlook: Cost pressures, tariff uncertainty and disruption</a>
-- https://x.com/ChrisjMartinez4/status/1995649689580863751 (X posts highlighting inventory squeezes)
+- <a href="https://x.com/ChrisjMartinez4/status/1995649689580863751">X Article</a> (X posts highlighting inventory squeezes)
 
 ### Aerospace
 The aerospace industry is navigating <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> headwinds tied to <a href="https://supplychaindaily.news/tags/electronics/">electronics</a> and material shortages as of December 4, 2025. Chip disruptions similar to those plaguing USA <a href="https://supplychaindaily.news/tags/automotive/">automotive</a> <a href="https://supplychaindaily.news/tags/manufacturing/">manufacturing</a> are delaying avionics production, with lead times for critical components extending by 4-6 months. This affects both commercial and defense sectors, where precision parts are essential, leading to potential delays in aircraft deliveries and increased costs amid tariff pressures.
@@ -55,7 +55,7 @@ Best practices include forging multi-tier supplier agreements and investing in a
 
 - <a href="https://www.gminsights.com/blogs/top-challenges-in-the-automotive-industry-pre-covid">Automotive Industry 2025: Electrification, Software, and Supply Chain Transformation</a>
 - <a href="https://resilinc.ai/learning-center/white-papers-reports/resilinc-special-report-automotive-supply-chain-challenges-2025-compliance-shortages-and-global-disruptions">Navigating Automotive Supply Chain Challenges in 2025</a>
-- https://x.com/amital13/status/1970398949883232731 (general <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> sentiment from X)
+- <a href="https://x.com/amital13/status/1970398949883232731">X Article</a> (general <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> sentiment from X)
 
 ### Transportation
 Transportation networks are buckling under <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> issues as of December 4, 2025, with <a href="https://supplychaindaily.news/tags/automotive/">automotive</a> <a href="https://supplychaindaily.news/tags/manufacturing/">manufacturing</a> disruptions causing cascading effects on logistics. Port congestions and trucking shortages, fueled by parts unavailability, are delaying shipments across the USA, increasing freight costs by 15-20%. This is particularly evident in <a href="https://supplychaindaily.news/tags/automotive/">automotive</a> <a href="https://supplychaindaily.news/tags/distribution/">distribution</a>, where halted productions lead to empty hauls and inventory backlogs.
@@ -66,7 +66,7 @@ Recommendations involve leveraging data analytics for route optimization and par
 
 - <a href="https://www.capstonepartners.com/insights/automotive-industry-update/">Automotive Industry Update</a>
 - <a href="https://all-about-industries.com/suppliers-2025-automotive-industry-challenges-successes-a-b946f635d5e9201a8c4cb54468e628f5">Suppliers 2025: Successes and challenges in the automotive industry</a>
-- https://x.com/DanCollins2011/status/1995538190367621477 (X discussions on production turmoil)
+- <a href="https://x.com/DanCollins2011/status/1995538190367621477">X Article</a> (X discussions on production turmoil)
 
 <div style="text-align: center; margin-top: 20px;">
 AIs can make mistakes. Check important info.

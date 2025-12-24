@@ -39,7 +39,7 @@ Recommendations include conducting regular <a href="https://supplychaindaily.new
 - <a href="https://www.boisestate.edu/cobe/blog/2025/02/the-u-s-automotive-industry-supply-chain-challenges-and-transformations/">The U.S. Automotive Industry Supply Chain</a>
 - <a href="https://www.automotivelogistics.media/supply-chain/automotive-logistics-and-supply-chains-in-2025-tariff-turmoil-investment-uncertainty-and-further-cost-pressures/649740">Top three issues facing automotive logistics and supply chains in 2025: tariffs, risk and uncertainty</a>
 - <a href="https://www.automotive-technology.com/articles/global-supply-chain-challenges-in-automotive-manufacturing">Global Supply Chain Challenges in Automotive Manufacturing</a>
-- https://x.com/macastel3/status/1910497960875741304 (Note: Social media posts referenced for sentiment, not as factual evidence)
+- <a href="https://x.com/macastel3/status/1910497960875741304">X Article</a> (Note: Social media posts referenced for sentiment, not as factual evidence)
 
 ## Aerospace
 
@@ -51,10 +51,10 @@ Impact analysis shows short-term risks like grounded fleets and escalated mainte
 
 Best practices involve collaborating with government programs for subsidies on reshoring and implementing just-in-time inventory with real-time monitoring to reduce waste.
 
-- https://www.gminsights.com/blogs/top-challenges-in-the-<a href="https://supplychaindaily.news/tags/automotive/">automotive</a>-industry-pre-covid (Adapted for aerospace parallels)
+- <a href="https://www.gminsights.com/blogs/top-challenges-in-the-">Top Challenges In The</a><a href="https://supplychaindaily.news/tags/automotive/">automotive</a>-industry-pre-covid (Adapted for aerospace parallels)
 - <a href="https://friedmancorp.com/blog/manufacturing-outloo-supply-chain-resiliency/">2025 US Manufacturing Outlook: Supply Chain Resiliency</a>
 - <a href="https://int-enviroguard.com/blog/the-resurgence-of-us-manufacturing-trends-technologies-challenges-in-2025">U.S. Manufacturing in 2025: Supply Chain, Workforce, Automation & Sustainability Trends</a>
-- https://x.com/anders_aslund/status/1916905436206305437 (Note: Social media posts referenced for sentiment, not as factual evidence)
+- <a href="https://x.com/anders_aslund/status/1916905436206305437">X Article</a> (Note: Social media posts referenced for sentiment, not as factual evidence)
 
 ## Transportation
 
@@ -69,7 +69,7 @@ Recommendations emphasize diversifying transportation modes (e.g., rail over roa
 - <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Trends And Challenges Shaping The Automotive Industry In 2025</a>
 - <a href="https://www.oliverwyman.com/our-expertise/insights/2025/apr/us-automotive-supplier-focus-areas-2025.html">Top 3 Priorities For US Automotive Suppliers To Win In 2025</a>
 - <a href="https://greendrivedynamics.com/automotive-supply-chain-resilience-in-2025">Why Automotive Supply Chain Resilience Strategies Are Crucial For The Automotive Market 2025 -</a>
-- https://x.com/Martyupnorth_2/status/1956341615892824282 (Note: Social media posts referenced for sentiment, not as factual evidence)
+- <a href="https://x.com/Martyupnorth_2/status/1956341615892824282">X Article</a> (Note: Social media posts referenced for sentiment, not as factual evidence)
 
 *This update is based on the latest available data as of October 8, 2025. For more on previous trends, check our [archive on 2025 supply chain disruptions](internal-link-to-yesterdays-content). Stay tuned for tomorrow's insights.*
 

@@ -68,10 +68,10 @@ Impact Analysis: Short-term, expect higher freight rates and delivery backlogs; 
 
 Recommendations: Optimize routes with AI and build flexible contracts with multiple carriers. Emphasize sustainability to meet regulatory demands.
 
-- https://www.npr.org/2021/04/09/985860442/auto-industry-continues-to-struggle-with-supply-chain-issues (historical context, updated relevance)
-- https://www.gminsights.com/blogs/top-challenges-in-the-<a href="https://supplychaindaily.news/tags/automotive/">automotive</a>-industry-pre-covid (adapted for 2025 trends)
-- https://x.com/macastel3/status/1910497960875741304 (sentiment from X posts)
-- https://x.com/anders_aslund/status/1916905436206305437 (sentiment from X posts)
+- <a href="https://www.npr.org/2021/04/09/985860442/auto-industry-continues-to-struggle-with-supply-chain-issues">Auto Industry Continues To Struggle With Supply Chain Issues : NPR</a> (historical context, updated relevance)
+- <a href="https://www.gminsights.com/blogs/top-challenges-in-the-">Top Challenges In The</a><a href="https://supplychaindaily.news/tags/automotive/">automotive</a>-industry-pre-covid (adapted for 2025 trends)
+- <a href="https://x.com/macastel3/status/1910497960875741304">X Article</a> (sentiment from X posts)
+- <a href="https://x.com/anders_aslund/status/1916905436206305437">X Article</a> (sentiment from X posts)
 
 This update provides a comprehensive view of today's <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> dynamics, emphasizing proactive strategies for mitigation. Stay tuned for tomorrow's insights on October 8, 2025. (Word count: 1245)
 

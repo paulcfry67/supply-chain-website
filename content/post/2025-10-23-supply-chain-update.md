@@ -42,7 +42,7 @@ Recommendations include implementing just-in-time inventory with buffer stocks a
 
 - <a href="https://int-enviroguard.com/blog/the-resurgence-of-us-manufacturing-trends-technologies-challenges-in-2025">U.S. Manufacturing in 2025: Supply Chain, Workforce, Automation & Sustainability Trends</a>
 - <a href="https://www.automotive-technology.com/articles/global-supply-chain-challenges-in-automotive-manufacturing">Global Supply Chain Challenges in Automotive Manufacturing</a>
-- https://x.com/macastel3/status/1910497960875741304 (Note: Referenced for sentiment on shipment halts, not as factual evidence)
+- <a href="https://x.com/macastel3/status/1910497960875741304">X Article</a> (Note: Referenced for sentiment on shipment halts, not as factual evidence)
 
 ### Aerospace
 <a href="https://supplychaindaily.news/tags/supply-chain/">Supply chain</a> disruptions in the aerospace sector on October 23, 2025, are marked by vulnerabilities in critical components like <a href="https://supplychaindaily.news/tags/electronics/">electronics</a> and rare-earth minerals, amid geopolitical tensions and tariff uncertainties. U.S. manufacturers are experiencing delays in engine parts and avionics, with <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> risks leading to production slowdowns at major hubs. This ties into broader <a href="https://supplychaindaily.news/tags/manufacturing/">manufacturing</a> trends, where automation and sustainability are key, but shortages are causing inventory rationing and repricing. For the USA <a href="https://supplychaindaily.news/tags/automotive/">automotive</a> industry, parallels exist in shared suppliers for advanced materials, amplifying cross-sector impacts.
@@ -53,7 +53,7 @@ Best practices involve risk mapping and expedited re-qualification of secondary 
 
 - <a href="https://www.ainvest.com/news/navigating-automotive-supply-chain-risks-vulnerabilities-resilient-investment-opportunities-2025-2510/">Navigating Automotive Supply Chain Risks: Vulnerabilities and Resilient Investment Opportunities in 2025</a>
 - <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Trends And Challenges Shaping The Automotive Industry In 2025</a>
-- https://x.com/DarkoPavic_/status/1979460293265600972 (Note: Referenced for sentiment on production slowdowns, not as factual evidence)
+- <a href="https://x.com/DarkoPavic_/status/1979460293265600972">X Article</a> (Note: Referenced for sentiment on production slowdowns, not as factual evidence)
 
 ### Transportation
 The transportation sector is under strain from <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> issues as of October 23, 2025, with rising tariffs and global disruptions causing freight volume drops and higher costs. Shipping and logistics providers are adapting to new trade flows, but delays in <a href="https://supplychaindaily.news/tags/automotive/">automotive</a> parts transport are particularly problematic for USA <a href="https://supplychaindaily.news/tags/automotive/">automotive</a> <a href="https://supplychaindaily.news/tags/manufacturing/">manufacturing</a>, leading to factory idle times and increased logistics expenses. Reports indicate slower supply chains resulting in scarcer goods and price hikes across sectors, including <a href="https://supplychaindaily.news/tags/electronics/">electronics</a> and construction materials.
@@ -64,7 +64,7 @@ Mitigation tips: Enhance schedule reliability through diversified routes and dig
 
 - <a href="https://www.autosinnovate.org/posts/papers-reports/Alliance%20for%20Automotive%20Innovation%20-%20DATA%20DRIVEN%20Report%20(January%202025).pdf">Alliance%20For%20Automotive%20Innovation%20 %20Data%20Driven%20Report%20(January</a>
 - <a href="https://www.capstonepartners.com/insights/automotive-industry-update/">Automotive Industry Update</a>
-- https://x.com/anders_aslund/status/1916905436206305437 (Note: Referenced for sentiment on supply plummets, not as factual evidence)
+- <a href="https://x.com/anders_aslund/status/1916905436206305437">X Article</a> (Note: Referenced for sentiment on supply plummets, not as factual evidence)
 
 <div style="text-align: center; margin-top: 20px;">
 AIs can make mistakes. Check important info.
