@@ -41,19 +41,22 @@ Here is the format to use:
 and non-categorical.
 
   TOP STORY SECTION (for homepage only):
-  - In addition to creating the daily post, you must ALSO update the homepage (content/_index.md) with today's top story
-  - The top story should be the most significant/impactful supply chain development of the day
-  - Update the <div id="top-story"> section in content/_index.md with:
-    * A compelling headline (2-3 sentences) summarizing the top story
-    * A link to the most relevant external source using proper <a> tag format
-    * Keep it concise - this is a teaser to draw readers into the full daily post
-  - Example format:
+  - The top story URL is manually selected by Paul Fry and placed in generator/topstory.txt (last line of file)
+  - When generating content, read the URL from the last line of generator/topstory.txt
+  - Use that URL as the primary source for understanding today's most important supply chain story
+  - Write a compelling 2-3 sentence summary about this story based on the article content
+  - The generator.py script will automatically:
+    * Fetch the page title from the URL
+    * Create a Top Story div with date, your summary, and link
+    * Update the homepage (content/_index.md) with this Top Story
+  - Example of what the generator creates:
     <div id="top-story">
     <p><strong>December 24, 2025:</strong> Automotive supply chains face critical disruption as chip shortages intensify,
     with major manufacturers warning of production halts within weeks. Industry experts cite geopolitical tensions and
-    tariff uncertainties as key drivers. <a href="https://example.com/article">Read more at Industry News</a></p>
+    tariff uncertainties as key drivers. <a href="https://example.com/article">Article Title Here</a></p>
     </div>
-  - NOTE: This top story update is SEPARATE from the individual post content and should be done by updating content/_index.md
+  - NOTE: You should write your content summary based on analyzing the URL from topstory.txt
+  - NOTE: Do NOT include the Top Story div in your generated content - the generator.py will create and place it automatically
   - Using the list of tags found in this page, https://supplychaindaily.news/tags/, do the following:
     1) create a hyperlink for each word which matches a tag.
     2) For example, change the following text in (a) to what is in (b).

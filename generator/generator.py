@@ -146,6 +146,24 @@ Key requirements:
 - Focus on 24-72 hour threat window
 - Include confidence assessments and source reliability ratings"""
 
+    def get_top_story_url(self) -> Optional[str]:
+        """Read the top story URL from topstory.txt (last line)"""
+        try:
+            topstory_file = Path(__file__).parent / "topstory.txt"
+            if topstory_file.exists():
+                with open(topstory_file, 'r', encoding='utf-8') as f:
+                    lines = [line.strip() for line in f.readlines() if line.strip()]
+                    if lines:
+                        url = lines[-1]  # Get last non-empty line
+                        if url.startswith('http'):
+                            self.logger.info(f"Top story URL from topstory.txt: {url}")
+                            return url
+            self.logger.warning("No valid top story URL found in topstory.txt")
+            return None
+        except Exception as e:
+            self.logger.error(f"Error reading topstory.txt: {str(e)}")
+            return None
+
     def generate_content(self) -> Optional[str]:
         """Generate the daily précis using Grok API"""
         # Get current date for the prompt
@@ -153,13 +171,26 @@ Key requirements:
         date_str = today.strftime("%Y-%m-%d")
         day_name = today.strftime("%A")
 
+        # Get top story URL selected by Paul Fry
+        top_story_url = self.get_top_story_url()
+        top_story_instruction = ""
+        if top_story_url:
+            top_story_instruction = f"""
+IMPORTANT - TOP STORY:
+Paul Fry has selected this URL as today's top supply chain story: {top_story_url}
+Please analyze this article and incorporate relevant insights from it into your content where appropriate.
+The homepage Top Story section will be automatically updated with this URL.
+"""
+
         # Get base prompt and add current date instruction
         base_prompt = self.get_daily_prompt()
         prompt = f"""CRITICAL: Today's date is {date_str} ({day_name}).
-        
+
 You MUST generate content for TODAY'S DATE: {date_str}
 All dates in your response should reflect this current date.
 Do NOT use placeholder dates like 2023-10-10 or October 10, 2023.
+
+{top_story_instruction}
 
 {base_prompt}"""
 
@@ -234,18 +265,60 @@ Do NOT use placeholder dates like 2023-10-10 or October 10, 2023.
 
         return None
 
+    def get_page_title_for_top_story(self, url: str) -> str:
+        """Fetch page title for top story URL"""
+        try:
+            import requests
+            from bs4 import BeautifulSoup
+
+            headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+            response = requests.get(url, timeout=10, headers=headers)
+            response.raise_for_status()
+
+            soup = BeautifulSoup(response.content, 'html.parser')
+            title_tag = soup.find('title')
+
+            if title_tag and title_tag.string:
+                title = title_tag.string.strip()
+                # Remove site name suffixes
+                for separator in [' | ', ' - ', ' – ', ' — ']:
+                    if separator in title:
+                        parts = title.split(separator)
+                        title = parts[0].strip()
+                        break
+                return title[:150]
+        except Exception as e:
+            self.logger.warning(f"Could not fetch title for {url}: {e}")
+
+        # Fallback to URL path
+        from urllib.parse import urlparse
+        parsed = urlparse(url)
+        path = parsed.path.strip('/').split('/')[-1]
+        if path:
+            return path.replace('-', ' ').title()[:80]
+        return parsed.netloc.replace('www.', '')
+
     def update_homepage_top_story(self, content: str) -> bool:
-        """Extract Top Story from content and update homepage"""
+        """Create Top Story from topstory.txt URL and update homepage"""
         try:
             import re
 
-            # Extract the Top Story div from content
-            top_story_match = re.search(r'<div id="top-story">.*?</div>', content, re.DOTALL)
-            if not top_story_match:
-                self.logger.warning("No Top Story found in generated content")
+            # Get the top story URL from topstory.txt
+            top_story_url = self.get_top_story_url()
+            if not top_story_url:
+                self.logger.warning("No top story URL available")
                 return False
 
-            top_story_html = top_story_match.group(0)
+            # Fetch the page title
+            page_title = self.get_page_title_for_top_story(top_story_url)
+
+            # Create Top Story div with today's date and the URL
+            today = datetime.now()
+            date_str = today.strftime("%B %d, %Y")
+
+            top_story_html = f'''<div id="top-story">
+<p><strong>{date_str}:</strong> Today's top supply chain story. <a href="{top_story_url}">{page_title}</a></p>
+</div>'''
 
             # Read the homepage file
             homepage_path = Path("../content/_index.md")
@@ -268,7 +341,7 @@ Do NOT use placeholder dates like 2023-10-10 or October 10, 2023.
             with open(homepage_path, 'w', encoding='utf-8') as f:
                 f.write(updated_homepage)
 
-            self.logger.info(f"Updated homepage Top Story at: {homepage_path}")
+            self.logger.info(f"Updated homepage Top Story with URL: {top_story_url}")
             return True
 
         except Exception as e:
@@ -278,12 +351,8 @@ Do NOT use placeholder dates like 2023-10-10 or October 10, 2023.
     def save_content(self, content: str) -> Optional[str]:
         """Save content to markdown file with proper naming"""
         try:
-            # First, update the homepage with Top Story
+            # Update the homepage with Top Story from topstory.txt
             self.update_homepage_top_story(content)
-
-            # Remove Top Story from the daily post content (it should only be on homepage)
-            import re
-            content = re.sub(r'<div id="top-story">.*?</div>\s*', '', content, flags=re.DOTALL)
 
             # Ensure output directory exists
             Path(self.config.output_dir).mkdir(parents=True, exist_ok=True)
