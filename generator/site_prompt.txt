@@ -39,8 +39,21 @@ Here is the format to use:
     NOTE: The title should be extracted from the webpage's <title> tag, NOT derived from the URL path or filename.
   - Begin with a "welcome" message (e.g., "Welcome to today's update...") of one or two paragraphs, make it general
 and non-categorical.
-  - Next add a "Top Story of the day" section and add a summary with a link to the external webpage.
-    NOTE: This "Top Story of the day" section should ONLY appear on the main index page, NOT on individual post pages.
+
+  TOP STORY SECTION (for homepage only):
+  - In addition to creating the daily post, you must ALSO update the homepage (content/_index.md) with today's top story
+  - The top story should be the most significant/impactful supply chain development of the day
+  - Update the <div id="top-story"> section in content/_index.md with:
+    * A compelling headline (2-3 sentences) summarizing the top story
+    * A link to the most relevant external source using proper <a> tag format
+    * Keep it concise - this is a teaser to draw readers into the full daily post
+  - Example format:
+    <div id="top-story">
+    <p><strong>December 24, 2025:</strong> Automotive supply chains face critical disruption as chip shortages intensify,
+    with major manufacturers warning of production halts within weeks. Industry experts cite geopolitical tensions and
+    tariff uncertainties as key drivers. <a href="https://example.com/article">Read more at Industry News</a></p>
+    </div>
+  - NOTE: This top story update is SEPARATE from the individual post content and should be done by updating content/_index.md
   - Using the list of tags found in this page, https://supplychaindaily.news/tags/, do the following:
     1) create a hyperlink for each word which matches a tag.
     2) For example, change the following text in (a) to what is in (b).
