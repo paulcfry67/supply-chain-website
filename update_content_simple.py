@@ -16,6 +16,50 @@ def add_disclaimer_if_missing(content):
         content = content.rstrip() + '\n\n' + DISCLAIMER + '\n'
     return content
 
+def add_tag_hyperlinking(content):
+    """Add hyperlinks for tag words in the body text"""
+    tags = [
+        'automotive', 'bottlenecks', 'daily-update', 'distribution',
+        'electronics', 'industrial', 'intelligence', 'manufacturing',
+        'material-cost', 'preparedness', 'supply-chain', 'threat-assessment'
+    ]
+
+    # Sort by length (longest first) to avoid partial matches
+    tags_sorted = sorted(tags, key=len, reverse=True)
+
+    for tag in tags_sorted:
+        # Create case-insensitive pattern for the tag word
+        # Only match whole words, not already in links
+        tag_lower = tag.replace('-', ' ')  # "material-cost" -> "material cost"
+        tag_pattern = r'\b' + re.escape(tag_lower) + r'\b'
+
+        # Find all occurrences (case-insensitive)
+        def replace_tag(match):
+            matched_text = match.group(0)
+            # Don't replace if already inside a link
+            return f'<a href="https://supplychaindaily.news/tags/{tag}/">{matched_text}</a>'
+
+        # Split content by both HTML <a> tags and markdown links to avoid replacing inside them
+        parts = re.split(r'(<a\s[^>]*>.*?</a>|\[(?:[^\]]+)\]\([^\)]+\))', content, flags=re.DOTALL)
+
+        for i in range(len(parts)):
+            # Only process parts that are not links (even indices)
+            if i % 2 == 0:
+                # Replace first 3 occurrences in this part
+                count = 0
+                def limited_replace(match):
+                    nonlocal count
+                    if count < 3:
+                        count += 1
+                        return replace_tag(match)
+                    return match.group(0)
+
+                parts[i] = re.sub(tag_pattern, limited_replace, parts[i], flags=re.IGNORECASE)
+
+        content = ''.join(parts)
+
+    return content
+
 def convert_raw_urls_to_links(content):
     """Convert raw URLs (not in <a> tags) to proper links"""
     # Find URLs that are on their own line starting with - or *
@@ -90,6 +134,7 @@ def update_file(filepath):
     original_content = content
     content = remove_old_sections(content)
     content = convert_raw_urls_to_links(content)
+    content = add_tag_hyperlinking(content)
     content = add_disclaimer_if_missing(content)
 
     # Check if anything changed
