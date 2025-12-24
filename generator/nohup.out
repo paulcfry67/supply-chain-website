@@ -1,0 +1,7 @@
+2025-12-24 11:26:43,021 - __main__ - INFO - Starting Daily Supply Chain generation
+2025-12-24 11:26:43,021 - __main__ - INFO - Attempt 1/3: Generating content via Grok API (timeout: 180s)
+2025-12-24 11:27:44,958 - __main__ - INFO - Content generated successfully (7758 characters)
+2025-12-24 11:27:44,958 - __main__ - INFO - Overwriting existing file: ../content/post/2025-12-24-supply-chain-update.md
+2025-12-24 11:27:44,959 - __main__ - INFO - Content saved to: ../content/post/2025-12-24-supply-chain-update.md
+2025-12-24 11:27:44,959 - __main__ - INFO - Daily Précis generation completed successfully
+2025-12-24 11:27:44,959 - __main__ - INFO - File ready for ingest: ../content/post/2025-12-24-supply-chain-update.md

@@ -31,6 +31,11 @@ Your final output should consist of only the generated content within the <conte
 
 Here is the format to use:
   - Do not include a title; the title will be shown automatically.
+  - When producing a link to an external webpage, use the Title and not the link name. For example,
+    1) <a href="https://www.spglobal.com/automotive-insights/en/blogs/2025-light-vehicle-production-forecast">December 2025 Light Vehicle Production Forecast</a> 
+    2) <a href="https://www.logisticsmanager.com/top-ten-logistics-stories-of-2025/">Top ten logistics stories of 2025</a>
+    3) <a href="https://www.supplychaindive.com/news/tariffs-strikes-tragedies-how-2025-transformed-supply-chains/808216/">Tariffs, strikes and tragedies: How 2025 transformed supply chains</a>
   - Begin with a "welcome" message (e.g., "Welcome to today's update...") of one or two paragraphs, make it general
 and non-categorical.
   - Continue with the sections described in number 7 above.
+  - Add a disclaimer at the very bottom of every page of the website which states "AIs can make mistakes. Check important info." Place this text in the middle of the page at the very end.
