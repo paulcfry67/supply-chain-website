@@ -1,0 +1,20 @@
+</div><!-- .wrapper -->
+	<footer class="footer">
+		<div class="container container-inner">
+			<div class="footer__copyright" style="display: flex; justify-content: space-between; align-items: center;">
+				<span>&copy; {{ now.Format "2006" }} {{ .Site.Title }}.
+          <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/">Hugo</a> and <a href="https://github.com/johnrlive/hugo-news/">Hugo-News</a> Theme</span></span>
+				<span style="opacity: 0.7;">AIs can make mistakes. Check important info.</span>
+			</div>
+		</div>
+	</footer>
+</div><!-- .container-outer -->
+
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+	});
+</script>
+  {{ partial "custom/scripts_body.html" . }}
+</body>
+</html>
