@@ -16,7 +16,13 @@
       "mcp__planka__list_cards",
       "mcp__planka__list_lists",
       "mcp__plugin_episodic-memory_episodic-memory__search",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(python3:*)",
+      "Bash(git checkout:*)",
+      "Bash(pip install:*)",
+      "Bash(tee:*)",
+      "Bash(ls:*)",
+      "Bash(grep:*)"
     ],
     "deny": [],
     "ask": []

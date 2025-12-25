@@ -1,0 +1,152 @@
+{
+  "tags": {
+    "bottlenecks": {
+      "count": 72,
+      "posts": [
+        "2025-09-25-supply-chain-update.md",
+        "2025-09-29-supply-chain-update.md",
+        "2025-10-02-supply-chain-update.md",
+        "2025-10-03-supply-chain-update.md",
+        "2025-10-04-supply-chain-update.md"
+      ]
+    },
+    "distribution": {
+      "count": 72,
+      "posts": [
+        "2025-09-25-supply-chain-update.md",
+        "2025-09-29-supply-chain-update.md",
+        "2025-10-02-supply-chain-update.md",
+        "2025-10-03-supply-chain-update.md",
+        "2025-10-04-supply-chain-update.md"
+      ]
+    },
+    "manufacturing": {
+      "count": 72,
+      "posts": [
+        "2025-09-25-supply-chain-update.md",
+        "2025-09-29-supply-chain-update.md",
+        "2025-10-02-supply-chain-update.md",
+        "2025-10-03-supply-chain-update.md",
+        "2025-10-04-supply-chain-update.md"
+      ]
+    },
+    "material cost": {
+      "count": 72,
+      "posts": [
+        "2025-09-25-supply-chain-update.md",
+        "2025-09-29-supply-chain-update.md",
+        "2025-10-02-supply-chain-update.md",
+        "2025-10-03-supply-chain-update.md",
+        "2025-10-04-supply-chain-update.md"
+      ]
+    },
+    "automotive": {
+      "count": 1,
+      "posts": [
+        "2025-09-05-supply-chain-update.md"
+      ]
+    },
+    "daily-update": {
+      "count": 1,
+      "posts": [
+        "2025-09-05-supply-chain-update.md"
+      ]
+    },
+    "electronics": {
+      "count": 1,
+      "posts": [
+        "2025-09-05-supply-chain-update.md"
+      ]
+    },
+    "industrial": {
+      "count": 1,
+      "posts": [
+        "2025-09-05-supply-chain-update.md"
+      ]
+    },
+    "intelligence": {
+      "count": 1,
+      "posts": [
+        "2025-09-25-daily-prepper-precis.md"
+      ]
+    },
+    "preparedness": {
+      "count": 1,
+      "posts": [
+        "2025-09-25-daily-prepper-precis.md"
+      ]
+    },
+    "supply-chain": {
+      "count": 1,
+      "posts": [
+        "2025-09-05-supply-chain-update.md"
+      ]
+    },
+    "threat-assessment": {
+      "count": 1,
+      "posts": [
+        "2025-09-25-daily-prepper-precis.md"
+      ]
+    }
+  },
+  "categories": {
+    "Aerospace": {
+      "count": 73,
+      "posts": [
+        "2025-09-25-daily-prepper-precis.md",
+        "2025-09-25-supply-chain-update.md",
+        "2025-09-29-supply-chain-update.md",
+        "2025-10-02-supply-chain-update.md",
+        "2025-10-03-supply-chain-update.md"
+      ]
+    },
+    "Automotive": {
+      "count": 73,
+      "posts": [
+        "2025-09-25-daily-prepper-precis.md",
+        "2025-09-25-supply-chain-update.md",
+        "2025-09-29-supply-chain-update.md",
+        "2025-10-02-supply-chain-update.md",
+        "2025-10-03-supply-chain-update.md"
+      ]
+    },
+    "Electronics": {
+      "count": 73,
+      "posts": [
+        "2025-09-25-daily-prepper-precis.md",
+        "2025-09-25-supply-chain-update.md",
+        "2025-09-29-supply-chain-update.md",
+        "2025-10-02-supply-chain-update.md",
+        "2025-10-03-supply-chain-update.md"
+      ]
+    },
+    "Transportation": {
+      "count": 72,
+      "posts": [
+        "2025-09-25-supply-chain-update.md",
+        "2025-09-29-supply-chain-update.md",
+        "2025-10-02-supply-chain-update.md",
+        "2025-10-03-supply-chain-update.md",
+        "2025-10-04-supply-chain-update.md"
+      ]
+    },
+    "Logistics": {
+      "count": 1,
+      "posts": [
+        "2025-09-05-supply-chain-update.md"
+      ]
+    },
+    "Manufacturing": {
+      "count": 1,
+      "posts": [
+        "2025-09-05-supply-chain-update.md"
+      ]
+    },
+    "Supply Chain": {
+      "count": 1,
+      "posts": [
+        "2025-09-05-supply-chain-update.md"
+      ]
+    }
+  }
+}
