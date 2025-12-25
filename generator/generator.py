@@ -483,6 +483,40 @@ author: "Supply Chain Analysis Team"
         except Exception as e:
             self.logger.error(f"Failed to send alert email: {str(e)}")
 
+    def rebuild_taxonomy(self) -> bool:
+        """Rebuild taxonomy-based content using update_content.py"""
+        try:
+            self.logger.info("Rebuilding taxonomy-based hyperlinks...")
+
+            # Get path to update_content.py (in parent directory)
+            script_path = Path(__file__).parent.parent / 'update_content.py'
+
+            if not script_path.exists():
+                self.logger.warning(f"update_content.py not found at {script_path}")
+                return False
+
+            # Import and run the update script
+            import sys
+            sys.path.insert(0, str(script_path.parent))
+
+            try:
+                import update_content
+                # Reload tags in case config changed
+                update_content.TAGS = update_content.load_tags_from_config()
+
+                # Run the main update function
+                update_content.main()
+                self.logger.info("Taxonomy rebuild completed successfully")
+                return True
+
+            except Exception as e:
+                self.logger.error(f"Error running update_content.py: {e}")
+                return False
+
+        except Exception as e:
+            self.logger.error(f"Error in rebuild_taxonomy: {e}")
+            return False
+
     def run(self) -> int:
         """Main execution method"""
         self.logger.info("Starting Daily Supply Chain generation")
@@ -509,6 +543,9 @@ author: "Supply Chain Analysis Team"
                     f"Error: {error_msg}\nTime: {datetime.now()}\nContent was generated but could not be saved."
                 )
                 return 1
+
+            # Rebuild taxonomy (hyperlinks based on taxonomy_config.json)
+            self.rebuild_taxonomy()
 
             self.logger.info(f"Daily Précis generation completed successfully")
             self.logger.info(f"File ready for ingest: {filepath}")

@@ -11,16 +11,34 @@ Updates:
 
 import re
 import os
+import json
 from pathlib import Path
 from urllib.parse import urlparse
 import requests
 from bs4 import BeautifulSoup
 import time
 
-# Available tags from the site
-TAGS = [
-    'bottlenecks', 'distribution', 'electronics', 'industrial', 'intelligence', 'manufacturing', 'material-cost', 'preparedness', 'threat-assessment'
-]
+def load_tags_from_config():
+    """Load tags from taxonomy_config.json"""
+    config_path = Path(__file__).parent / 'taxonomy_config.json'
+    if not config_path.exists():
+        # Fallback to default tags if config doesn't exist
+        return ['bottlenecks', 'distribution', 'electronics', 'industrial',
+                'intelligence', 'manufacturing', 'material-cost', 'preparedness',
+                'threat-assessment']
+
+    with open(config_path, 'r') as f:
+        config = json.load(f)
+
+    # Get tags where hyperlink is enabled
+    tags = [
+        tag for tag, data in config.get('tags', {}).items()
+        if not tag.startswith('_') and isinstance(data, dict) and data.get('hyperlink', True)
+    ]
+    return sorted(tags)
+
+# Available tags from the site (loaded from taxonomy_config.json)
+TAGS = load_tags_from_config()
 
 DISCLAIMER = """<div style="text-align: center; margin-top: 20px;">
 AIs can make mistakes. Check important info.
