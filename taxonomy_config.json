@@ -9,7 +9,7 @@
       "slug": "bottlenecks",
       "display_name": "Bottlenecks",
       "hyperlink": true,
-      "description": "Supply chain bottlenecks and capacity constraints"
+      "description": "bottlenecks and capacity constraints"
     },
     "distribution": {
       "slug": "distribution",
@@ -51,7 +51,7 @@
       "slug": "intelligence",
       "display_name": "Intelligence",
       "hyperlink": true,
-      "description": "Supply chain intelligence and insights"
+      "description": "intelligence and insights"
     },
     "preparedness": {
       "slug": "preparedness",
@@ -63,7 +63,7 @@
       "slug": "threat-assessment",
       "display_name": "Threat Assessment",
       "hyperlink": true,
-      "description": "Supply chain risk and threat assessment"
+      "description": "risk and threat assessment"
     }
   },
 
@@ -79,6 +79,11 @@
       "display_name": "Automotive",
       "description": "Automotive manufacturing and supply chains"
     },
+    "Construction": {
+      "slug": "construction",
+      "display_name": "Construction",
+      "description": "Construction and supply chains"
+    },
     "Electronics": {
       "slug": "electronics",
       "display_name": "Electronics",
@@ -93,6 +98,11 @@
       "slug": "manufacturing",
       "display_name": "Manufacturing",
       "description": "General manufacturing topics"
+    },
+    "Chemicals": {
+      "slug": "chemicals",
+      "display_name": "Chemicals",
+      "description": "Chemicals"
     },
     "Logistics": {
       "slug": "logistics",
