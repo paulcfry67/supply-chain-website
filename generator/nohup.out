@@ -10,3 +10,16 @@
  create mode 100644 generator/nohup.out
 To https://github.com/AcceleratedIndustries/supchain.git
    2d42afc..3bbb91d  main -> main
+2025-12-26 21:38:22,393 - __main__ - INFO - Starting Daily Supply Chain generation
+2025-12-26 21:38:22,393 - __main__ - INFO - Top story URL from topstory.txt: https://www.logisticsmanager.com/temu-partners-with-postnl-on-european-logistics/
+2025-12-26 21:38:22,393 - __main__ - INFO - Attempt 1/3: Generating content via Grok API (timeout: 180s)
+2025-12-26 21:39:17,071 - __main__ - INFO - Content generated successfully (10193 characters)
+2025-12-26 21:39:17,071 - __main__ - INFO - Top story URL from topstory.txt: https://www.logisticsmanager.com/temu-partners-with-postnl-on-european-logistics/
+2025-12-26 21:39:18,233 - __main__ - INFO - Updated homepage Top Story with URL: https://www.logisticsmanager.com/temu-partners-with-postnl-on-european-logistics/
+2025-12-26 21:39:18,233 - __main__ - INFO - Overwriting existing file: ../content/post/2025-12-26-supply-chain-update.md
+2025-12-26 21:39:18,233 - __main__ - INFO - Content saved to: ../content/post/2025-12-26-supply-chain-update.md
+2025-12-26 21:39:18,233 - __main__ - INFO - Rebuilding taxonomy-based hyperlinks...
+Error: content/post not found
+2025-12-26 21:39:18,234 - __main__ - INFO - Taxonomy rebuild completed successfully
+2025-12-26 21:39:18,234 - __main__ - INFO - Daily Précis generation completed successfully
+2025-12-26 21:39:18,234 - __main__ - INFO - File ready for ingest: ../content/post/2025-12-26-supply-chain-update.md
