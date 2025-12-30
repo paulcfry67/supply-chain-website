@@ -19,11 +19,11 @@ Your trusted source for daily intelligence on supply chain issues in manufacturi
 <!-- This section is automatically updated by generator.py with the day's top supply chain story -->
 <div id="top-story">
 <p><strong>Today's Top Story:</strong><br>
-Temu partners with PostNL on European logistics</p>
+Tariffs, strikes and tragedies: How 2025 transformed supply chains</p>
 
-<p><em>Source: Logisticsmanager (logisticsmanager.com)</em></p>
+<p><em>Source: Supplychaindive (supplychaindive.com)</em></p>
 
-<p>Temu, the global e-commerce marketplace, and PostNL have signed a MOU to strengthen their logistics collaboration in Europe.</p>
+<p>Supply chain and logistics news</p>
 
-<p style="color: red;"><a href="https://www.logisticsmanager.com/temu-partners-with-postnl-on-european-logistics/" style="color: red;">Read the whole story at Logisticsmanager</a></p>
+<p style="color: red;"><a href="https://www.supplychaindive.com/news/tariffs-strikes-tragedies-how-2025-transformed-supply-chains/808216/" style="color: red;">Read the whole story at Supplychaindive</a></p>
 </div>
