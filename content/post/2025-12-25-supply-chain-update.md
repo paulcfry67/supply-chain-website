@@ -19,7 +19,7 @@ The push towards domestic sourcing has gained momentum, but challenges remain. A
 
 Looking ahead, experts predict that these disruptions could lead to innovation in supply chain resilience, such as adopting AI-driven forecasting tools to mitigate risks. Businesses are advised to audit their supplier networks and invest in nearshoring to buffer against future volatility.
 
-- <a href="https://www.forvismazars.us/forsights/2025/10/us-automotive-industry-outlook-2025-insights-trends">US Automotive Industry Outlook 2025: Insights & Trends | Forvis Mazars US</a>
+- <a href="https://www.forvismazars.us/forsights/2025/10/us-automotive-industry-outlook-2025-insights-trends">US Automotive Industry Outlook 2025: Insights & Trends</a>
 - <a href="https://supplychaindigital.com/supply-chain-risk-management/automotive-industry-faces-uncertainty-2025">Supply Chain Issues and Market Shifts Challenge Automakers | Supply Chain Magazine</a>
 - <a href="https://www.automotivelogistics.media/supply-chain/automotive-logistics-and-supply-chains-in-2025-tariff-turmoil-investment-uncertainty-and-further-cost-pressures/649740">Top three issues facing automotive logistics and supply chains in 2025: tariffs, risk and uncertainty</a>
 
@@ -65,7 +65,7 @@ The USMCA review threatens further changes, potentially upending established rou
 
 Mitigation strategies include investing in digital tracking and diversifying transport modes. Companies should explore rail-truck hybrids for efficiency.
 
-- <a href="https://automotiveworld.com/articles/usmca-review-threatens-unwanted-change-for-supply-chains">USMCA review threatens unwanted change for supply chains | Automotive World</a>
+- <a href="https://automotiveworld.com/articles/usmca-review-threatens-unwanted-change-for-supply-chains">USMCA review threatens unwanted change for supply chains</a>
 - <a href="https://supplychaindive.com/news/usmca-review-ustr-supply-chain-priorities/808393">USMCA review: 5 supply chain issues the US plans to address</a>
 - <a href="https://www.logisticsmanager.com/top-ten-logistics-stories-of-2025/">Top ten logistics stories of 2025</a>
 

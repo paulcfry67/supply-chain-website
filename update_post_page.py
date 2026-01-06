@@ -69,8 +69,9 @@ def get_page_title(url):
 
         if title_tag and title_tag.string:
             title = title_tag.string.strip()
-            # Clean up common title suffixes and separators
-            title = re.sub(r'\s*[\|\-]\s*(Reuters|Bloomberg|WSJ|Supply Chain Dive|Logistics Manager|Tom\'?s Hardware|Torque News|Automotive News|Manufacturing Dive|Boise State University|CNBC|SCMP).*$', '', title, flags=re.IGNORECASE)
+            # Clean up site name suffixes - remove everything after | or - at the end
+            # Common patterns: "Title | Site Name" or "Title - Site Name"
+            title = re.sub(r'\s*[\|\-\u2013\u2014]\s+[^|\-\u2013\u2014]+$', '', title)
             # Remove extra whitespace
             title = ' '.join(title.split())
             return title[:200]  # Limit length
@@ -104,6 +105,13 @@ def generate_title_from_url(url):
             return words[:100]
 
     return f"{domain} Article"
+
+
+def clean_title_suffix(title):
+    """Remove site name suffixes from title (e.g., ' | Site Name' or ' - Site Name')"""
+    # Remove everything after | or - at the end (including em/en dashes)
+    cleaned = re.sub(r'\s*[\|\-\u2013\u2014]\s+[^|\-\u2013\u2014]+$', '', title)
+    return cleaned.strip()
 
 
 def looks_like_url_derived_title(title, url):
