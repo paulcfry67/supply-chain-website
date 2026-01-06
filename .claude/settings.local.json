@@ -22,7 +22,10 @@
       "Bash(pip install:*)",
       "Bash(tee:*)",
       "Bash(ls:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Skill(superpowers:systematic-debugging)",
+      "Bash(git remote set-url:*)",
+      "Bash(git push)"
     ],
     "deny": [],
     "ask": []
