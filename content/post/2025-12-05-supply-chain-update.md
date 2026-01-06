@@ -1,5 +1,5 @@
 ---
-title: "Daily Supply Chain News - 2025-12-06"
+title: "Daily Supply Chain News - 2025-12-05"
 date: 2025-12-06T01:11:31.419602+00:00
 draft: false
 categories: ["Electronics", "Automotive", "Aerospace", "Transportation", "Construction"]

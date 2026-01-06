@@ -1,5 +1,5 @@
 ---
-title: "Daily Supply Chain News - 2025-10-08"
+title: "Daily Supply Chain News - 2025-10-07"
 date: 2025-10-08T01:28:00.539492+00:00
 draft: false
 categories: ["Electronics", "Automotive", "Aerospace", "Transportation"]
@@ -39,7 +39,7 @@ Impact Analysis: Short-term effects include halted productions and empty dealer 
 Recommendations: Automakers should prioritize <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> mapping and risk assessments, adopting digital tools for real-time tracking. Best practices include building strategic stockpiles and forming alliances for domestic sourcing, as evidenced by recent resilience strategies emphasizing electrification and sustainability.
 
 - <a href="https://www.boisestate.edu/cobe/blog/2025/02/the-u-s-automotive-industry-supply-chain-challenges-and-transformations/">The U.S. Automotive Industry Supply Chain</a>
-- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Trends And Challenges Shaping The Automotive Industry In 2025</a>
+- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Dentons</a>
 - <a href="https://www.automotivelogistics.media/nearshoring/forecasts-for-2025-shows-resilience-is-tested-by-trade-volatility-ev-transitions-and-digital-fragmentation/337990">Automotive supply chains in flux: 2025 outlook and trends</a>
 - <a href="https://greendrivedynamics.com/automotive-supply-chain-resilience-in-2025">Why Automotive Supply Chain Resilience Strategies Are Crucial For The Automotive Market 2025 -</a>
 - <a href="https://www.automotive-technology.com/articles/global-supply-chain-challenges-in-automotive-manufacturing">Global Supply Chain Challenges in Automotive Manufacturing</a>

@@ -58,7 +58,7 @@ Key trends include a focus on nearshoring to mitigate risks, yet economic pressu
 Short-term, expect increased shipping rates and inventory gaps; long-term, enhanced digital integration could foster resilience. Companies should prioritize multi-modal transport strategies and risk assessments. For related insights, see our October 3, 2025, transportation update.
 
 - <a href="https://automotivelogistics.media/supply-chain/automotive-logistics-and-supply-chains-in-2025-tariff-turmoil-investment-uncertainty-and-further-cost-pressures/649740">Top three issues facing automotive logistics and supply chains in 2025: tariffs, risk and uncertainty</a>
-- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Trends And Challenges Shaping The Automotive Industry In 2025</a>
+- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Dentons</a>
 - <a href="https://friedmancorp.com/blog/manufacturing-outloo-supply-chain-resiliency/">2025 US Manufacturing Outlook: Supply Chain Resiliency</a>
 
 ### Overall Impact Analysis and Recommendations

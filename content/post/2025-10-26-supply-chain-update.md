@@ -1,5 +1,5 @@
 ---
-title: "Daily Supply Chain News - 2025-10-27"
+title: "Daily Supply Chain News - 2025-10-26"
 date: 2025-10-27T00:19:06.080173+00:00
 draft: false
 categories: ["Electronics", "Automotive", "Aerospace", "Transportation", "Construction"]
@@ -24,7 +24,7 @@ To mitigate these disruptions, companies should diversify suppliers by mapping m
 
 - <a href="https://www.acea.auto/press-release/acea-calls-for-quick-resolution-to-critical-chip-supply-shortage/">Acea Calls For Quick Resolution To Critical Chip Supply Shortage</a>
 - <a href="https://www.cbtnews.com/u-s-automakers-struggle-with-parts-shortages-and-halted-output/">U.S. automakers struggle with parts shortages and halted output</a>
-- <a href="https://x.com/SpecialSitsNews/status/1982392064181723465">1982392064181723465</a>
+- <a href="https://x.com/SpecialSitsNews/status/1982392064181723465">X Article</a>
 
 ## <a href="https://supplychaindaily.news/tags/automotive/">Automotive</a>
 
@@ -37,9 +37,9 @@ In terms of impact, short-term effects include workforce furloughs and revenue l
 Recommendations include adopting just-in-time alternatives like nearshoring to Mexico or Canada for faster logistics, and leveraging digital twins for <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> simulations. Successful strategies from past crises, such as those during the early 2020s chip crunch, emphasize supplier audits and contingency planning. Companies should also explore government incentives for domestic <a href="https://supplychaindaily.news/tags/manufacturing/">manufacturing</a> to buffer against global volatility.
 
 - <a href="https://www.cbtnews.com/u-s-automakers-struggle-with-parts-shortages-and-halted-output/">U.S. automakers struggle with parts shortages and halted output</a>
-- <a href="https://markets.financialcontent.com/buffnews/article/marketminute-2025-10-10-us-auto-sector-in-crisis-supplier-implosions-send-shockwaves-through-markets-fueling-commodity-demand-fears">Marketminute 2025 10 10 Us Auto Sector In Crisis Supplier Implosions Send Shockw</a>
+- <a href="https://markets.financialcontent.com/buffnews/article/marketminute-2025-10-10-us-auto-sector-in-crisis-supplier-implosions-send-shockwaves-through-markets-fueling-commodity-demand-fears">US Auto Sector in Crisis: Supplier Implosions Send Shockwaves Through Markets, Fueling Commodity Demand Fears</a>
 - <a href="https://www.forvismazars.us/forsights/2025/10/us-automotive-industry-outlook-2025-insights-trends">US Automotive Industry Outlook 2025: Insights & Trends</a>
-- <a href="https://x.com/ThisIsDynamo/status/1981792168453824632">1981792168453824632</a>
+- <a href="https://x.com/ThisIsDynamo/status/1981792168453824632">X Article</a>
 
 ## Construction
 
@@ -53,7 +53,7 @@ Best practices involve securing long-term supplier agreements and utilizing bloc
 
 - <a href="https://www.boisestate.edu/cobe/blog/2025/02/the-u-s-automotive-industry-supply-chain-challenges-and-transformations/">The U.S. Automotive Industry Supply Chain</a>
 - <a href="https://supplychaindigital.com/supply-chain-risk-management/automotive-industry-faces-uncertainty-2025">Supply Chain Issues and Market Shifts Challenge Automakers</a>
-- <a href="https://x.com/macastel3/status/1910497960875741304">1910497960875741304</a>
+- <a href="https://x.com/macastel3/status/1910497960875741304">X Article</a>
 
 ## Aerospace
 
@@ -67,7 +67,7 @@ Mitigation strategies include fostering public-private partnerships for critical
 
 - <a href="https://www.morganlewis.com/pubs/2025/10/update-on-global-trends-and-supply-chain-developments-in-the-automotive-industry">Update on Global Trends and Supply Chain Developments in the Automotive Industry</a>
 - <a href="https://resilinc.ai/learning-center/white-papers-reports/resilinc-special-report-automotive-supply-chain-challenges-2025-compliance-shortages-and-global-disruptions">Navigating Automotive Supply Chain Challenges in 2025</a>
-- <a href="https://x.com/amital13/status/1970398949883232731">1970398949883232731</a>
+- <a href="https://x.com/amital13/status/1970398949883232731">X Article</a>
 
 ## Transportation
 
@@ -81,7 +81,7 @@ Recommendations focus on multi-modal transport strategies and real-time tracking
 
 - <a href="https://mrinetwork.com/hiring-talent-strategy/u-s-automotive-manufacturing-in-summer-2025-navigating-transformation-amid-challenges/">U.S. Automotive Manufacturing in Summer 2025: Navigating Transformation Amid Challenges</a>
 - <a href="https://www.ainvest.com/news/navigating-automotive-supply-chain-risks-vulnerabilities-resilient-investment-opportunities-2025-2510/">Navigating Automotive Supply Chain Risks: Vulnerabilities and Resilient Investment Opportunities in 2025</a>
-- <a href="https://x.com/Martyupnorth_2/status/1956341615892824282">1956341615892824282</a>
+- <a href="https://x.com/Martyupnorth_2/status/1956341615892824282">X Article</a>
 
 <div style="text-align: center; margin-top: 20px;">
 AIs can make mistakes. Check important info.

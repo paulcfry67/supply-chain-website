@@ -29,7 +29,7 @@ Businesses in <a href="https://supplychaindaily.news/tags/electronics/">electron
 - URLs used as sources:
   - <a href="https://www.gminsights.com/blogs/top-challenges-in-the-automotive-industry-pre-covid">Automotive Industry 2025: Electrification, Software, and Supply Chain Transformation</a>
   - <a href="https://logisticsviewpoints.com/2025/09/12/supply-chain-logistics-news-september-8th-11th-2025/">Supply Chain & Logistics News September 8th- 11th 2025</a>
-  - <a href="https://x.com/JosephPolitano/status/1636125654969118720">1636125654969118720</a>
+  - <a href="https://x.com/JosephPolitano/status/1636125654969118720">X Article</a>
 
 ### <a href="https://supplychaindaily.news/tags/automotive/">Automotive</a>
 
@@ -43,8 +43,8 @@ In our impact analysis, short-term consequences include reduced car availability
   - <a href="https://supplychaindigital.com/supply-chain-risk-management/automotive-industry-faces-uncertainty-2025">Supply Chain Issues and Market Shifts Challenge Automakers</a>
   - <a href="https://www.spglobal.com/automotive-insights/en/rapid-impact-analysis/tariffs-on-auto-industry-extended-disruption-likely">What vehicle tariffs mean for global auto markets</a>
   - <a href="https://automotivelogistics.media/supply-chain/automotive-logistics-and-supply-chains-in-2025-tariff-turmoil-investment-uncertainty-and-further-cost-pressures/649740">Top three issues facing automotive logistics and supply chains in 2025: tariffs, risk and uncertainty</a>
-  - <a href="https://x.com/macastel3/status/1910497960875741304">1910497960875741304</a>
-  - <a href="https://x.com/anders_aslund/status/1916905436206305437">1916905436206305437</a>
+  - <a href="https://x.com/macastel3/status/1910497960875741304">X Article</a>
+  - <a href="https://x.com/anders_aslund/status/1916905436206305437">X Article</a>
 
 ### Aerospace
 
@@ -55,7 +55,7 @@ Production slowdowns are evident, with lead times for aircraft parts extending t
 Short-term impacts include project delays and higher ticket prices for air travel; long-term, the focus on sustainability and automation could drive reshoring. Industry reports emphasize adapting to trade flows and risk management to mitigate these challenges.
 
 - URLs used as sources:
-  - <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Trends And Challenges Shaping The Automotive Industry In 2025</a>
+  - <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Dentons</a>
   - <a href="https://int-enviroguard.com/blog/the-resurgence-of-us-manufacturing-trends-technologies-challenges-in-2025">U.S. Manufacturing in 2025: Supply Chain, Workforce, Automation & Sustainability Trends</a>
   - <a href="https://www.automotive-technology.com/articles/global-supply-chain-challenges-in-automotive-manufacturing">Global Supply Chain Challenges in Automotive Manufacturing</a>
 
@@ -70,8 +70,8 @@ Analysis points to short-term inflation spikes and long-term shifts toward resil
 - URLs used as sources:
   - <a href="https://www.logisticsmanager.com/winners-announced-at-supply-chain-excellence-awards-usa-2025/">Winners announced at Supply Chain Excellence Awards USA 2025!</a>
   - <a href="https://www.automotivelogistics.media/nearshoring/forecasts-for-2025-shows-resilience-is-tested-by-trade-volatility-ev-transitions-and-digital-fragmentation/337990">Automotive supply chains in flux: 2025 outlook and trends</a>
-  - <a href="https://ihcus.com/2025/07/09/how-supply-chain-delays-are-impacting-automotive-manufacturers">How Supply Chain Delays Are Impacting Automotive Manufacturers</a>
-  - <a href="https://x.com/Martyupnorth_2/status/1956341615892824282">1956341615892824282</a>
+  - <a href="https://ihcus.com/2025/07/09/how-supply-chain-delays-are-impacting-automotive-manufacturers">How Supply Chain Delays Are Impacting Automotive Manufacturers | Staffing Agency</a>
+  - <a href="https://x.com/Martyupnorth_2/status/1956341615892824282">X Article</a>
 
 The current <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> situation as of September 29, 2025, poses immediate risks to businesses and consumers. Short-term, expect production halts, job losses (already at 11,000 in <a href="https://supplychaindaily.news/tags/manufacturing/">manufacturing</a>), and inflated prices—<a href="https://supplychaindaily.news/tags/automotive/">automotive</a> costs could rise 10-15% for end-users. Consumers may face vehicle shortages, delaying purchases and increasing used car demand.
 

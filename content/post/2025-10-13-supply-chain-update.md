@@ -22,7 +22,7 @@ In the <a href="https://supplychaindaily.news/tags/electronics/">electronics</a>
 This sector's challenges are spilling over into <a href="https://supplychaindaily.news/tags/automotive/">automotive</a> <a href="https://supplychaindaily.news/tags/electronics/">electronics</a>, where connected car features are delayed. Businesses are advised to diversify suppliers to avoid <a href="https://supplychaindaily.news/tags/bottlenecks/">bottlenecks</a>.
 
 - Sources:
-  - <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Trends And Challenges Shaping The Automotive Industry In 2025</a>
+  - <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Dentons</a>
   - <a href="https://www.automotive-technology.com/articles/global-supply-chain-challenges-in-automotive-manufacturing">Global Supply Chain Challenges in Automotive Manufacturing</a>
 
 ### <a href="https://supplychaindaily.news/tags/automotive/">Automotive</a>

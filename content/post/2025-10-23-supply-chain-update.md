@@ -52,7 +52,7 @@ Short-term effects include delayed aircraft deliveries and increased costs, pote
 Best practices involve risk mapping and expedited re-qualification of secondary suppliers. Companies should invest in predictive analytics to foresee disruptions. Link to our [aerospace supply chain overview](/aerospace-overview-2025).
 
 - <a href="https://www.ainvest.com/news/navigating-automotive-supply-chain-risks-vulnerabilities-resilient-investment-opportunities-2025-2510/">Navigating Automotive Supply Chain Risks: Vulnerabilities and Resilient Investment Opportunities in 2025</a>
-- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Trends And Challenges Shaping The Automotive Industry In 2025</a>
+- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Dentons</a>
 - <a href="https://x.com/DarkoPavic_/status/1979460293265600972">X Article</a> (Note: Referenced for sentiment on production slowdowns, not as factual evidence)
 
 ### Transportation

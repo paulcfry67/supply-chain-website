@@ -43,7 +43,7 @@ Logistics woes, including port delays and trade volatility, have extended delive
 - <a href="https://www.automotivelogistics.media/nearshoring/forecasts-for-2025-shows-resilience-is-tested-by-trade-volatility-ev-transitions-and-digital-fragmentation/337990">Automotive supply chains in flux: 2025 outlook and trends</a>
 - <a href="https://www.automotivelogistics.media/nearshoring/what-liberation-day-tariffs-mean-for-the-automotive-supply-chain/46993.article">'Liberation Day' tariffs shake global automotive supply chains</a>
 - <a href="https://www.spglobal.com/automotive-insights/en/blogs/2025/01/automotive-suppliers-outlook-2025-trends-and-challenges">Automotive Suppliers Outlook for 2025: Trends and Challenges</a>
-- <a href="https://ihcus.com/2025/07/09/how-supply-chain-delays-are-impacting-automotive-manufacturers">How Supply Chain Delays Are Impacting Automotive Manufacturers</a>
+- <a href="https://ihcus.com/2025/07/09/how-supply-chain-delays-are-impacting-automotive-manufacturers">How Supply Chain Delays Are Impacting Automotive Manufacturers | Staffing Agency</a>
 
 ## Aerospace
 
@@ -55,7 +55,7 @@ The integration of software in aerospace <a href="https://supplychaindaily.news/
 
 **Recommendations:** Aerospace companies should adopt blockchain for transparent tracking and collaborate on joint stockpiling initiatives. Best practices from leaders like Lockheed Martin include scenario planning, which has cut disruption impacts by 20%. For related insights, see our [update on <a href="https://supplychaindaily.news/tags/industrial/">industrial</a> equipment shortages](internal-link-to-previous-<a href="https://supplychaindaily.news/tags/industrial/">industrial</a>-content).
 
-- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Trends And Challenges Shaping The Automotive Industry In 2025</a>
+- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Dentons</a>
 - <a href="https://www.automotive-technology.com/articles/global-supply-chain-challenges-in-automotive-manufacturing">Global Supply Chain Challenges in Automotive Manufacturing</a>
 - <a href="https://logisticsviewpoints.com/2025/09/19/supply-chain-logistics-news-sept-15th-18th-2025">Supply Chain & Logistics News Sept 15th-18th 2025</a>
 

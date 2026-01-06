@@ -46,7 +46,7 @@ The aerospace industry is facing <a href="https://supplychaindaily.news/tags/sup
 Impact analysis points to short-term flight cancellations from maintenance backlogs and long-term innovation stalls in sustainable aviation. Mitigation strategies include supplier audits and blockchain for traceability, proven to enhance resilience in volatile markets.
 
 - <a href="https://www.automotive-technology.com/articles/global-supply-chain-challenges-in-automotive-manufacturing">Global Supply Chain Challenges in Automotive Manufacturing</a>
-- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Trends And Challenges Shaping The Automotive Industry In 2025</a>
+- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Dentons</a>
 - <a href="https://mrinetwork.com/hiring-talent-strategy/u-s-automotive-manufacturing-in-summer-2025-navigating-transformation-amid-challenges/">U.S. Automotive Manufacturing in Summer 2025: Navigating Transformation Amid Challenges</a>
 
 ### Transportation

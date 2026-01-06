@@ -53,7 +53,7 @@ Transportation and logistics sectors are under strain as of October 2, 2025, wit
 For <a href="https://supplychaindaily.news/tags/automotive/">automotive</a> <a href="https://supplychaindaily.news/tags/distribution/">distribution</a>, this means longer wait times for vehicle deliveries and higher freight rates due to tariff volatility. Rail and air freight are also impacted, with economic uncertainty making the US "uninvestible" for some foreign suppliers. Best practices include digital tools for better visibility and diversified routing to avoid chokepoints.
 
 - <a href="https://www.tcs.com/what-we-do/industries/manufacturing/white-paper/supply-chain-resiliency-auto-industrial-manufacturing">Building Future-proof Supply Chains in Auto & Industrial Manufacturing</a>
-- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Trends And Challenges Shaping The Automotive Industry In 2025</a>
+- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Dentons</a>
 
 In the short term, as of October 2, 2025, these <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> issues are causing immediate production stoppages and cost escalations across sectors. For USA <a href="https://supplychaindaily.news/tags/automotive/">automotive</a> <a href="https://supplychaindaily.news/tags/manufacturing/">manufacturing</a>, factory closures and parts shortages could lead to a 10-15% drop in output, affecting employment and GDP contributions. Consumers may face higher vehicle prices and limited inventory, potentially delaying purchases and impacting related industries like insurance and retail.
 

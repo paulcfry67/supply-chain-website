@@ -19,7 +19,7 @@ In the USA, <a href="https://supplychaindaily.news/tags/electronics/">electronic
 
 - <a href="https://www.acea.auto/press-release/acea-calls-for-quick-resolution-to-critical-chip-supply-shortage/">Acea Calls For Quick Resolution To Critical Chip Supply Shortage</a>
 - <a href="https://www.automotivelogistics.media/supply-chain/automotive-logistics-and-supply-chains-in-2025-tariff-turmoil-investment-uncertainty-and-further-cost-pressures/649740">Top three issues facing automotive logistics and supply chains in 2025: tariffs, risk and uncertainty</a>
-- <a href="https://x.com/shigishihara/status/1981627816438370727">1981627816438370727</a>
+- <a href="https://x.com/shigishihara/status/1981627816438370727">X Article</a>
 
 ### <a href="https://supplychaindaily.news/tags/automotive/">Automotive</a>
 <a href="https://supplychaindaily.news/tags/supply-chain/">Supply chain</a> issues in USA <a href="https://supplychaindaily.news/tags/automotive/">automotive</a> <a href="https://supplychaindaily.news/tags/manufacturing/">manufacturing</a> remain a critical concern on October 28, 2025, with recent halts in production at major players like Ford and Jeep underscoring the fragility of global sourcing. An aluminum fire and persistent chip shortages have disrupted output, leading to parts shortages that are idling assembly lines and delaying vehicle deliveries. According to industry updates, these disruptions are linked to broader challenges, including rare-earth material curbs and tariff impacts, which are squeezing profit margins and raising vehicle prices for consumers.
@@ -31,8 +31,8 @@ To mitigate these, <a href="https://supplychaindaily.news/tags/automotive/">auto
 - <a href="https://www.cbtnews.com/u-s-automakers-struggle-with-parts-shortages-and-halted-output/">U.S. automakers struggle with parts shortages and halted output</a>
 - <a href="https://www.forvismazars.us/forsights/2025/10/us-automotive-industry-outlook-2025-insights-trends">US Automotive Industry Outlook 2025: Insights & Trends</a>
 - <a href="https://supplychaindigital.com/supply-chain-risk-management/automotive-industry-faces-uncertainty-2025">Supply Chain Issues and Market Shifts Challenge Automakers</a>
-- <a href="https://x.com/Leslieannscott/status/1981125843377410463">1981125843377410463</a>
-- <a href="https://x.com/ThisIsDynamo/status/1981792168453824632">1981792168453824632</a>
+- <a href="https://x.com/Leslieannscott/status/1981125843377410463">X Article</a>
+- <a href="https://x.com/ThisIsDynamo/status/1981792168453824632">X Article</a>
 
 ### Construction
 As of October 28, 2025, the construction sector in the USA is facing mounting <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> disruptions, fueled by raw material shortages and escalating freight costs. Key issues include delays in steel, aluminum, and <a href="https://supplychaindaily.news/tags/electronics/">electronics</a> components essential for infrastructure projects, with tariffs causing a 10-15% spike in import prices. This is particularly evident in projects relying on imported materials, where supply chains are stretched thin due to global geopolitical tensions and extreme weather events impacting logistics.
@@ -42,8 +42,8 @@ In <a href="https://supplychaindaily.news/tags/manufacturing/">manufacturing</a>
 Best practices include adopting end-to-end <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> solutions for better forecasting and partnering with local suppliers to reduce dependency on volatile international routes. For more on infrastructure impacts, refer to our prior analysis (internal link: /infrastructure-supply-chains-2025-10-26).
 
 - <a href="https://int-enviroguard.com/blog/the-resurgence-of-us-manufacturing-trends-technologies-challenges-in-2025">U.S. Manufacturing in 2025: Supply Chain, Workforce, Automation & Sustainability Trends</a>
-- <a href="https://x.com/GusevV1987/status/1981405464572092856">1981405464572092856</a>
-- <a href="https://x.com/Kyrannio/status/1981071496140271826">1981071496140271826</a>
+- <a href="https://x.com/GusevV1987/status/1981405464572092856">X Article</a>
+- <a href="https://x.com/Kyrannio/status/1981071496140271826">X Article</a>
 - <a href="https://www.automotive-technology.com/articles/global-supply-chain-challenges-in-automotive-manufacturing">Global Supply Chain Challenges in Automotive Manufacturing</a>
 
 ### Aerospace
@@ -54,8 +54,8 @@ The sector's global nature amplifies risks, with geopolitical unrest causing fre
 Recommendations for aerospace companies include investing in automation and <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> analytics to optimize inventory and predict disruptions. This builds on our earlier discussion of aerospace logistics (internal link: /aerospace-logistics-update-2025-10-25).
 
 - <a href="https://www.ainvest.com/news/navigating-automotive-supply-chain-risks-vulnerabilities-resilient-investment-opportunities-2025-2510/">Navigating Automotive Supply Chain Risks: Vulnerabilities and Resilient Investment Opportunities in 2025</a>
-- <a href="https://x.com/amital13/status/1970398949883232731">1970398949883232731</a>
-- <a href="https://x.com/macastel3/status/1910497960875741304">1910497960875741304</a>
+- <a href="https://x.com/amital13/status/1970398949883232731">X Article</a>
+- <a href="https://x.com/macastel3/status/1910497960875741304">X Article</a>
 - <a href="https://www.boisestate.edu/cobe/blog/2025/02/the-u-s-automotive-industry-supply-chain-challenges-and-transformations/">The U.S. Automotive Industry Supply Chain</a>
 
 ### Transportation
@@ -67,9 +67,9 @@ To counter these, companies should explore nearshoring and build redundancies in
 
 - <a href="https://www.automotivelogistics.media/supply-chain/automotive-logistics-and-supply-chains-in-2025-tariff-turmoil-investment-uncertainty-and-further-cost-pressures/649740">Top three issues facing automotive logistics and supply chains in 2025: tariffs, risk and uncertainty</a>
 - <a href="https://brianstireandservice.com/2025s-auto-supply-chain-challenge">Navigating 2025’s Auto Supply Chain Challenges</a>
-- <a href="https://x.com/Hannibal9972485/status/1920513939466572160">1920513939466572160</a>
-- <a href="https://x.com/anders_aslund/status/1916905436206305437">1916905436206305437</a>
-- <a href="https://x.com/0xDondo/status/1981705969362227649">1981705969362227649</a>
+- <a href="https://x.com/Hannibal9972485/status/1920513939466572160">X Article</a>
+- <a href="https://x.com/anders_aslund/status/1916905436206305437">X Article</a>
+- <a href="https://x.com/0xDondo/status/1981705969362227649">X Article</a>
 
 <div style="text-align: center; margin-top: 20px;">
 AIs can make mistakes. Check important info.

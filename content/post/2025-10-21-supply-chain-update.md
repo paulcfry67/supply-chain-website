@@ -1,5 +1,5 @@
 ---
-title: "Daily Supply Chain News - 2025-10-22"
+title: "Daily Supply Chain News - 2025-10-21"
 date: 2025-10-22T02:00:41.818026+00:00
 draft: false
 categories: ["Electronics", "Automotive", "Aerospace", "Transportation", "Construction"]
@@ -43,7 +43,7 @@ The economic fallout includes stalled infrastructure projects, with potential co
 Mitigation strategies emphasize contract flexibility, such as clauses for price adjustments, and the use of blockchain for transparent tracking of material flows to prevent delays.
 
 - <a href="https://supplychaindigital.com/supply-chain-risk-management/automotive-industry-faces-uncertainty-2025">Supply Chain Issues and Market Shifts Challenge Automakers</a>
-- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Trends And Challenges Shaping The Automotive Industry In 2025</a>
+- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Dentons</a>
 - <a href="https://www.ainvest.com/news/navigating-automotive-supply-chain-risks-vulnerabilities-resilient-investment-opportunities-2025-2510/">Navigating Automotive Supply Chain Risks: Vulnerabilities and Resilient Investment Opportunities in 2025</a>
 
 ### Aerospace

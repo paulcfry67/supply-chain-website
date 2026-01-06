@@ -44,8 +44,8 @@ Short-term impacts include halted developments and increased bidding prices, pot
 Best practices for mitigation involve contractual clauses for flexible sourcing and leveraging digital platforms for supplier visibility. Companies are advised to stockpile non-perishable materials and explore recycled alternatives for sustainability.
 
 - <a href="https://int-enviroguard.com/blog/the-resurgence-of-us-manufacturing-trends-technologies-challenges-in-2025">U.S. Manufacturing in 2025: Supply Chain, Workforce, Automation & Sustainability Trends</a>
-- <a href="https://www.plantemoran.com/explore-our-thinking/insight/2023/03/top-supply-chain-issues-ranked">2025 top supply chain issues</a>
-- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Trends And Challenges Shaping The Automotive Industry In 2025</a>
+- <a href="https://www.plantemoran.com/explore-our-thinking/insight/2023/03/top-supply-chain-issues-ranked">2025 top supply chain issues | Our Insights</a>
+- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Dentons</a>
 
 ## Aerospace
 

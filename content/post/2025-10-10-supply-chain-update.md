@@ -35,7 +35,7 @@ The USA <a href="https://supplychaindaily.news/tags/automotive/">automotive</a> 
 Aerospace supply chains as of October 10, 2025, are contending with similar tariff-driven disruptions, particularly in critical materials like rare earths for magnets and alloys. U.S. manufacturers report 15-20% cost spikes, delaying aircraft production and maintenance. Logistics issues, including air freight constraints tied to <a href="https://supplychaindaily.news/tags/automotive/">automotive</a> sector overflows, are extending lead times by weeks. The sector's global interdependence amplifies risks from trade wars, with some firms shifting to domestic sourcing amid uncertainty. This contrasts with earlier 2025 resilience reports, now challenged by broader <a href="https://supplychaindaily.news/tags/manufacturing/">manufacturing</a> fragmentation.
 
 - **Sources:**
-  - <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Trends And Challenges Shaping The Automotive Industry In 2025</a>
+  - <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Dentons</a>
   - <a href="https://www.spglobal.com/automotive-insights/en/blogs/2025/01/automotive-suppliers-outlook-2025-trends-and-challenges">Automotive Suppliers Outlook for 2025: Trends and Challenges</a>
   - <a href="https://sdcexec.com/sourcing-procurement/manufacturing/article/22947583/board-international-5-trends-reshaping-us-manufacturing-in-2025">5 Trends Reshaping U.S. Manufacturing in 2025</a>
 

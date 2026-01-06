@@ -66,7 +66,7 @@ Impact analysis: Short-term, businesses face higher operational costs and invent
 
 Recommendations emphasize diversifying transportation modes (e.g., rail over road) and investing in sustainable practices like electric fleets to counter fuel price volatility. Industry leaders who adopted these in 2025 have seen 15-20% efficiency gains.
 
-- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Trends And Challenges Shaping The Automotive Industry In 2025</a>
+- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Dentons</a>
 - <a href="https://www.oliverwyman.com/our-expertise/insights/2025/apr/us-automotive-supplier-focus-areas-2025.html">Top 3 Priorities For US Automotive Suppliers To Win In 2025</a>
 - <a href="https://greendrivedynamics.com/automotive-supply-chain-resilience-in-2025">Why Automotive Supply Chain Resilience Strategies Are Crucial For The Automotive Market 2025 -</a>
 - <a href="https://x.com/Martyupnorth_2/status/1956341615892824282">X Article</a> (Note: Social media posts referenced for sentiment, not as factual evidence)

@@ -35,11 +35,11 @@ Aerospace supply chains in the USA are under strain as of October 15, 2025, with
 
 Short-term impacts include delivery delays for new aircraft, raising operational costs for airlines and potentially spiking ticket prices. Long-term consequences could involve reduced innovation in defense technologies and a reliance on vulnerable international suppliers, risking national security. To mitigate, companies should prioritize multi-sourcing strategies, invest in sustainable materials R&D, and utilize blockchain for transparent tracking. Observed successes include aerospace firms that have integrated automation to cut dependency on single suppliers, achieving up to 30% faster recovery from disruptions.
 
-- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Trends And Challenges Shaping The Automotive Industry In 2025</a>
-- <a href="https://www.plantemoran.com/explore-our-thinking/insight/2023/03/top-supply-chain-issues-ranked">2025 top supply chain issues</a>
+- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Dentons</a>
+- <a href="https://www.plantemoran.com/explore-our-thinking/insight/2023/03/top-supply-chain-issues-ranked">2025 top supply chain issues | Our Insights</a>
 - <a href="https://www.npr.org/2021/04/09/985860442/auto-industry-continues-to-struggle-with-supply-chain-issues">Auto Industry Continues To Struggle With Supply Chain Issues : NPR</a>
-- <a href="https://x.com/SoMuchInfoOk/status/1977314366060908942">1977314366060908942</a>
-- <a href="https://x.com/GlobalNewsRadar/status/1977678546496544888">1977678546496544888</a>
+- <a href="https://x.com/SoMuchInfoOk/status/1977314366060908942">X Article</a>
+- <a href="https://x.com/GlobalNewsRadar/status/1977678546496544888">X Article</a>
 
 ### Transportation
 Transportation logistics across <a href="https://supplychaindaily.news/tags/manufacturing/">manufacturing</a> sectors are facing acute disruptions on October 15, 2025, with halted shipments and rising freight costs impacting the flow of goods in the USA. Key issues include a sharp decline in container volumes due to trade tensions, with some routes experiencing 20-30% drops in traffic, leading to empty shelves and suspended productions in reliant industries. Higher costs—up 10-15% for shipping—are squeezing margins for small businesses, while delays in rail and trucking are extending delivery times by 2-4 weeks. In the <a href="https://supplychaindaily.news/tags/automotive/">automotive</a> context, this is delaying vehicle parts, exacerbating assembly line stoppages, while <a href="https://supplychaindaily.news/tags/electronics/">electronics</a> and aerospace sectors see compounded effects from scarce raw materials transport.
@@ -47,11 +47,11 @@ Transportation logistics across <a href="https://supplychaindaily.news/tags/manu
 Impact analysis points to short-term price spikes in consumer goods and potential shutdowns for manufacturers without buffer stocks. Long-term, persistent chaos could render the US "uninvestible" for foreign firms, leading to economic slowdowns. Recommendations involve adopting resilient logistics software, diversifying transport modes (e.g., combining sea and air freight), and negotiating long-term contracts with carriers. Industry leaders who have implemented these, such as through nearshoring hubs, report minimized downtime and cost savings of 15-25%.
 
 - <a href="https://www.progressive.com/resources/insights/automotive-industry-trends/">Automotive Industry Trends 2024</a>
-- <a href="https://x.com/amital13/status/1970398949883232731">1970398949883232731</a>
-- <a href="https://x.com/macastel3/status/1910497960875741304">1910497960875741304</a>
-- <a href="https://x.com/anders_aslund/status/1916905436206305437">1916905436206305437</a>
-- <a href="https://x.com/GeorgeM_Growth/status/1908217834234151003">1908217834234151003</a>
-- <a href="https://x.com/JosephPolitano/status/1672720252189147138">1672720252189147138</a>
+- <a href="https://x.com/amital13/status/1970398949883232731">X Article</a>
+- <a href="https://x.com/macastel3/status/1910497960875741304">X Article</a>
+- <a href="https://x.com/anders_aslund/status/1916905436206305437">X Article</a>
+- <a href="https://x.com/GeorgeM_Growth/status/1908217834234151003">X Article</a>
+- <a href="https://x.com/JosephPolitano/status/1672720252189147138">X Article</a>
 
 <div style="text-align: center; margin-top: 20px;">
 AIs can make mistakes. Check important info.

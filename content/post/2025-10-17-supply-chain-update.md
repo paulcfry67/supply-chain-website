@@ -47,7 +47,7 @@ Impact analysis points to short-term risks like grounded flights and higher main
 
 - <a href="https://www.automotive-technology.com/articles/global-supply-chain-challenges-in-automotive-manufacturing">Global Supply Chain Challenges in Automotive Manufacturing</a>
 - <a href="https://www.capstonepartners.com/insights/automotive-industry-update/">Automotive Industry Update</a>
-- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Trends And Challenges Shaping The Automotive Industry In 2025</a>
+- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Dentons</a>
 
 ### Transportation
 As of October 17, 2025, transportation supply chains are under strain from freight volume drops and logistical <a href="https://supplychaindaily.news/tags/bottlenecks/">bottlenecks</a>, with shipping costs rising 10-15% due to trade volatility and halted shipments from major exporters. This affects the <a href="https://supplychaindaily.news/tags/distribution/">distribution</a> of goods across sectors, including <a href="https://supplychaindaily.news/tags/automotive/">automotive</a> parts, leading to scarcer availability and price hikes in USA markets. Delays in container shipping are particularly acute, impacting just-in-time delivery models.

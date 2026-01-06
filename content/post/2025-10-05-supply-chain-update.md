@@ -36,7 +36,7 @@ Short-term impacts include reduced vehicle availability, potentially spiking pri
 
 - <a href="https://automotivelogistics.media/supply-chain/automotive-logistics-and-supply-chains-in-2025-tariff-turmoil-investment-uncertainty-and-further-cost-pressures/649740">Top three issues facing automotive logistics and supply chains in 2025: tariffs, risk and uncertainty</a>
 - <a href="https://www.spglobal.com/automotive-insights/en/blogs/2025/01/automotive-suppliers-outlook-2025-trends-and-challenges">Automotive Suppliers Outlook for 2025: Trends and Challenges</a>
-- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Trends And Challenges Shaping The Automotive Industry In 2025</a>
+- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Dentons</a>
 - <a href="https://supplychaindigital.com/supply-chain-risk-management/automotive-industry-faces-uncertainty-2025">Supply Chain Issues and Market Shifts Challenge Automakers</a>
 
 ## Aerospace

@@ -39,7 +39,7 @@ Production halts are evident, with automakers like GM, Ford, and Stellantis abso
 **Recommendations:** Automakers should prioritize <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> resilience by investing in domestic sourcing and partnerships. Best practices include adopting just-in-time alternatives like vendor-managed inventory, as seen in Toyota's model, which has minimized downtime. Regular audits and scenario planning can help navigate tariff volatility—consider our previous article on [EV Supply Chain Strategies](internal-link-to-yesterdays-content) for more insights.
 
 - <a href="https://www.automotivelogistics.media/nearshoring/forecasts-for-2025-shows-resilience-is-tested-by-trade-volatility-ev-transitions-and-digital-fragmentation/337990">Automotive supply chains in flux: 2025 outlook and trends</a>
-- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Trends And Challenges Shaping The Automotive Industry In 2025</a>
+- <a href="https://www.dentons.com/en/insights/articles/2025/january/23/trends-and-challenges-shaping-the-automotive-industry-in-2025">Dentons</a>
 - <a href="https://friedmancorp.com/blog/manufacturing-outloo-supply-chain-resiliency/">2025 US Manufacturing Outlook: Supply Chain Resiliency</a>
 
 ## Aerospace
