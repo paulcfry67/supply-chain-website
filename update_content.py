@@ -289,7 +289,9 @@ def update_content_file(filepath):
 
 def main():
     """Main function to process all content files"""
-    content_dir = Path('content/post')
+    # Use script location to find content directory (works when called from generator/)
+    script_dir = Path(__file__).parent
+    content_dir = script_dir / 'content' / 'post'
 
     if not content_dir.exists():
         print(f"Error: {content_dir} not found")

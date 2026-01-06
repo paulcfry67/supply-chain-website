@@ -19,7 +19,7 @@ Impact analysis reveals short-term consequences such as increased costs—up by 
 
 To mitigate these issues, companies should adopt best practices like multi-sourcing strategies, investing in AI-driven inventory management, and partnering with local suppliers. Successful examples include firms that have reduced dependency on single regions by 30% through nearshoring to Mexico and Vietnam.
 
-- <a href="https://www.reuters.com/business/autos-transportation/how-nexperia-chip-crisis-upended-auto-supply-chains-again-2025-11-24/">How Nexperia Chip Crisis Upended Auto Supply Chains Again 2025 11 24</a>
+- <a href="https://www.reuters.com/business/autos-transportation/how-nexperia-chip-crisis-upended-auto-supply-chains-again-2025-11-24/">How the Nexperia chip crisis upended auto supply chains - again</a>
 - <a href="https://globenewswire.com/news-release/2025/12/15/3205180/28124/en/Revolutionizing-Automotive-Electronics-Growth-Trends-in-the-Image-Signal-Processor-Market.html">Revolutionizing Automotive Electronics: Growth Trends in</a>
 - <a href="https://www.digitimes.com/news/a20251211PD218/automotive-automotive-supply-chain-taiwan-market-supply-chain.html">Global automotive supply chains split into two competing ecosystems</a>
 
@@ -30,7 +30,7 @@ The impact is significant: short-term production halts could lead to 1.1 million
 
 Recommendations include building resilient supply chains through digital twins for forecasting, collaborating on industry-wide stockpiling, and leveraging government incentives for domestic production. Companies like Toyota have maintained steady inventories by diversifying suppliers, a strategy that could serve as a model for others.
 
-- <a href="https://www.reuters.com/business/autos-transportation/major-automakers-say-china-poses-clear-present-threat-us-auto-industry-2025-12-11/">Major Automakers Say China Poses Clear Present Threat Us Auto Industry 2025 12 1</a>
+- <a href="https://www.reuters.com/business/autos-transportation/major-automakers-say-china-poses-clear-present-threat-us-auto-industry-2025-12-11/">Major automakers say China poses 'clear and present threat' to US auto industry</a>
 - <a href="https://www.automotivelogistics.media/supply-chain/automotive-logistics-and-supply-chains-q4-2025-cost-pressures-tariff-uncertainty-and-supply-chain-disruption-continues-to-plague-the-industry/2126758">Q4 2025 outlook: Cost pressures, tariff uncertainty and disruption</a>
 - <a href="https://supplychaindigital.com/supply-chain-risk-management/automotive-industry-faces-uncertainty-2025">Supply Chain Issues and Market Shifts Challenge Automakers</a>
 - <a href="https://x.com/FirstSquawk/status/1981894712828346700">X Article</a> (Note: Used for sentiment; information treated as inconclusive)
@@ -42,7 +42,7 @@ Short-term impacts include project delays of 2-3 months and cost overruns of 8-1
 
 Best practices involve adopting just-in-time alternatives like modular construction and forging alliances with diversified suppliers. Firms that have invested in <a href="https://supplychaindaily.news/tags/supply-chain/">supply chain</a> visibility tools have reduced disruptions by 25%, offering a blueprint for resilience.
 
-- <a href="https://www.sdcexec.com/sourcing-procurement/manufacturing/news/22956480/gep-north-america-pulls-back-in-manufacturing-demand">North America Pulls Back in Manufacturing Demand</a>
+- <a href="https://www.sdcexec.com/sourcing-procurement/manufacturing/news/22956480/gep-north-america-pulls-back-in-manufacturing-demand">North America Pulls Back in Manufacturing Demand | Supply & Demand Chain Executive</a>
 - <a href="https://openpr.com/news/4314954/usa-automotive-composites-market-landscape-2036-strategic">USA Automotive Composites Market Landscape 2036: Strategic</a>
 - <a href="https://www.cnbc.com/2025/12/10/supply-chain-diversification-away-from-china-is-progressing-from-talks-to-action-eu-chamber-says.html">Supply chain diversification away from China is progressing from talks to action, EU chamber says</a>
 
@@ -53,7 +53,7 @@ Impact analysis points to short-term production slowdowns, increasing costs by 1
 
 Mitigation strategies recommend scenario planning with AI analytics and building redundant supplier networks. Industry leaders have successfully navigated similar issues by prioritizing critical components, reducing vulnerability by 20%.
 
-- <a href="https://www.forvismazars.us/forsights/2025/10/us-automotive-industry-outlook-2025-insights-trends">US Automotive Industry Outlook 2025: Insights & Trends</a>
+- <a href="https://www.forvismazars.us/forsights/2025/10/us-automotive-industry-outlook-2025-insights-trends">US Automotive Industry Outlook 2025: Insights & Trends | Forvis Mazars US</a>
 - <a href="https://www.gminsights.com/blogs/top-challenges-in-the-automotive-industry-pre-covid">Automotive Industry 2025: Electrification, Software, and Supply Chain Transformation</a>
 - <a href="https://www.digitimes.com/news/a20251211PD218/automotive-automotive-supply-chain-taiwan-market-supply-chain.html">Global automotive supply chains split into two competing ecosystems</a>
 
