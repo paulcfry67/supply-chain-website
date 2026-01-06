@@ -1,6 +1,6 @@
 ---
 title: "Daily Supply Chain News - 2026-01-05"
-date: 2026-01-06T03:34:51.634256+00:00
+date: 2026-01-05T03:34:51.634256+00:00
 draft: false
 categories: ["Electronics", "Automotive", "Aerospace", "Transportation"]
 tags: ["material cost", "bottlenecks", "distribution", "manufacturing"]
