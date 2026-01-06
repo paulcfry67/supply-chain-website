@@ -25,7 +25,9 @@
       "Bash(grep:*)",
       "Skill(superpowers:systematic-debugging)",
       "Bash(git remote set-url:*)",
-      "Bash(git push)"
+      "Bash(git push)",
+      "Bash(systemctl status:*)",
+      "Bash(crontab:*)"
     ],
     "deny": [],
     "ask": []
