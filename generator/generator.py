@@ -364,8 +364,15 @@ Do NOT use placeholder dates like 2023-10-10 or October 10, 2023.
 <p style="color: red;"><a href="{top_story_url}" style="color: red;">Read the whole story at {page_info['source'].split('(')[0].strip()}</a></p>
 </div>'''
 
-            # Read the homepage file
-            homepage_path = Path("../content/_index.md")
+            # Read the homepage file using absolute path resolution to prevent path traversal
+            homepage_path = (Path(__file__).parent.parent / "content" / "_index.md").resolve()
+
+            # Validate that the resolved path is within the expected directory
+            expected_base = (Path(__file__).parent.parent / "content").resolve()
+            if not str(homepage_path).startswith(str(expected_base)):
+                self.logger.error(f"Security: Homepage path outside expected directory: {homepage_path}")
+                return False
+
             if not homepage_path.exists():
                 self.logger.error(f"Homepage file not found: {homepage_path}")
                 return False
