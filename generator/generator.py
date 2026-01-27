@@ -71,8 +71,9 @@ class Config:
 class SupplyChainDailyGenerator:
     """Main class for generating daily prepper précis"""
 
-    def __init__(self, config: Config):
+    def __init__(self, config: Config, target_date: Optional[datetime] = None):
         self.config = config
+        self.target_date = target_date or datetime.now()
         self.setup_logging()
         self.session = requests.Session()
         self.session.headers.update({
@@ -167,7 +168,7 @@ Key requirements:
     def generate_content(self) -> Optional[str]:
         """Generate the daily précis using Grok API"""
         # Get current date for the prompt
-        today = datetime.now()
+        today = self.target_date
         date_str = today.strftime("%Y-%m-%d")
         day_name = today.strftime("%A")
 
@@ -225,8 +226,8 @@ Do NOT use placeholder dates like 2023-10-10 or October 10, 2023.
                 else:
                     self.logger.debug(f"Skipping penalty parameters for model {self.config.model}")
 
-                # Always include search_parameters; {} lets server defaults apply
-                payload["search_parameters"] = self.config.search_parameters
+                # Note: search_parameters removed as live search is deprecated
+                # Use Agent Tools API instead if search functionality needed
 
                 response = self.session.post(
                     f"{self.config.grok_base_url}/chat/completions",
@@ -402,7 +403,7 @@ Do NOT use placeholder dates like 2023-10-10 or October 10, 2023.
             Path(self.config.output_dir).mkdir(parents=True, exist_ok=True)
 
             # Generate filename
-            today = datetime.now().strftime("%Y-%m-%d")
+            today = self.target_date.strftime("%Y-%m-%d")
             filename = f"{today}-supply-chain-update.md"
             filepath = Path(self.config.output_dir) / filename
 
@@ -426,7 +427,7 @@ Do NOT use placeholder dates like 2023-10-10 or October 10, 2023.
 
     def format_markdown(self, content: str) -> str:
         """Format content with proper markdown structure and frontmatter"""
-        now = datetime.now(timezone.utc)
+        now = self.target_date.replace(tzinfo=timezone.utc)
         today = now.strftime("%Y-%m-%d")
 
         # Map/normalize sections for Hugo validation
@@ -665,6 +666,7 @@ def main():
     parser.add_argument("--config", type=str, help="Path to configuration file")
     parser.add_argument("--config-check", action="store_true", help="Check configuration and exit")
     parser.add_argument("--dry-run", action="store_true", help="Generate content but don't save")
+    parser.add_argument("--date", type=str, help="Generate for specific date (YYYY-MM-DD)")
 
     args = parser.parse_args()
 
@@ -691,8 +693,18 @@ def main():
         print("ERROR: GROK_API_KEY environment variable (or config) is required")
         return 1
 
+    # Parse target date if provided
+    target_date = None
+    if args.date:
+        try:
+            target_date = datetime.strptime(args.date, "%Y-%m-%d")
+            print(f"Generating content for date: {args.date}")
+        except ValueError:
+            print(f"ERROR: Invalid date format '{args.date}'. Use YYYY-MM-DD format.")
+            return 1
+
     # Run generator
-    generator = SupplyChainDailyGenerator(config)
+    generator = SupplyChainDailyGenerator(config, target_date)
 
     if args.dry_run:
         content = generator.generate_content()
