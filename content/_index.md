@@ -19,11 +19,11 @@ Your trusted source for daily intelligence on supply chain issues in manufacturi
 <!-- This section is automatically updated by generator.py with the day's top supply chain story -->
 <div id="top-story">
 <p><strong>Today's Top Story:</strong><br>
-Tariffs, strikes and tragedies: How 2025 transformed supply chains</p>
+808216</p>
 
 <p><em>Source: Supplychaindive (supplychaindive.com)</em></p>
 
-<p>Supply chain and logistics news</p>
+<p>Read the full article for details on this important supply chain development.</p>
 
 <p style="color: red;"><a href="https://www.supplychaindive.com/news/tariffs-strikes-tragedies-how-2025-transformed-supply-chains/808216/" style="color: red;">Read the whole story at Supplychaindive</a></p>
 </div>
