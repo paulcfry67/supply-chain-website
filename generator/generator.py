@@ -57,7 +57,7 @@ class Config:
     log_level: str = "INFO"
 
     # ===== Email settings =====
-    alert_email: str = "paul@accelerated.industries"
+    alert_email: str = "paul.fry@flexresourcing.com"
     smtp_server: str = "smtp.gmail.com"  # Configure as needed
     smtp_port: int = 587
     smtp_username: str = ""  # Set via environment
@@ -69,7 +69,7 @@ class Config:
 
 
 class SupplyChainDailyGenerator:
-    """Main class for generating daily prepper précis"""
+    """Main class for generating daily updates"""
 
     def __init__(self, config: Config, target_date: Optional[datetime] = None):
         self.config = config
@@ -581,7 +581,7 @@ def load_config(config_file: Optional[str] = None) -> Config:
         'max_chars': 80000,
         'output_dir': '/tmp/supchain',
         'log_level': 'INFO',
-        'alert_email': 'paul@accelerated.industries',
+        'alert_email': 'paul.fry@flexresourcing.com',
         'smtp_server': 'smtp.gmail.com',
         'smtp_port': 587,
         'smtp_username': '',
